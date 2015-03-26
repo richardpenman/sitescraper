@@ -1,0 +1,674 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head><title>
+	Application Level Replication Technologies - Stack Overflow
+</title><meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><link href="/Content/all.css?cachebreaker=20080918.1" rel="stylesheet" type="text/css" /><link href="/Content/print.css" rel="stylesheet" media="print" type="text/css" /><link rel="shortcut icon" href="/favicon.ico" /><link rel="apple-itouch-icon" href="/Content/Img/apple-touch-icon.png" /><link rel="search" type="application/opensearchdescription+xml" title="Stack Overflow" href="/opensearch.xml" />    
+    <script type="text/javascript" src="/Content/Js/jquery.package.master.js?cachebreaker=20080930"></script>
+    
+    <link rel="alternate" type="application/atom+xml" title="RSS" href="/feeds/question/66040" />    
+    
+    <script src="/content/js/jquery.package.question.js?cachebreaker=20081003.3" type="text/javascript"></script>
+    
+    <script type="text/javascript">
+        var fkey = "";
+        var repNeededForComments = 50;
+        
+        $().ready(function() {    
+            setupFormValidation('#post-form');
+            vote.initForShow(false, 66040); 
+            styleCode();
+        });
+    </script>
+    <link href="/questions/66040/increment-view-count" type="text/css" rel="stylesheet" />
+</head>
+
+<body>
+
+
+
+    <div class="container">
+    
+        <div id="header">
+        
+        <table width="950px" class="header-table">
+            <tr>            
+            <td style="vertical-align:middle; padding-top:22px;" width="260px">
+            <a href="/"><img src="/Content/Img/stackoverflow-logo-250.png" width="250" height="70" alt="logo link to homepage" /></a>
+            </td>
+            <td style="vertical-align:top; width:690px;">
+            <table>
+            <!--row-->
+            <tr>
+            <td style="vertical-align:middle; height:40px; text-align:left; width:430px">
+            <div id="headerlinks">
+            
+            <a href="/users/login?returnurl=%2fquestions%2f66040%2fapplication-level-replication-technologies">login</a><span class="link-separator">|</span>
+            <a href="/about">about</a>
+            <span class="link-separator">|</span>
+            <a href="/faq">faq</a>   
+            </div>
+            </td>
+            <td style="text-align:right; vertical-align:middle; width:270px;">
+            <form id="search" action="/search" method="get">
+                <input name="q" class="textbox" type="text" maxlength="80" size="27" value="" style="margin:0px;" />&nbsp;
+                <input type="submit" class="button" value="Search" style="margin:0px; padding:2px; padding: 0px !ie7;" />
+            </form>          
+            </td>
+            </tr>
+            <!--row-->
+            <tr><td colspan="2">
+            <div class="betamessage-top">This is a <b>public beta</b>. Found a bug? Want to make a feature request? <b><a href="http://stackoverflow.uservoice.com/">stackoverflow.uservoice.com</a></b></div>                        
+            </td></tr>
+            <!--row-->
+            <tr>
+            <td style="text-align:left; vertical-align:middle; height:40px">
+            <div class="nav">            
+                <ul class="primarynav">
+                    <li class="youarehere">
+                        <a href="/questions">Questions</a>
+                    </li>
+                    <li class="">
+                        <a href="/tags">Tags</a>
+                    </li>
+                    <li class="">
+                        <a href="/users">Users</a>
+                    </li>
+                    <li class="">
+                        <a href="/badges">Badges</a>
+                    </li>
+                </ul> 
+             </div>                           
+             </td>
+             <td style="text-align:right; vertical-align:middle;">
+                <div class="nav" style="float:right; margin-right:-5px;">
+                <ul class="primarynav">
+                    <li class="">
+                    
+                    <a href="/questions/ask">Ask Question</a>
+                    
+                    </li>
+                </ul>                            
+                </div>
+            </td>            
+
+            </tr>
+            </table>
+            </td>
+        </tr>
+        </table> 
+        
+        </div>      
+        
+        <div id="content">
+            
+
+<div id="question-header">
+    <h2><a href="/questions/66040/application-level-replication-technologies">Application Level Replication Technologies</a></h2>
+</div>
+
+<div id="mainbar">
+
+<div id="question" class="" style="width:710px;">
+    <table width="710px">
+    <tr>
+    <td width="60px" style="vertical-align:top;">
+        
+<div class="vote">
+
+    <input type="hidden" value="66040" />
+    <img class="vote-up" src="/content/img/vote-arrow-up.png" width="40" height="25" alt="vote up" title="This was helpful (click again to undo)" />
+    <span class="vote-count-post">
+    2
+    </span>
+    <img class="vote-down" src="/content/img/vote-arrow-down.png" width="40" height="25" alt="vote down" title="This was not helpful (click again to undo)" />
+    <br />  
+    
+    <img class="vote-favorite" src="/content/img/vote-favorite-off.png" width="32" height="31" alt="star" title="This is a favorite question (click again to undo)" />
+    <div class="favoritecount"><b>
+        
+    </b></div>
+        
+
+</div>
+        
+        <div class="viewcount">
+            views<br />
+            <b>41</b>            
+        </div>
+    </td>
+    <td>
+        <div>          
+            <div class="post-text">
+                <p>I am building out a solution that will be deployed in multiple data centers in multiple regions around the world, with each data center having a replicated copy of data actively updated in each region. I will have a combination of multiple databases and file systems in each data center, the state of which must be kept consistent (within a data center). These multiple repositories will be fronted by a SOA service tier. </p>
+
+<p>I can tolerate some latency in the replication, and need to allow for regions to be off-line, and then catch up later.</p>
+
+<p>Given the multiple back end repositories of data, I can't easily rely on independent replication solutions for each one to maintain a consistent state. I am thus lead to implementing replication at the application layer -- by replicating the SOA requests in some manner. I'll need to make sure that replication loops don't occur, and that last writer conditions are sorted out correctly.</p>
+
+<p>In your experience, what is the best pattern for solving this problem, and are there good products (free or otherwise) that should be investigated?</p>
+
+            </div>            
+            <div class="post-taglist">
+                <a href="/questions/tagged/replication" class="post-tag" title="show questions tagged 'replication'" rel="tag">replication</a> <a href="/questions/tagged/soa" class="post-tag" title="show questions tagged 'soa'" rel="tag">soa</a> 
+            </div>
+            <table width="100%">
+            <tr>
+            <td align="left" style="vertical-align:top;">            
+                <div class="post-menu"><a id="vote-offensive-66040" title="flag this post as hate speech, spam, or abuse">offensive?</a> <span class="vote-offensive-count"></span></div>                            
+            </td>
+            
+            <td class="post-signature owner">                                                
+            
+<div class="user-info">
+    
+    <div class="user-action-time">asked <span title="9/15/2008 7:37:17 PM UTC" class="relativetime">Sep 15 at 19:37</span><br /></div>
+    <div class="user-gravatar32"><a href="/users/9608/thebighaikublogspotcom"><img src="http://www.gravatar.com/avatar/37e9bcfaf8162dbfa9944c336c6e253f?s=32&d=identicon&r=PG" height=32 width=32 alt="gravatar image" /></a></div>
+    <div class="user-details"><a href="/users/9608/thebighaikublogspotcom">thebighaiku.blogspot.com</a><br/><span class="reputation-score" title="reputation score">21</span><span title="1 bronze badges"><span class="badge3">&#9679;</span><span class="badgecount">1</span></span></div>
+    
+</div>
+            </td>
+            </tr>
+            </table>
+        </div>
+    </td>
+    </tr>
+
+    
+
+<tr>
+<td width="60" height="20"></td>
+<td>
+    <div class="post-menu">
+        <input id="can-post-comments-66040" type="hidden" value="false"/>
+        <a id="comments-link-66040" class="comments-link">add comment</a><noscript>&nbsp;JavaScript is needed to access comments.</noscript>
+        <div id="comments-66040" class="comments-container">
+            <div class="comments"></div>
+        </div>
+    </div>
+</td>
+</tr>
+
+    </table>
+    
+</div>
+
+<div id="answers">
+
+    <a name="sort-top"></a>
+    <div id="answer-header">
+        <div id="subheader">
+            <h2>3 Answers:</h2>
+            <div id="tabs">
+                <a href="/questions/66040?sort=oldest#sort-top" title="Answers in the order they were given">Oldest</a><a href="/questions/66040?sort=newest#sort-top" title="Most recent answers first">Newest</a><a class="youarehere" href="/questions/66040?sort=votes#sort-top" title="Answers with the most votes first">Votes</a>
+            </div>    
+        </div>
+    </div>    
+
+
+
+    <a name="71380"></a>
+    
+    <div id="answer-71380" class="answer ">    
+        <table style="width:710px">
+        <tr>
+        <td width="60px" style="vertical-align:top;">
+            
+<div class="vote">
+
+    <input type="hidden" value="71380" />
+    <img class="vote-up" src="/content/img/vote-arrow-up.png" width="40" height="25" alt="vote up" title="This was helpful (click again to undo)" />
+    <span class="vote-count-post">
+    1
+    </span>
+    <img class="vote-down" src="/content/img/vote-arrow-down.png" width="40" height="25" alt="vote down" title="This was not helpful (click again to undo)" />
+    <br />  
+        
+
+</div>
+
+        </td>
+        <td>
+            <div class="post-text"><p>Lotus/ Domino is your answer. I've been working with it for ten years and its exactly what you need. It may not be trendy (a perception that I would challenge) but its powerful, adaptable and very secure, The latest version R8 is the best yet.</p>
+</div>            
+            <table style="width:100%">
+            <tr>
+            <td style="vertical-align:top;" align="left">
+                <div class="post-menu"><a href="/questions/66040/application-level-replication-technologies#71380" title="permalink to this answer">link</a><span class="link-separator">|</span><a id="vote-offensive-71380" title="flag this post as hate speech, spam, or abuse">offensive?</a> <span class="vote-offensive-count"></span></div>
+            </td>
+            
+            
+            <td align="right" class="post-signature">                   
+            
+<div class="user-info">
+    
+    <div class="user-action-time">answered <span title="9/16/2008 11:28:13 AM UTC" class="relativetime">Sep 16 at 11:28</span><br /></div>
+    <div class="user-gravatar32"><a href="/users/11770/andrewb"><img src="http://www.gravatar.com/avatar/a8a2d01378b67b3770882823a22f8e04?s=32&d=identicon&r=PG" height=32 width=32 alt="gravatar image" /></a></div>
+    <div class="user-details"><a href="/users/11770/andrewb">AndrewB</a><br/><span class="reputation-score" title="reputation score">11</span><span title="1 bronze badges"><span class="badge3">&#9679;</span><span class="badgecount">1</span></span></div>
+    
+</div>    
+            </td>
+            </tr>
+            </table>
+        </td>
+        </tr>
+        
+        
+
+<tr>
+<td width="60" height="20"></td>
+<td>
+    <div class="post-menu">
+        <input id="can-post-comments-71380" type="hidden" value="false"/>
+        <a id="comments-link-71380" class="comments-link">add comment</a><noscript>&nbsp;JavaScript is needed to access comments.</noscript>
+        <div id="comments-71380" class="comments-container">
+            <div class="comments"></div>
+        </div>
+    </div>
+</td>
+</tr>
+        
+        </table>
+    </div>
+
+
+    <a name="66301"></a>
+    
+    <div id="answer-66301" class="answer ">    
+        <table style="width:710px">
+        <tr>
+        <td width="60px" style="vertical-align:top;">
+            
+<div class="vote">
+
+    <input type="hidden" value="66301" />
+    <img class="vote-up" src="/content/img/vote-arrow-up.png" width="40" height="25" alt="vote up" title="This was helpful (click again to undo)" />
+    <span class="vote-count-post">
+    0
+    </span>
+    <img class="vote-down" src="/content/img/vote-arrow-down.png" width="40" height="25" alt="vote down" title="This was not helpful (click again to undo)" />
+    <br />  
+        
+
+</div>
+
+        </td>
+        <td>
+            <div class="post-text"><p>You dont give enough specifics to be certain of your needs but I think you should check out SQL Server Merge replication. It allows for asynchronous replication of multiple databases with full conflict resolution. You will need to designate a Global master and all the other databases will replicate to that one, but all the database instances are fully functional (read/write) and so you can schedule replication at whatever intervals suit you. If any region goes offline they can catch up later with no issues - if the master goes offline everyone will work independantly until replication can resume.</p>
+
+<p>I would be interested to know of other solutions this flexible (apart from Lotus Notes/Domino of course which is not very trendy these days).</p>
+</div>            
+            <table style="width:100%">
+            <tr>
+            <td style="vertical-align:top;" align="left">
+                <div class="post-menu"><a href="/questions/66040/application-level-replication-technologies#66301" title="permalink to this answer">link</a><span class="link-separator">|</span><a id="vote-offensive-66301" title="flag this post as hate speech, spam, or abuse">offensive?</a> <span class="vote-offensive-count"></span></div>
+            </td>
+            
+            
+            <td align="right" class="post-signature">                   
+            
+<div class="user-info">
+    
+    <div class="user-action-time">answered <span title="9/15/2008 7:57:32 PM UTC" class="relativetime">Sep 15 at 19:57</span><br /></div>
+    <div class="user-gravatar32"><a href="/users/9731/ewan-makepeace"><img src="http://www.gravatar.com/avatar/c6379f15a7490dfbcc5c08b111aa43d6?s=32&d=identicon&r=PG" height=32 width=32 alt="gravatar image" /></a></div>
+    <div class="user-details"><a href="/users/9731/ewan-makepeace">Ewan Makepeace</a><br/><span class="reputation-score" title="reputation score">275</span><span title="8 bronze badges"><span class="badge3">&#9679;</span><span class="badgecount">8</span></span></div>
+    
+</div>    
+            </td>
+            </tr>
+            </table>
+        </td>
+        </tr>
+        
+        
+
+<tr>
+<td width="60" height="20"></td>
+<td>
+    <div class="post-menu">
+        <input id="can-post-comments-66301" type="hidden" value="false"/>
+        <a id="comments-link-66301" class="comments-link">add comment</a><noscript>&nbsp;JavaScript is needed to access comments.</noscript>
+        <div id="comments-66301" class="comments-container">
+            <div class="comments"></div>
+        </div>
+    </div>
+</td>
+</tr>
+        
+        </table>
+    </div>
+
+
+    <a name="90378"></a>
+    
+    <div id="answer-90378" class="answer ">    
+        <table style="width:710px">
+        <tr>
+        <td width="60px" style="vertical-align:top;">
+            
+<div class="vote">
+
+    <input type="hidden" value="90378" />
+    <img class="vote-up" src="/content/img/vote-arrow-up.png" width="40" height="25" alt="vote up" title="This was helpful (click again to undo)" />
+    <span class="vote-count-post">
+    0
+    </span>
+    <img class="vote-down" src="/content/img/vote-arrow-down.png" width="40" height="25" alt="vote down" title="This was not helpful (click again to undo)" />
+    <br />  
+        
+
+</div>
+
+        </td>
+        <td>
+            <div class="post-text"><p>I think that your answer is going to have to be based on a pub/sub architecture. I am assuming that you have reliable messaging between your data centers so that you can rely on published updates being received eventually. If all of your access to the data repositories is via service you can add an event notification to the orchestration of each of your update services that notifies all interested data centers of the event. Ideally the master database is the only one that sends out these updates. If the master database is the only one sending the updates you can exclude routing the notifications to the node that generated them in the first place thus avoiding update loops.</p>
+</div>            
+            <table style="width:100%">
+            <tr>
+            <td style="vertical-align:top;" align="left">
+                <div class="post-menu"><a href="/questions/66040/application-level-replication-technologies#90378" title="permalink to this answer">link</a><span class="link-separator">|</span><a id="vote-offensive-90378" title="flag this post as hate speech, spam, or abuse">offensive?</a> <span class="vote-offensive-count"></span></div>
+            </td>
+            
+            
+            <td align="right" class="post-signature">                   
+            
+<div class="user-info">
+    
+    <div class="user-action-time">answered <span title="9/18/2008 5:52:47 AM UTC" class="relativetime">Sep 18 at 5:52</span><br /></div>
+    <div class="user-gravatar32"><a href="/users/14893/peter-kelley"><img src="http://www.gravatar.com/avatar/0b9c98b4b1455b5394bcce6b5fe254aa?s=32&d=identicon&r=PG" height=32 width=32 alt="gravatar image" /></a></div>
+    <div class="user-details"><a href="/users/14893/peter-kelley">Peter Kelley</a><br/><span class="reputation-score" title="reputation score">379</span><span title="7 bronze badges"><span class="badge3">&#9679;</span><span class="badgecount">7</span></span></div>
+    
+</div>    
+            </td>
+            </tr>
+            </table>
+        </td>
+        </tr>
+        
+        
+
+<tr>
+<td width="60" height="20"></td>
+<td>
+    <div class="post-menu">
+        <input id="can-post-comments-90378" type="hidden" value="false"/>
+        <a id="comments-link-90378" class="comments-link">add comment</a><noscript>&nbsp;JavaScript is needed to access comments.</noscript>
+        <div id="comments-90378" class="comments-container">
+            <div class="comments"></div>
+        </div>
+    </div>
+</td>
+</tr>
+        
+        </table>
+    </div>
+
+
+<div style="height:20px; clear:both;"></div>
+
+
+    <form id="post-form" action="/questions/66040/answer?sort=Votes" method="post">
+        <h2>Your Answer:</h2>
+        
+
+<script src="/Content/Js/jquery.package.editor.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+
+$().ready(function() {
+    initStyleCode();
+    initValidation();
+    initWMDToggle();
+    initResizer();
+    initBullet();
+});
+
+function initBullet() {
+    $.get("/questions/ticks", function(txt) {
+        $("#comment-div").append("<input type='hidden' name='bullet' value='" + txt + "' />");        
+    });
+}
+
+function initResizer() {
+    $("#post-text:not(.processed)").TextAreaResizer();
+}
+
+function initWMDToggle() {
+    var WMD_HIDE_COOKIE = 'wmdhide';
+    
+    $("#previewToggle").toggle(function() {
+        $(this).text("show preview");
+        $.cookie(WMD_HIDE_COOKIE, 'false', { path: '/', expires: 60 });
+        $("#post-preview").hide();
+     }, function() {
+        $(this).text("hide preview");        
+        $.cookie(WMD_HIDE_COOKIE, 'true', { path: '/', expires: 60 });
+        $("#post-preview").show();
+        styleCode();
+     });
+     
+     if($.cookie(WMD_HIDE_COOKIE) == 'false') {
+        $("#previewToggle").click();
+     }  
+}
+
+function initStyleCode() {
+    $("#post-text").typeWatch( { highlight:false, wait:5000, captureLength: 5, callback:styleCode } );
+}
+
+function initValidation() {
+    $("#post-text").rules("add", { required: true, minlength: 10 });
+    if ($("#title").length > 0) {
+        $("#title").rules("add", { required: true, minlength: 10 });
+    }
+}
+</script>
+
+<input id="fkey" name="fkey" type="hidden" value="" />
+
+<div id="comment-div">
+    <input id="comment" name="comment" type="text" />
+</div>
+
+
+
+<div class="form-item" style="margin-bottom:-50px;">
+
+    <div id="post-text-container" class="resizable-textarea">
+        <textarea id="post-text" name="post-text" cols="90" rows="10" tabindex="101" ></textarea>
+    </div>
+    
+    <div style="float:right; width:200px; text-align:right; margin-right:20px;">
+    <input id="communitymode" name="communitymode" type="checkbox"/>
+    <label for="communitymode" style="display:inline;"><span title="community owned posts do not generate any reputation for the owner, and have a lower reputation barrier for collaborative editing" style="color: #888; font-weight:normal; font-size:90%;">community wiki</span></label> 
+    </div>
+    
+    <br />    
+    <span class="form-error"></span>    
+    <a id="previewToggle" title="Show or hide the real time as-you-type Markdown preview" href="javascript:void(0);" tabindex="-1" >hide preview</a>
+</div>
+
+<div class="form-item" style="width: 680px; padding-top:0; margin-top:40px">
+    <div id="preview-container">
+        <div id="post-preview" class="wmd-preview form-item">
+        </div>
+    </div>
+</div>
+    
+<div class="form-item">
+    <table>
+    <tr>
+    <td style="vertical-align:middle;">
+        <label for="openid_identifier">OpenID Login: <span class="form-error"></span></label>
+        <input id="openid_identifier" name="openid_identifier" type="text" size="40" maxlength="200" value="" tabindex="104" />
+        <div class="form-item-info">
+            Get an <a href="https://www.myopenid.com/" target="_blank">OpenID</a>.
+        </div>
+    </td>
+    <td style="vertical-align:middle; padding: 0px 40px 0px 40px">
+        <div style="position: absolute; margin-top:40px; background-color:white; margin-left:-10px; padding:5px;">or</div>
+        <div style="width:1px; border-left:solid 1px #999; height:8em; margin:auto;"></div>
+    </td>
+    <td style="vertical-align:middle;"> 
+        <label for="display-name">Name: <span class="form-error"></span></label>
+        <input id="display-name" name="display-name" type="text" size="30" maxlength="30" value="" tabindex="105" />
+        
+        <label for="email">Email: <span class="form-error"></span><span class="form-detail">(never shown)</span></label>
+        <input id="email" name="email" type="text" size="40" maxlength="100" value="" tabindex="106" />
+        
+        <label for="home-page">Home Page: <span class="form-error"></span></label>
+        <input id="home-page" name="home-page" type="text" size="40" maxlength="200" value="" tabindex="107" />
+    </td>
+    </tr>
+    </table>    
+</div>
+
+<script type="text/javascript">
+    $().ready(function() {
+    
+        $.validator.addMethod("validUserName",
+          function(value, element) {
+          return this.optional(element) || /^[\w\-\sÀÈÌÒÙàèìòùÁÉÍÓÚÝáéíóúýÂÊÎÔÛâêîôûÃÑÕãñõÄËÏÖÜäëïöüçÇßØøÅåÆæÞþÐð]+$/.test(value); },
+          "Can only contain A-Z, 0-9, spaces, and hyphens.");        
+        $.validator.addMethod("alturl", 
+          function (value) { 
+          return /((^https?:\/\/)?.{2,}\.\w{2,4}\/?|^$)/.test(value); }, 
+          "Enter a valid URL.");
+        $.validator.addMethod("requiredUnlessOpenIdAvailable", 
+          function(value) {
+          return (value.length > 2) || ($("#openid_identifier").val().length > 0); },
+          "Required if you're not using an OpenID.");
+        
+        $("#openid_identifier").rules("add", { alturl: true });
+        $("#display-name").rules("add", { validUserName: true, requiredUnlessOpenIdAvailable: true, minlength: 2, maxlength: 25 });
+        $("#email").rules("add", { email: true, requiredUnlessOpenIdAvailable: true });                
+        $("#home-page").rules("add", { alturl: true });        
+    });
+</script>
+    
+
+        
+        <div class="form-submit" style="clear:both;"><input id="submit-button" type="submit" value="Post Your Answer" tabindex="110"/></div>
+    </form>    
+    
+
+
+<h2>
+
+Not the answer you're looking for? 
+
+Browse other questions tagged <a href="/questions/tagged/replication" class="post-tag" title="show questions tagged 'replication'" rel="tag">replication</a> <a href="/questions/tagged/soa" class="post-tag" title="show questions tagged 'soa'" rel="tag">soa</a>  or <a href="/questions/ask">ask your own question</a>.
+</h2>
+
+</div>
+
+</div>
+
+<div id="sidebar" style="width:220px">
+    
+<div class="module newuser">
+    <h4>Welcome!</h4>
+    <div class="box">
+        <p>Stack Overflow is a <b>collaboratively edited question and answer site for programmers</b> &mdash; regardless of platform or language. Jump in and share your software engineering expertise! No registration or account required.</p>
+        <p style="text-align:right;"><a href="/about">about &raquo;</a><br /><a href="/faq">faq &raquo;</a></p>
+    </div>
+</div>
+
+    <div class="module">    
+    <p>You're viewing a single question tagged</p>
+    <div style="margin-bottom:10px;margin-top:5px;">
+        <a href="/questions/tagged/replication" class="post-tag" title="show questions tagged 'replication'" rel="tag">replication</a>&nbsp;<span class="item-multiplier">&times;&nbsp;26</span><br/><a href="/questions/tagged/soa" class="post-tag" title="show questions tagged 'soa'" rel="tag">soa</a>&nbsp;<span class="item-multiplier">&times;&nbsp;18</span><br/>
+    </div> 
+    <p style="margin-bottom:0">asked</p>
+    <p><b style="font-size:120%;">19 days ago</b></p>
+       
+    <p style="margin-bottom:0">answered by</p>
+    <div class="summarycount" style="text-align:left;">3</div>
+    <p style="margin-bottom:0">users with</p>
+    <div class="summarycount" style="text-align:left;">1</div>
+    <p>total votes</p>
+    <p style="margin-bottom:0">it was answered in</p>
+    <p><b style="font-size:120%;">20 minutes</b></p> 
+    <p style="margin-bottom:0">latest activity was</p>
+    <p><b style="font-size:120%;">17 days ago</b></p>
+
+    </div>
+
+
+    <div class="module">
+    <h4>Legend</h4>
+    <table>
+    <tr>
+    <td style="padding:3px 0px 3px 0px;"><div style="height:20px; width:20px; background-color: white; margin-right:10px; border: 1px solid #999;"></div></td>
+    <td style="vertical-align:middle;">answer</td>
+    </tr>
+    <tr>
+    <td style="padding:3px 0px 3px 0px;"><div class="owner-answer" style="height:20px; width:20px; margin-right:10px; border: 1px solid #999;"></div></td>
+    <td style="vertical-align:middle;">question owner</td>
+    </tr>
+    <tr>
+    <td style="padding:3px 0px 3px 0px;"><div class="accepted-answer" style="height:20px; width:20px; margin-right:10px; border: 1px solid #999;"></div></td>
+    <td style="vertical-align:middle;">accepted by owner</td>
+    </tr>
+    </table>
+    </div>
+
+<div class="module">
+<h4>Sponsored By</h4>
+<div class="box" style="margin-bottom:10px;">
+
+<p><b><a href="http://submain.com/landing/codeit.right/?utm_campaign=codeit.right&utm_medium=textad&utm_source=stackoverflow" rel="nofollow"> CodeIt.Right The First Time</a></b></p>
+<p>Deliver secure, quality code with guidelines and best practices at your fingertips!</p>
+<p>Static code analysis and refactoring to best practices in a single application. Automatically correct code errors and violations.</p>
+<p>Delivered by SubMain - your coding standards and best practices experts.</p>
+<p><a href="http://submain.com/landing/codeit.right/?utm_campaign=codeit.right&utm_medium=textad&utm_source=stackoverflow" rel="nofollow">Download now!</a></p>
+
+</div>
+</div>
+
+</div>
+
+<div id="mainbar-footer">    
+    
+<div id="feed-link">
+    <div id="feed-link-image"><a href="/feeds/question/66040" title="a syndicated data feed of this page suitable for your favorite feed reader"><img src="/Content/Img/feed-icon-small.png" width="14" height="14" alt="feed icon"/></a></div>
+    <div id="feed-link-text"><a href="/feeds/question/66040" title="a syndicated data feed of this page suitable for your favorite feed reader">question feed</a></div>
+</div>
+
+</div>
+
+
+        </div>
+                
+        
+    </div>
+            
+    <div id="footer">
+        <div class="container">
+            <div id="footer-menu"><a href="/about">about this site</a> | <a href="/faq">faq</a> | <a href="http://blog.stackoverflow.com/">blog</a> | <a href="http://itc.conversationsnetwork.org/series/stackoverflow.html">podcast</a> | <a href="/privacy">privacy policy</a> | <a href="mailto:team@stackoverflow.com">contact us</a> | <a href="http://stackoverflow.uservoice.com/">report a bug</a></div>
+            <div id="creativecommons"><a href="http://creativecommons.org/licenses/by-sa/2.5/"><img src="/content/img/cc-wiki.png" title="Creative Commons: Attribution - Share Alike" alt="cc-wiki" /></a></div>
+            <div id="betamessage">Using this website may cause <a href="http://www.youtube.com/watch?v=UM64dMoweio">irreversible damage to the kidneys and liver</a>.</div>
+            <div id="svnrevision">svn revision: 1776</div>            
+        </div>
+    </div>
+
+    <script type="text/javascript">
+        var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+        document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+    </script>
+    <script type="text/javascript">
+        var pageTracker = _gat._getTracker("UA-5620270-1");
+        pageTracker._trackPageview();
+    </script>
+
+    <noscript>
+        <style type="text/css">body { margin-top:3.5em; }</style>
+        <div id="noscript-warning" style="">
+            Stack Overflow works best with JavaScript enabled
+        </div>        
+
+    </noscript>
+
+</body>
+
+</html>

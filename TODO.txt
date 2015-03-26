@@ -1,0 +1,12 @@
+consistent variable style
+fix unicode warnings with:
+    unicode('£', encoding='utf-8')
+
+relative paths with ID's
+keep element references instead of xpaths?
+return list of xpaths
+    HtmlXpathSet
+
+html5parser
+tbody problem
+    use clean for consistency?

@@ -1,0 +1,1920 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" dir="ltr" lang="en">
+<head>
+	<base href="http://www.linuxquestions.org/questions/" />
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+<meta name="generator" content="vBulletin 3.8.1" />
+
+<meta name="keywords" content="mutt/fetchmail, Linux,how to,tutorial,operating system,linux,red hat,mandrake,security,linux help,installation,question,forum" />
+<meta name="description" content="mutt/fetchmail Linux - Software" />
+
+
+<!-- CSS Stylesheet -->
+<style type="text/css" id="vbulletin_css">
+/**
+* vBulletin 3.8.1 CSS
+* Style: 'LQ Style - child of default'; Style ID: 7
+*/
+@import url("clientscript/vbulletin_css/style-40d9bcc6-00007.css");
+</style>
+<link rel="stylesheet" type="text/css" href="clientscript/vbulletin_important.css?v=381" />
+
+
+<!-- / CSS Stylesheet -->
+
+<script type="text/javascript" src="clientscript/yui/yahoo-dom-event/yahoo-dom-event.js?v=381"></script>
+<script type="text/javascript" src="clientscript/yui/connection/connection-min.js?v=381"></script>
+<script type="text/javascript">
+<!--
+var SESSIONURL = "";
+var SECURITYTOKEN = "guest";
+var IMGDIR_MISC = "http://linuxquestions.cachefly.net/images/questions/images/misc";
+var vb_disable_ajax = parseInt("0", 10);
+// -->
+</script>
+
+<script type="text/javascript" src="/questions/clientscript/vbulletin_global.js"></script>
+
+<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+<link rel="alternate" type="application/rss+xml" title="LQ Latest Threads" href="/syndicate/lqlatest.xml" />
+<link rel="alternate" type="application/rss+xml" title="LQ News and Articles" href="/syndicate/lqnews.rss" />
+<link rel="alternate" type="application/rss+xml" title="LQ Zero Reply Threads" href="/syndicate/lqnoreplies.xml" />
+
+<script type="text/javascript" src="http://partner.googleadservices.com/gampad/google_service.js">
+</script>
+<script type="text/javascript">
+  GS_googleAddAdSenseService("ca-pub-4420048478783872");
+  GS_googleEnableAllServices();
+</script>
+<script type="text/javascript">
+  GA_googleAddSlot("ca-pub-4420048478783872", "LQ_MPU_Content");
+  GA_googleAddSlot("ca-pub-4420048478783872", "LQ_MPU_FirstPost");
+  GA_googleAddSlot("ca-pub-4420048478783872", "LQ_Top_Leader");
+  GA_googleAddSlot("ca-pub-4420048478783872", "LQ_Top_Sky");
+  GA_googleAddSlot("ca-pub-4420048478783872", "LQ_MPU_Bottom");
+  GA_googleAddSlot("ca-pub-4420048478783872", "LQ_AfterPost_Leader");
+</script>
+<script type="text/javascript">
+  GA_googleFetchAds();
+</script>
+
+
+
+			<link rel="stylesheet" type="text/css" href="clientscript/vbulletin_css/livetopic.css" id="livetopic" /><script type="text/javascript" src="clientscript/post_thanks.js"></script>
+	
+	<title> mutt/fetchmail - LinuxQuestions.org</title>
+	<script src="vbspell.js"></script>
+	<script type="text/javascript" src="clientscript/vbulletin_post_loader.js?v=381"></script>
+</head>
+<body onload="">
+<!-- logo -->
+<a name="top"></a>
+<table border="0" width="100%" cellpadding="0" cellspacing="0" align="center">
+<tr>
+    <td align="left"><a href="/questions/index.php"><img src="http://linuxquestions.cachefly.net/images/questions/images/LinuxQuestions.png" border="0" alt="LinuxQuestions.org" /></a></td>
+    <td align="right">
+     <div align="right">Help answer threads with <a href="/questions/lqsearch.php?do=noreplies">0 replies</a>.</div>
+    </td>
+</tr>
+</table>
+<!-- /logo -->
+
+<!-- content table -->
+<!-- open content container -->
+
+<div align="center">
+	<div class="page" style="width:100%; text-align:left">
+		<div style="padding:0px 0px 0px 0px" align="left">
+
+
+
+
+
+<div class="vbmenu_popup" id="vbbloglinks_menu" style="display:none;margin-top:3px" align="left">
+	<table cellpadding="4" cellspacing="1" border="0">
+	<tr>
+		<td class="thead"><a href="blog.php">Blogs</a></td>
+	</tr>
+	
+	<tr>
+		<td class="vbmenu_option"><a href="blog.php?do=list">Recent Entries</a></td>
+	</tr>
+	<tr>
+		<td class="vbmenu_option"><a href="blog.php?do=list&amp;blogtype=best">Best Entries</a></td>
+	</tr>
+	<tr>
+		<td class="vbmenu_option"><a href="blog.php?do=bloglist&amp;blogtype=best">Best Blogs</a></td>
+	</tr>
+	<tr>
+		<td class="vbmenu_option"><a href="blog.php?do=bloglist">Blog List</a></td>
+	</tr>
+	
+	<tr>
+		<td class="vbmenu_option"><a href="blog_search.php?do=search">Search Blogs</a></td>
+	</tr>
+	
+	</table>
+</div>
+<script type="text/javascript">
+<!--
+function log_out()
+{
+    ht = document.getElementsByTagName("html");
+    ht[0].style.filter = "progid:DXImageTransform.Microsoft.BasicImage(grayscale=1)";
+    if (confirm('Are you sure you want to log out?'))
+    {
+        return true;
+    }
+    else
+    {
+        ht[0].style.filter = "";
+        return false;
+    }
+}
+//-->
+</script>
+<div style="text-align:center;margin-bottom:15px"> 
+
+<script language="javascript"><!--
+document.write('<scr'+'ipt language="javascript1.1" src="http://adserver.adtechus.com/addyn/3.0/5159/409337/0/225/ADTECH;loc=100;target=_blank;key=key1+key2+key3+key4;grp=[group];misc='+new Date().getTime()+'"></scri'+'pt>');
+//-->
+</script><noscript><a href="http://adserver.adtechus.com/adlink/3.0/5159/409337/0/225/ADTECH;loc=300;key=key1+key2+key3+key4;grp=[group]" target="_blank"><img src="http://adserver.adtechus.com/adserv/3.0/5159/409337/0/225/ADTECH;loc=300;key=key1+key2+key3+key4;grp=[group]" border="0" width="728" height="90"></a></noscript>
+</div>
+<!-- START: LQ Table Top -->
+<table cellpadding="0" cellspacing="0" border="0" width="100%" align="center">
+<tr>
+<td class="page" valign="top">
+<!-- END: LQ Table Top -->
+<!-- nav buttons bar -->
+<div align="center">
+	<table class="tborder" cellpadding="3" cellspacing="0" border="0" width="100%" align="center" style="border-top-width:0px">
+	<tr align="center">
+		<td class="vbmenu_control"><a href="/" accesskey="1">Home</a></td>
+		<td class="vbmenu_control"><a href="/questions/">Forums</a></td>
+		<td class="vbmenu_control"><a href="/hcl/">HCL</a></td>
+		<td class="vbmenu_control"><a href="/reviews/">Reviews</a></td>
+		<td class="vbmenu_control"><a href="/linux/answers/">Tutorials</a></td>
+		<td class="vbmenu_control"><a href="/linux/articles/">Articles</a></td>
+		
+			<td class="vbmenu_control"><a href="register.php" rel="nofollow">Register</a></td>
+		
+				
+			
+				<td class="vbmenu_control"><a href="/questions/search.php" accesskey="4">Search</a></td>
+				
+				<td class="vbmenu_control"><a href="/questions/search.php?do=getdaily" accesskey="2">Today's Posts</a></td>
+				
+			
+			<td class="vbmenu_control"><a href="/questions/forumdisplay.php?do=markread" rel="nofollow">Mark Forums Read</a></td>
+						
+		
+		
+	</tr>
+	</table>
+</div>
+<!-- / nav buttons bar -->
+
+
+
+<!-- breadcrumb, login, pm info -->
+<table class="tborder" cellpadding="3" cellspacing="1" border="0" width="100%" align="center" style="border-top:0px">
+<tr>
+	<td class="alt1" width="100%">
+		
+			<table cellpadding="0" cellspacing="0" border="0">
+			<tr valign="bottom">
+				<td><a href="#" onclick="history.back(1); return false;"><img src="http://linuxquestions.cachefly.net/images/questions/images/misc/navbits_start.gif" alt="Go Back" border="0" /></a></td>
+				<td>&nbsp;</td>
+				<td width="100%"><span class="navbar"><a href="/" accesskey="1">LinuxQuestions.org</a></span> 
+
+<span class="navbar">&gt; <a href="/questions/" accesskey="1">Forums</a></span> 
+
+
+	<span class="navbar">&gt; <a href="/questions/linux-50/">Linux</a></span>
+
+
+	<span class="navbar">&gt; <a href="/questions/linux-software-2/">Linux - Software</a></span>
+
+</td>
+			</tr>
+			<tr>
+				<td class="navbar" style="font-size:10pt; padding-top:1px" colspan="3"><a href="/questions/linux-software-2/muttfetchmail-608702/"><img class="inlineimg" src="http://linuxquestions.cachefly.net/images/questions/images/misc/navbits_finallink.gif" alt="Reload this Page" border="0" /></a> <strong>
+	 mutt/fetchmail
+
+</strong></td>
+			</tr>
+			</table>			
+		
+	</td>	
+	
+	
+		
+		<td class="alt2" nowrap="nowrap" style="padding:0px">
+			
+		<!-- login form -->
+		<form action="/questions/login.php" method="post" onsubmit="md5hash(vb_login_password, vb_login_md5password, vb_login_md5password_utf, 0)">
+		<script type="text/javascript" src="/questions/clientscript/vbulletin_md5.js"></script>
+		<table cellpadding="0" cellspacing="3" border="0">
+		<tr>
+			<td class="smallfont">User Name</td>
+			<td><input type="text" class="bginput" style="font-size: 11px" name="vb_login_username" id="navbar_username" size="10" accesskey="u" tabindex="101" value="User Name" onfocus="if (this.value == 'User Name') this.value = '';" /></td>
+			<td class="smallfont" colspan="2" nowrap="nowrap"><label for="cb_cookieuser_navbar"><input type="checkbox" name="cookieuser" value="1" tabindex="103" id="cb_cookieuser_navbar" accesskey="c" checked="checked" />Remember Me?</label></td>
+		</tr>
+		<tr>
+			<td class="smallfont">Password</td>
+			<td><input type="password" class="bginput" style="font-size: 11px" name="vb_login_password" size="10" accesskey="p" tabindex="102" /></td>
+			<td><input type="submit" class="button" value="Log in" tabindex="104" title="Enter your username and password in the boxes provided to login, or click the 'register' button to create a profile for yourself." accesskey="s" /></td>
+		</tr>
+		</table>
+		<input type="hidden" name="s" value="" />
+	<input type="hidden" name="securitytoken" value="guest" />
+		<input type="hidden" name="do" value="login" />		
+		<input type="hidden" name="vb_login_md5password" />
+		<input type="hidden" name="vb_login_md5password_utf" />
+		</form>
+		<!-- / login form -->
+			
+		</td>
+		
+		
+	
+</tr>
+</table>
+<!-- / breadcrumb, login, pm info -->
+
+
+	<table class="tborder" cellpadding="3" cellspacing="1" border="0" width="100%" align="center" style="border-top:0px">
+	<tr>
+		<td class="alt1" width="100%"><strong>Linux - Software</strong> <span class="smallfont">This forum is for Software issues.<br />
+Having a problem installing a new program?  Want to know which application is best for the job?  Post your question in this forum.</span></td>
+	</tr>
+	</table>
+
+
+
+	<br />
+	<table class="tborder" cellpadding="3" cellspacing="1" border="0" width="100%" align="center">
+	<tr>
+		<td class="thead">Notices</td>
+	</tr>
+	<tr>
+		<td class="alt1"><div class="navbar_notice" id="navbar_notice_1">
+	Welcome to <strong>LinuxQuestions.org</strong>, a friendly and active Linux Community. <br /><br />
+You are currently viewing LQ as a guest.  By joining our community you will have the ability to post topics, receive our newsletter, use the advanced search, subscribe to threads and access many other special features. Registration is quick, simple and absolutely free. <a href="/questions/register.php"><strong>Join our community</strong></a> today!<br /><br />
+<strong>Note that registered members see fewer ads, and ContentLink is completely disabled once you log in.</strong><br /><br />
+Are you new to LinuxQuestions.org?  Visit the following links:<br />
+<a href="/linux/answers/LinuxQuestions_org/How_to_Use_LinuxQuestions_org">Site Howto</a> |
+<a href="/questions/faq.php">Site FAQ</a> |
+<a href="/linux/sitemap.html">Sitemap</a> | 
+<a href="/questions/register.php">Register Now</a>
+<br /><br />If you have any problems with the registration process or your account login, please <a href="/questions/sendmessage.php">contact us</a>.  If you need to reset your password, <a href="/questions/login.php?do=lostpw">click here</a>.<br /><br />
+</div><div class="navbar_notice" id="navbar_notice_9">
+	Follow LinuxQuestions.org on your favorite social networks:<br /><br />
+Twitter: <a href="http://twitter.com/linuxquestions" rel="nofollow">@linuxquestions</a><br />
+identi.ca: <a href="http://identi.ca/linuxquestions" rel="nofollow">@linuxquestions</a><br />
+Facebook: <a href="http://www.facebook.com/LinuxQuestions.org" rel="nofollow">@linuxquestions</a>
+</div></td>
+	</tr>
+	</table>
+
+
+	<br />
+
+<!-- <div style="text-align:center;margin-bottom:15px"> 
+google_leaderboard_white_text
+</div>-->
+<div class="KonaBody">
+
+
+
+
+
+
+
+<a name="poststop" id="poststop"></a>
+
+<!-- controls above postbits -->
+<table cellpadding="0" cellspacing="0" border="0" width="100%" style="margin-bottom:3px">
+<tr valign="bottom">
+	
+		<td class="smallfont"><a href="newreply.php?do=newreply&amp;noquote=1&amp;p=2999626" rel="nofollow"><img src="http://linuxquestions.cachefly.net/images/questions/images/buttons/reply.gif" alt="Reply" border="0" /></a></td>
+	
+	
+</tr>
+</table>
+<!-- / controls above postbits -->
+
+<!-- toolbar -->
+<table class="tborder" cellpadding="3" cellspacing="1" border="0" width="100%" align="center" style="border-bottom-width:0px">
+<tr>
+	<td class="tcat" width="100%">
+		<div class="smallfont">
+		
+		
+		&nbsp;
+		</div>
+	</td>
+	<td class="vbmenu_control" id="threadtools" nowrap="nowrap">
+		<a href="#goto_threadtools">Thread Tools</a>
+		
+	</td>
+	
+	
+	
+	
+</tr>
+</table>
+<!-- / toolbar -->
+
+
+
+
+
+
+
+<div id="posts"><!-- post #2999626 -->
+
+	<!-- open content container -->
+
+<div align="center">
+	<div class="page" style="width:100%; text-align:left">
+		<div style="padding:0px 0px 0px 0px" align="left">
+
+	<div id="edit2999626" style="padding:0px 0px 3px 0px">
+	<!-- this is not the last post shown on the page -->
+
+
+
+<table id="post2999626" class="tborder" cellpadding="3" cellspacing="0" border="0" width="100%" align="center">
+<tr>
+	
+		<td colspan="2" class="thead" style="font-weight:normal; border: 1px solid #FFFFFF; border-right: 0px" >		
+			<!-- status icon and date -->
+			<a name="post2999626"><img class="inlineimg" src="http://linuxquestions.cachefly.net/images/questions/images/statusicon/post_old.gif" alt="Old" border="0" /></a>
+			12-23-2007, 08:50 AM
+			
+			<!-- / status icon and date -->				
+		</td>
+		<td class="thead" style="font-weight:normal; border: 1px solid #FFFFFF; border-left: 0px" align="right">
+			&nbsp;
+		
+			#<a href="/questions/showthread.php?p=2999626#post2999626" rel="nofollow" id="postcount2999626" name="1"><strong>1</strong></a>
+			
+		
+		</td>
+	
+</tr>
+<tr valign="top">
+	<td class="alt2" width="175" style="border: 1px solid #FFFFFF; border-top: 0px; border-bottom: 0px">
+			
+			<div id="postmenu_2999626">
+				
+				<a class="bigusername" href="/user/sycamorex-216084/">sycamorex</a>
+				<script type="text/javascript"> vbmenu_register("postmenu_2999626", true); </script>
+				
+			</div>
+			<div class="smallfont">Senior Member</div>
+			<div class="smallfont"><a href="/linux/member.html">Contributing Member</a></div>
+			
+			
+			
+			
+			<div class="smallfont">
+				&nbsp;<br />
+				<div>Registered: Nov 2005</div>
+				<div>Location: London</div>
+				<div>Distribution: Slackware 12.2</div>
+				
+				<div>
+					Posts: 1,459
+				</div>
+				 
+<!--	<div>Thanks: 8</div> -->
+	<div>
+		
+			
+				Thanked: 57
+			
+		
+	</div>
+
+				
+				
+				
+				<div>    </div>
+			</div>					
+	</td>
+	
+	<td colspan="2" class="alt2" id="td_post_2999626" style="border-right: 1px solid #FFFFFF">
+	
+		
+		
+			<!-- icon and title -->
+			<div class="smallfont">
+				
+				<strong>mutt/fetchmail</strong>
+			</div>
+			<hr size="1" style="color:#FFFFFF" />
+			<!-- / icon and title -->
+		
+		
+
+		<!-- message -->
+
+
+<div style="float: right; margin-left: 5px; margin-bottom: 5px; margin-top: -3px; margin-right: -3px">
+<script language="javascript"><!--
+document.write('<scr'+'ipt language="javascript1.1" src="http://adserver.adtechus.com/addyn/3.0/5159/409335/0/170/ADTECH;loc=100;target=_blank;key=key1+key2+key3+key4;grp=[group];misc='+new Date().getTime()+'"></scri'+'pt>');
+//-->
+</script><noscript><a href="http://adserver.adtechus.com/adlink/3.0/5159/409335/0/170/ADTECH;loc=300;key=key1+key2+key3+key4;grp=[group]" target="_blank"><img src="http://adserver.adtechus.com/adserv/3.0/5159/409335/0/170/ADTECH;loc=300;key=key1+key2+key3+key4;grp=[group]" border="0" width="300" height="250"></a></noscript>
+<br />[<a href="/questions/lqlogin.php">Log in</a> to <strong>get rid</strong> of this advertisement]
+</div>
+
+		<div id="post_message_2999626">Hi, <br />
+I've been trying to use my gmail from CLI. <br />
+Here's my .fetchmailrc<br />
+<br />
+<div style="margin:20px; margin-top:5px">
+	<div class="smallfont" style="margin-bottom:2px">Code:</div>
+	<pre class="bbcodeblock" dir="ltr" style="
+		margin: 0px;
+		margin-right: -99999px;
+		padding: 3px;
+		border: 1px inset;
+		width: 98%;
+		height: 50px;
+		text-align: left;
+		overflow: auto">poll pop.gmail.com with proto POP3 and options no dns
+user 'username@gmail.com' is 'username' here options ssl</pre>
+</div>Obviously username is replaced with the real one. Also, POP is enabled in my gmail settings (I've been using thunderbird for a while)<br />
+<br />
+<br />
+Here's my .muttrc<br />
+<div style="margin:20px; margin-top:5px">
+	<div class="smallfont" style="margin-bottom:2px">Code:</div>
+	<pre class="bbcodeblock" dir="ltr" style="
+		margin: 0px;
+		margin-right: -99999px;
+		padding: 3px;
+		border: 1px inset;
+		width: 98%;
+		height: 306px;
+		text-align: left;
+		overflow: auto">set pop_user=&quot;username@gmail.com&quot;
+
+# My email account password
+set pop_pass=&quot;my password&quot;
+
+# Too many email headers make reading a message difficult
+ignore *
+unignore From: To: Cc: Subject: Date: #Only these are shown in the header
+
+#To ensure that mutt does not put
+#'username@localhost.localdomain in From
+set from=&quot;username@gmail.com&quot;
+set use_from=yes
+set envelope_from=&quot;yes&quot;
+
+#The text editor I want to use to write emails
+#The default is emacs
+set editor=&quot;emacs -nw&quot;</pre>
+</div><br />
+the output of fetchmail -vk<br />
+<br />
+<div style="margin:20px; margin-top:5px">
+	<div class="smallfont" style="margin-bottom:2px">Code:</div>
+	<pre class="bbcodeblock" dir="ltr" style="
+		margin: 0px;
+		margin-right: -99999px;
+		padding: 3px;
+		border: 1px inset;
+		width: 98%;
+		height: 498px;
+		text-align: left;
+		overflow: auto">sycamorex@debian205:~$ fetchmail -vk
+Enter password for username@gmail.com@pop.gmail.com: 
+fetchmail: 6.3.8 querying pop.gmail.com (protocol POP3) at Sun 23 Dec 2007 14:42:05 GMT: poll started
+Trying to connect to 66.2bla...bla..bla09/995...connected.
+fetchmail: Issuer Organisation: Equifax
+fetchmail: Unknown Issuer CommonName
+fetchmail: Server CommonName: pop.gmail.com
+fetchmail: pop.gmail.com key fingerprint: 44:A8:E9:2C:FB.....bla bla..blaB2:9E:F1:A9
+fetchmail: Server certificate verification error: unable to get local issuer certificate
+fetchmail: Server certificate verification error: certificate not trusted
+fetchmail: Server certificate verification error: unable to verify the first certificate
+fetchmail: POP3&lt; +OK Gpop ready for requests from 83.4.bla... bla..blao24pf3879126ugd.0
+fetchmail: POP3&gt; CAPA
+fetchmail: POP3&lt; +OK Capability list follows
+fetchmail: POP3&lt; USER
+fetchmail: POP3&lt; RESP-CODES
+fetchmail: POP3&lt; EXPIRE 0
+fetchmail: POP3&lt; LOGIN-DELAY 300
+fetchmail: POP3&lt; X-GOOGLE-VERHOEVEN
+fetchmail: POP3&lt; UIDL
+fetchmail: POP3&lt; .
+fetchmail: POP3&gt; USER username@gmail.com
+fetchmail: POP3&lt; +OK send PASS
+fetchmail: POP3&gt; PASS *
+fetchmail: POP3&lt; +OK Welcome.
+fetchmail: POP3&gt; STAT
+fetchmail: POP3&lt; +OK 0 0
+fetchmail: No mail for hemarcin@gmail.com at pop.gmail.com
+fetchmail: POP3&gt; QUIT
+fetchmail: POP3&lt; +OK Farewell.
+fetchmail: 6.3.8 querying pop.gmail.com (protocol POP3) at Sun 23 Dec 2007 14:42:07 GMT: poll completed
+fetchmail: normal termination, status 1</pre>
+</div>when I open mutt and want to write an email - it says that email has been sent but then when I want to check it on my other email account nothing has been delivered.<br />
+<br />
+can you give me any hint. I'm working with mutt, fetchmail for the first time.<br />
+<br />
+thanks</div>
+		<!-- / message -->
+	
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		<!-- edit note -->
+			<div class="smallfont">			<hr size="1" style="color:#FFFFFF" />
+				<em>
+				Last edited by sycamorex; 12-23-2007 at <span class="time">09:07 AM</span>..
+				
+				</em>
+			</div>
+		<!-- / edit note -->
+		
+	
+	</td>
+</tr>
+<tr>
+	<td class="alt2" style="border: 1px solid #FFFFFF; border-top: 0px">
+<img class="inlineimg" src='http://linuxquestions.cachefly.net/images/questions/images/statusicon/../icons/useragent/icon_.gif' alt='' />
+		
+<img class="inlineimg" src="http://linuxquestions.cachefly.net/images/questions/images/statusicon/forum_new.gif" alt="sycamorex is online now" border="0" />
+
+						
+		
+		
+		&nbsp;
+	</td>
+	<td id="lqtags_2999626" class="alt2" valign="bottom">
+	
+        &nbsp;
+	
+	</td>
+	
+	<td class="alt2" align="right" style="border: 1px solid #FFFFFF; border-left: 0px; border-top: 0px">
+	
+		<!-- controls -->
+	
+		
+		
+		
+			<a href="newreply.php?do=newreply&amp;p=2999626" rel="nofollow"><img src="http://linuxquestions.cachefly.net/images/questions/images/buttons/quote.gif" alt="Reply With Quote" border="0" /></a>
+		
+		
+		
+		
+		
+			
+		
+		
+		<!-- / controls -->
+	</td>
+</tr>
+</table>
+
+<div align="center"><!-- lq_leader_afterpost --> </div>
+
+ <div id="post_thanks_box_2999626"></div>
+
+<!-- post 2999626 popup menu -->
+<div class="vbmenu_popup" id="postmenu_2999626_menu" style="display:none">
+	<table cellpadding="4" cellspacing="1" border="0">
+	<tr>
+		<td class="thead">sycamorex</td>
+	</tr>
+	
+	<tr><td class="vbmenu_option"><a href="/user/sycamorex-216084/">View Public Profile</a></td></tr>
+	
+	<tr><td class="vbmenu_option"><a href="/linux/blog/sycamorex">View LQ Blog</a></td></tr>
+	<tr><td class="vbmenu_option"><a href="/bookmarks/user/sycamorex">View Bookmarks</a></td></tr>
+	<tr><td class="vbmenu_option"><a href="/reviews/showcat.php?cat=myprod&amp;ppuser=216084">View Review Entries</a></td></tr>
+	<tr><td class="vbmenu_option"><a href="/hcl/showcat.php?cat=myprod&amp;ppuser=216084">View HCL Entries</a></td></tr>
+	
+	
+	
+	
+	
+	
+	
+		<tr><td class="vbmenu_option"><a href="/questions/search.php?do=finduser&amp;u=216084" rel="nofollow">Find More Posts by sycamorex</a></td></tr>
+	
+	
+	
+	</table>
+</div>
+<!-- / post 2999626 popup menu -->
+
+
+	</div>
+	
+		</div>
+	</div>
+</div>
+
+<!-- / close content container -->
+
+<!-- / post #2999626 --><!-- post #2999668 -->
+
+	<!-- open content container -->
+
+<div align="center">
+	<div class="page" style="width:100%; text-align:left">
+		<div style="padding:0px 0px 0px 0px" align="left">
+
+	<div id="edit2999668" style="padding:0px 0px 3px 0px">
+	<!-- this is not the last post shown on the page -->
+
+
+
+<table id="post2999668" class="tborder" cellpadding="3" cellspacing="0" border="0" width="100%" align="center">
+<tr>
+	
+		<td colspan="2" class="thead" style="font-weight:normal; border: 1px solid #FFFFFF; border-right: 0px" >		
+			<!-- status icon and date -->
+			<a name="post2999668"><img class="inlineimg" src="http://linuxquestions.cachefly.net/images/questions/images/statusicon/post_old.gif" alt="Old" border="0" /></a>
+			12-23-2007, 09:32 AM
+			
+			<!-- / status icon and date -->				
+		</td>
+		<td class="thead" style="font-weight:normal; border: 1px solid #FFFFFF; border-left: 0px" align="right">
+			&nbsp;
+		
+			#<a href="/questions/showthread.php?p=2999668#post2999668" rel="nofollow" id="postcount2999668" name="2"><strong>2</strong></a>
+			
+		
+		</td>
+	
+</tr>
+<tr valign="top">
+	<td class="alt1" width="175" style="border: 1px solid #FFFFFF; border-top: 0px; border-bottom: 0px">
+			
+			<div id="postmenu_2999668">
+				
+				<a class="bigusername" href="/user/su-shee-366145/">Su-Shee</a>
+				<script type="text/javascript"> vbmenu_register("postmenu_2999668", true); </script>
+				
+			</div>
+			<div class="smallfont">Member</div>
+			
+			
+			
+			
+			
+			<div class="smallfont">
+				&nbsp;<br />
+				<div>Registered: Sep 2007</div>
+				<div>Location: Berlin</div>
+				<div>Distribution: Slackware</div>
+				
+				<div>
+					Posts: 502
+				</div>
+				 
+<!--	<div>Thanks: 0</div> -->
+	<div>
+		
+			
+				Thanked: 21
+			
+		
+	</div>
+
+				
+				
+				
+				<div>    </div>
+			</div>					
+	</td>
+	
+	<td colspan="2" class="alt1" id="td_post_2999668" style="border-right: 1px solid #FFFFFF">
+	
+		
+		
+		
+
+		<!-- message -->
+
+
+		<div id="post_message_2999668">Well, that's because you maybe just configured GETTING your mail, but not SENDING your mail?<br />
+<br />
+POP and fetchmail are about getting your mail from your POP/IMAP-account. <br />
+<br />
+Mutt is just your tool to compose the mail (your mail user agent) - now you need something to get it out there. <img src="http://http.cdnlayer.com/lq/images/questions/images/smilies/wink.gif" border="0" alt="" title="Wink" class="inlineimg" /> <br />
+<br />
+In your case of using gmail it possibly involves relaying over gmail - which is possible. <br />
+<br />
+I use msmtp to send mail out after composing it in mutt. Msmtp is small and very simple - I don't need an entire sendmail on my notebook just to send out 50  mails a day.<br />
+<br />
+From within mutt, this would be something like this in your muttrc: <br />
+<br />
+set sendmail=&quot;/usr/local/bin/msmtp&quot;<br />
+<br />
+And my msmtprc says for gmail-relaying something like this: <br />
+<br />
+account default<br />
+host smtp.gmail.com<br />
+port 587<br />
+user <a href="mailto:YOU@gmail.com">YOU@gmail.com</a><br />
+password PASSWORD<br />
+protocol smtp<br />
+tls_starttls on<br />
+logfile /home/MYHOME/.msmtp.log<br />
+<br />
+This is totally independent from your POP-fetchmail-setting.</div>
+		<!-- / message -->
+	
+		
+		
+		
+		
+		
+		
+		
+		
+		
+	
+	</td>
+</tr>
+<tr>
+	<td class="alt1" style="border: 1px solid #FFFFFF; border-top: 0px">
+<img class="inlineimg" src='http://linuxquestions.cachefly.net/images/questions/images/statusicon/../icons/useragent/icon_.gif' alt='' />
+		<img class="inlineimg" src="http://linuxquestions.cachefly.net/images/questions/images/statusicon/forum_old.gif" alt="Su-Shee is offline" border="0" />
+
+
+						
+		
+		
+		&nbsp;
+	</td>
+	<td id="lqtags_2999668" class="alt1" valign="bottom">
+	
+        &nbsp;
+	
+	</td>
+	
+	<td class="alt1" align="right" style="border: 1px solid #FFFFFF; border-left: 0px; border-top: 0px">
+	
+		<!-- controls -->
+	
+		
+		
+		
+			<a href="newreply.php?do=newreply&amp;p=2999668" rel="nofollow"><img src="http://linuxquestions.cachefly.net/images/questions/images/buttons/quote.gif" alt="Reply With Quote" border="0" /></a>
+		
+		
+		
+		
+		
+			
+		
+		
+		<!-- / controls -->
+	</td>
+</tr>
+</table>
+
+ <div id="post_thanks_box_2999668"></div>
+
+<!-- post 2999668 popup menu -->
+<div class="vbmenu_popup" id="postmenu_2999668_menu" style="display:none">
+	<table cellpadding="4" cellspacing="1" border="0">
+	<tr>
+		<td class="thead">Su-Shee</td>
+	</tr>
+	
+	<tr><td class="vbmenu_option"><a href="/user/su-shee-366145/">View Public Profile</a></td></tr>
+	
+	<tr><td class="vbmenu_option"><a href="/linux/blog/Su-Shee">View LQ Blog</a></td></tr>
+	<tr><td class="vbmenu_option"><a href="/bookmarks/user/Su-Shee">View Bookmarks</a></td></tr>
+	<tr><td class="vbmenu_option"><a href="/reviews/showcat.php?cat=myprod&amp;ppuser=366145">View Review Entries</a></td></tr>
+	<tr><td class="vbmenu_option"><a href="/hcl/showcat.php?cat=myprod&amp;ppuser=366145">View HCL Entries</a></td></tr>
+	
+	
+	
+	
+	
+	
+	
+		<tr><td class="vbmenu_option"><a href="/questions/search.php?do=finduser&amp;u=366145" rel="nofollow">Find More Posts by Su-Shee</a></td></tr>
+	
+	
+	
+	</table>
+</div>
+<!-- / post 2999668 popup menu -->
+
+
+	</div>
+	
+		</div>
+	</div>
+</div>
+
+<!-- / close content container -->
+
+<!-- / post #2999668 --><!-- post #2999717 -->
+
+	<!-- open content container -->
+
+<div align="center">
+	<div class="page" style="width:100%; text-align:left">
+		<div style="padding:0px 0px 0px 0px" align="left">
+
+	<div id="edit2999717" style="padding:0px 0px 3px 0px">
+	<!-- this is not the last post shown on the page -->
+
+
+
+<table id="post2999717" class="tborder" cellpadding="3" cellspacing="0" border="0" width="100%" align="center">
+<tr>
+	
+		<td colspan="2" class="thead" style="font-weight:normal; border: 1px solid #FFFFFF; border-right: 0px" >		
+			<!-- status icon and date -->
+			<a name="post2999717"><img class="inlineimg" src="http://linuxquestions.cachefly.net/images/questions/images/statusicon/post_old.gif" alt="Old" border="0" /></a>
+			12-23-2007, 10:13 AM
+			
+			<!-- / status icon and date -->				
+		</td>
+		<td class="thead" style="font-weight:normal; border: 1px solid #FFFFFF; border-left: 0px" align="right">
+			&nbsp;
+		
+			#<a href="/questions/showthread.php?p=2999717#post2999717" rel="nofollow" id="postcount2999717" name="3"><strong>3</strong></a>
+			
+		
+		</td>
+	
+</tr>
+<tr valign="top">
+	<td class="alt2" width="175" style="border: 1px solid #FFFFFF; border-top: 0px; border-bottom: 0px">
+			
+			<div id="postmenu_2999717">
+				
+				<a class="bigusername" href="/user/sycamorex-216084/">sycamorex</a>
+				<script type="text/javascript"> vbmenu_register("postmenu_2999717", true); </script>
+				
+			</div>
+			<div class="smallfont">Senior Member</div>
+			<div class="smallfont"><a href="/linux/member.html">Contributing Member</a></div>
+			
+			
+			
+			
+			<div class="smallfont">
+				&nbsp;<br />
+				<div>Registered: Nov 2005</div>
+				<div>Location: London</div>
+				<div>Distribution: Slackware 12.2</div>
+				
+				<div>
+					Posts: 1,459
+				</div>
+				 
+<!--	<div>Thanks: 8</div> -->
+	<div>
+		
+			
+				Thanked: 57
+			
+		
+	</div>
+<!-- Threadauthor -->
+
+
+<br /><strong>Original Poster</strong>
+<!-- / Threadauthor -->
+				
+				
+				
+				<div>    </div>
+			</div>					
+	</td>
+	
+	<td colspan="2" class="alt2" id="td_post_2999717" style="border-right: 1px solid #FFFFFF">
+	
+		
+		
+		
+
+		<!-- message -->
+
+
+		<div id="post_message_2999717">thanks, makes sense <br />
+<br />
+However, what I get in Mutt when I try to send an email is:<br />
+<br />
+<div style="margin:20px; margin-top:5px; ">
+	<div class="smallfont" style="margin-bottom:2px">Quote:</div>
+	<table cellpadding="3" cellspacing="0" border="0" width="100%">
+	<tr>
+		<td class="bbcodeblock" style="border:1px inset">
+			
+				msmtp: envelope from address <a href="mailto:YOU@gmail.com">YOU@gmail.com</a> not accepted by the server<br />
+msmtp: server message: 530 5.7.0 Must issue a STARTTLS command first k5sm707424nfh.18<br />
+msmtp: could not send mail (account default from /home/sycamorex/.msmtprc)
+			
+		</td>
+	</tr>
+	</table>
+</div><div style="margin:20px; margin-top:5px; ">
+	<div class="smallfont" style="margin-bottom:2px">Quote:</div>
+	<table cellpadding="3" cellspacing="0" border="0" width="100%">
+	<tr>
+		<td class="bbcodeblock" style="border:1px inset">
+			
+				Error sending message, child exited 65 (Data format error.).
+			
+		</td>
+	</tr>
+	</table>
+</div>and the log entry from .msmtp.log<br />
+<br />
+<div style="margin:20px; margin-top:5px; ">
+	<div class="smallfont" style="margin-bottom:2px">Quote:</div>
+	<table cellpadding="3" cellspacing="0" border="0" width="100%">
+	<tr>
+		<td class="bbcodeblock" style="border:1px inset">
+			
+				Dec 23 16:10:12 host=smtp.gmail.com tls=off auth=off from=YOU@gmail.com recipients=SOMEBODY@gmail.com smtpstatus=530 smtpmsg='530 5.7.0 Must issue a STARTTLS command first k5sm707424nfh.18' errormsg='envelope from address <a href="mailto:YOU@gmail.com">YOU@gmail.com</a> not accepted by the server' exitcode=EX_DATAERR
+			
+		</td>
+	</tr>
+	</table>
+</div>my .msmtprc<br />
+<br />
+<div style="margin:20px; margin-top:5px; ">
+	<div class="smallfont" style="margin-bottom:2px">Quote:</div>
+	<table cellpadding="3" cellspacing="0" border="0" width="100%">
+	<tr>
+		<td class="bbcodeblock" style="border:1px inset">
+			
+				account default<br />
+host smtp.gmail.com<br />
+port 587<br />
+user <a href="mailto:YOU@gmail.com">YOU@gmail.com</a><br />
+password blablabal<br />
+protocol smtp<br />
+tls_starttls on<br />
+logfile /home/sycamorex/Mail/.msmtp.log
+			
+		</td>
+	</tr>
+	</table>
+</div>thanks</div>
+		<!-- / message -->
+	
+		
+		
+		
+		
+		
+		
+		
+		
+		
+	
+	</td>
+</tr>
+<tr>
+	<td class="alt2" style="border: 1px solid #FFFFFF; border-top: 0px">
+<img class="inlineimg" src='http://linuxquestions.cachefly.net/images/questions/images/statusicon/../icons/useragent/icon_.gif' alt='' />
+		
+<img class="inlineimg" src="http://linuxquestions.cachefly.net/images/questions/images/statusicon/forum_new.gif" alt="sycamorex is online now" border="0" />
+
+						
+		
+		
+		&nbsp;
+	</td>
+	<td id="lqtags_2999717" class="alt2" valign="bottom">
+	
+        &nbsp;
+	
+	</td>
+	
+	<td class="alt2" align="right" style="border: 1px solid #FFFFFF; border-left: 0px; border-top: 0px">
+	
+		<!-- controls -->
+	
+		
+		
+		
+			<a href="newreply.php?do=newreply&amp;p=2999717" rel="nofollow"><img src="http://linuxquestions.cachefly.net/images/questions/images/buttons/quote.gif" alt="Reply With Quote" border="0" /></a>
+		
+		
+		
+		
+		
+			
+		
+		
+		<!-- / controls -->
+	</td>
+</tr>
+</table>
+
+ <div id="post_thanks_box_2999717"></div>
+
+<!-- post 2999717 popup menu -->
+<div class="vbmenu_popup" id="postmenu_2999717_menu" style="display:none">
+	<table cellpadding="4" cellspacing="1" border="0">
+	<tr>
+		<td class="thead">sycamorex</td>
+	</tr>
+	
+	<tr><td class="vbmenu_option"><a href="/user/sycamorex-216084/">View Public Profile</a></td></tr>
+	
+	<tr><td class="vbmenu_option"><a href="/linux/blog/sycamorex">View LQ Blog</a></td></tr>
+	<tr><td class="vbmenu_option"><a href="/bookmarks/user/sycamorex">View Bookmarks</a></td></tr>
+	<tr><td class="vbmenu_option"><a href="/reviews/showcat.php?cat=myprod&amp;ppuser=216084">View Review Entries</a></td></tr>
+	<tr><td class="vbmenu_option"><a href="/hcl/showcat.php?cat=myprod&amp;ppuser=216084">View HCL Entries</a></td></tr>
+	
+	
+	
+	
+	
+	
+	
+		<tr><td class="vbmenu_option"><a href="/questions/search.php?do=finduser&amp;u=216084" rel="nofollow">Find More Posts by sycamorex</a></td></tr>
+	
+	
+	
+	</table>
+</div>
+<!-- / post 2999717 popup menu -->
+
+
+	</div>
+	
+		</div>
+	</div>
+</div>
+
+<!-- / close content container -->
+
+<!-- / post #2999717 --><!-- post #3002732 -->
+
+	<!-- open content container -->
+
+<div align="center">
+	<div class="page" style="width:100%; text-align:left">
+		<div style="padding:0px 0px 0px 0px" align="left">
+
+	<div id="edit3002732" style="padding:0px 0px 3px 0px">
+	<!-- this is not the last post shown on the page -->
+
+
+
+<table id="post3002732" class="tborder" cellpadding="3" cellspacing="0" border="0" width="100%" align="center">
+<tr>
+	
+		<td colspan="2" class="thead" style="font-weight:normal; border: 1px solid #FFFFFF; border-right: 0px" >		
+			<!-- status icon and date -->
+			<a name="post3002732"><img class="inlineimg" src="http://linuxquestions.cachefly.net/images/questions/images/statusicon/post_old.gif" alt="Old" border="0" /></a>
+			12-27-2007, 05:08 AM
+			
+			<!-- / status icon and date -->				
+		</td>
+		<td class="thead" style="font-weight:normal; border: 1px solid #FFFFFF; border-left: 0px" align="right">
+			&nbsp;
+		
+			#<a href="/questions/showthread.php?p=3002732#post3002732" rel="nofollow" id="postcount3002732" name="4"><strong>4</strong></a>
+			
+		
+		</td>
+	
+</tr>
+<tr valign="top">
+	<td class="alt1" width="175" style="border: 1px solid #FFFFFF; border-top: 0px; border-bottom: 0px">
+			
+			<div id="postmenu_3002732">
+				
+				<a class="bigusername" href="/user/andrew.46-373926/">andrew.46</a>
+				<script type="text/javascript"> vbmenu_register("postmenu_3002732", true); </script>
+				
+			</div>
+			<div class="smallfont">Member</div>
+			
+			
+			
+			
+			
+			<div class="smallfont">
+				&nbsp;<br />
+				<div>Registered: Oct 2007</div>
+				<div>Location: Australia</div>
+				<div>Distribution: Slackware 12.2</div>
+				
+				<div>
+					Posts: 212
+				</div>
+				 
+<!--	<div>Thanks: 4</div> -->
+	<div>
+		
+			
+				Thanked: 4
+			
+		
+	</div>
+
+				
+				
+				
+				<div>    </div>
+			</div>					
+	</td>
+	
+	<td colspan="2" class="alt1" id="td_post_3002732" style="border-right: 1px solid #FFFFFF">
+	
+		
+		
+		
+
+		<!-- message -->
+
+
+		<div id="post_message_3002732">Hi,<br />
+<br />
+ Have a look at:<br />
+<br />
+<a href="http://www.andrews-corner.org/mutt.html" target="_blank">http://www.andrews-corner.org/mutt.html</a><br />
+<br />
+ there is a section on msmtp as well<br />
+<br />
+       Andrew</div>
+		<!-- / message -->
+	
+		
+		
+		
+		
+		
+		
+		
+		
+		
+	
+	</td>
+</tr>
+<tr>
+	<td class="alt1" style="border: 1px solid #FFFFFF; border-top: 0px">
+<img class="inlineimg" src='http://linuxquestions.cachefly.net/images/questions/images/statusicon/../icons/useragent/icon_.gif' alt='' />
+		<img class="inlineimg" src="http://linuxquestions.cachefly.net/images/questions/images/statusicon/forum_old.gif" alt="andrew.46 is offline" border="0" />
+
+
+						
+		
+		
+		&nbsp;
+	</td>
+	<td id="lqtags_3002732" class="alt1" valign="bottom">
+	
+        &nbsp;
+	
+	</td>
+	
+	<td class="alt1" align="right" style="border: 1px solid #FFFFFF; border-left: 0px; border-top: 0px">
+	
+		<!-- controls -->
+	
+		
+		
+		
+			<a href="newreply.php?do=newreply&amp;p=3002732" rel="nofollow"><img src="http://linuxquestions.cachefly.net/images/questions/images/buttons/quote.gif" alt="Reply With Quote" border="0" /></a>
+		
+		
+		
+		
+		
+			
+		
+		
+		<!-- / controls -->
+	</td>
+</tr>
+</table>
+
+ <div id="post_thanks_box_3002732"></div>
+
+<!-- post 3002732 popup menu -->
+<div class="vbmenu_popup" id="postmenu_3002732_menu" style="display:none">
+	<table cellpadding="4" cellspacing="1" border="0">
+	<tr>
+		<td class="thead">andrew.46</td>
+	</tr>
+	
+	<tr><td class="vbmenu_option"><a href="/user/andrew.46-373926/">View Public Profile</a></td></tr>
+	
+	<tr><td class="vbmenu_option"><a href="/linux/blog/andrew.46">View LQ Blog</a></td></tr>
+	<tr><td class="vbmenu_option"><a href="/bookmarks/user/andrew.46">View Bookmarks</a></td></tr>
+	<tr><td class="vbmenu_option"><a href="/reviews/showcat.php?cat=myprod&amp;ppuser=373926">View Review Entries</a></td></tr>
+	<tr><td class="vbmenu_option"><a href="/hcl/showcat.php?cat=myprod&amp;ppuser=373926">View HCL Entries</a></td></tr>
+	
+	
+	
+	
+	
+	
+		<tr><td class="vbmenu_option"><a href="http://www.andrews-corner.org">Visit andrew.46's homepage!</a></td></tr>
+	
+	
+		<tr><td class="vbmenu_option"><a href="/questions/search.php?do=finduser&amp;u=373926" rel="nofollow">Find More Posts by andrew.46</a></td></tr>
+	
+	
+	
+	</table>
+</div>
+<!-- / post 3002732 popup menu -->
+
+
+	</div>
+	
+		</div>
+	</div>
+</div>
+
+<!-- / close content container -->
+
+<!-- / post #3002732 --><!-- post #3043428 -->
+
+	<!-- open content container -->
+
+<div align="center">
+	<div class="page" style="width:100%; text-align:left">
+		<div style="padding:0px 0px 0px 0px" align="left">
+
+	<div id="edit3043428" style="padding:0px 0px 3px 0px">
+	
+
+
+
+<table id="post3043428" class="tborder" cellpadding="3" cellspacing="0" border="0" width="100%" align="center">
+<tr>
+	
+		<td colspan="2" class="thead" style="font-weight:normal; border: 1px solid #FFFFFF; border-right: 0px" >		
+			<!-- status icon and date -->
+			<a name="post3043428"><img class="inlineimg" src="http://linuxquestions.cachefly.net/images/questions/images/statusicon/post_old.gif" alt="Old" border="0" /></a>
+			02-02-2008, 05:15 AM
+			
+			<!-- / status icon and date -->				
+		</td>
+		<td class="thead" style="font-weight:normal; border: 1px solid #FFFFFF; border-left: 0px" align="right">
+			&nbsp;
+		
+			#<a href="/questions/showthread.php?p=3043428#post3043428" rel="nofollow" id="postcount3043428" name="5"><strong>5</strong></a>
+			
+		
+		</td>
+	
+</tr>
+<tr valign="top">
+	<td class="alt2" width="175" style="border: 1px solid #FFFFFF; border-top: 0px; border-bottom: 0px">
+			
+			<div id="postmenu_3043428">
+				
+				<a class="bigusername" href="/user/sycamorex-216084/">sycamorex</a>
+				<script type="text/javascript"> vbmenu_register("postmenu_3043428", true); </script>
+				
+			</div>
+			<div class="smallfont">Senior Member</div>
+			<div class="smallfont"><a href="/linux/member.html">Contributing Member</a></div>
+			
+			
+			
+			
+			<div class="smallfont">
+				&nbsp;<br />
+				<div>Registered: Nov 2005</div>
+				<div>Location: London</div>
+				<div>Distribution: Slackware 12.2</div>
+				
+				<div>
+					Posts: 1,459
+				</div>
+				 
+<!--	<div>Thanks: 8</div> -->
+	<div>
+		
+			
+				Thanked: 57
+			
+		
+	</div>
+<!-- Threadauthor -->
+
+
+<br /><strong>Original Poster</strong>
+<!-- / Threadauthor -->
+				
+				
+				
+				<div>    </div>
+			</div>					
+	</td>
+	
+	<td colspan="2" class="alt2" id="td_post_3043428" style="border-right: 1px solid #FFFFFF">
+	
+		
+		
+		
+
+		<!-- message -->
+
+
+		<div id="post_message_3043428">Ok, finally I managed to do it. I got all the certificates and c_rehashed them and I got rid of those errors. Then I had a problem with msmtp, but what turned out was that in .muttrc the path to msmtp was not correct<br />
+<br />
+thanks guys</div>
+		<!-- / message -->
+	
+		
+		
+		
+		
+		
+		
+		
+		
+		
+	
+	</td>
+</tr>
+<tr>
+	<td class="alt2" style="border: 1px solid #FFFFFF; border-top: 0px">
+<img class="inlineimg" src='http://linuxquestions.cachefly.net/images/questions/images/statusicon/../icons/useragent/icon_.gif' alt='' />
+		
+<img class="inlineimg" src="http://linuxquestions.cachefly.net/images/questions/images/statusicon/forum_new.gif" alt="sycamorex is online now" border="0" />
+
+						
+		
+		
+		&nbsp;
+	</td>
+	<td id="lqtags_3043428" class="alt2" valign="bottom">
+	
+        &nbsp;
+	
+	</td>
+	
+	<td class="alt2" align="right" style="border: 1px solid #FFFFFF; border-left: 0px; border-top: 0px">
+	
+		<!-- controls -->
+	
+		
+		
+		
+			<a href="newreply.php?do=newreply&amp;p=3043428" rel="nofollow"><img src="http://linuxquestions.cachefly.net/images/questions/images/buttons/quote.gif" alt="Reply With Quote" border="0" /></a>
+		
+		
+		
+		
+		
+			
+		
+		
+		<!-- / controls -->
+	</td>
+</tr>
+</table>
+
+ <div id="post_thanks_box_3043428"></div>
+
+<!-- post 3043428 popup menu -->
+<div class="vbmenu_popup" id="postmenu_3043428_menu" style="display:none">
+	<table cellpadding="4" cellspacing="1" border="0">
+	<tr>
+		<td class="thead">sycamorex</td>
+	</tr>
+	
+	<tr><td class="vbmenu_option"><a href="/user/sycamorex-216084/">View Public Profile</a></td></tr>
+	
+	<tr><td class="vbmenu_option"><a href="/linux/blog/sycamorex">View LQ Blog</a></td></tr>
+	<tr><td class="vbmenu_option"><a href="/bookmarks/user/sycamorex">View Bookmarks</a></td></tr>
+	<tr><td class="vbmenu_option"><a href="/reviews/showcat.php?cat=myprod&amp;ppuser=216084">View Review Entries</a></td></tr>
+	<tr><td class="vbmenu_option"><a href="/hcl/showcat.php?cat=myprod&amp;ppuser=216084">View HCL Entries</a></td></tr>
+	
+	
+	
+	
+	
+	
+	
+		<tr><td class="vbmenu_option"><a href="/questions/search.php?do=finduser&amp;u=216084" rel="nofollow">Find More Posts by sycamorex</a></td></tr>
+	
+	
+	
+	</table>
+</div>
+<!-- / post 3043428 popup menu -->
+
+
+	</div>
+	
+		</div>
+	</div>
+</div>
+
+<!-- / close content container -->
+
+<!-- / post #3043428 --><div id="lastpost"></div></div>
+
+<div align="center">
+<script type="text/javascript">
+  GA_googleFillSlot("LQ_MPU_Bottom");
+</script></div><br />
+
+<!-- start content table -->
+<!-- open content container -->
+
+<div align="center">
+	<div class="page" style="width:100%; text-align:left">
+		<div style="padding:0px 0px 0px 0px" align="left">
+
+<!-- / start content table -->
+
+<!-- controls below postbits -->
+<table cellpadding="0" cellspacing="0" border="0" width="100%">
+<tr valign="top">
+	
+		<td class="smallfont"><a href="newreply.php?do=newreply&amp;noquote=1&amp;p=3043428" rel="nofollow"><img src="http://linuxquestions.cachefly.net/images/questions/images/buttons/reply.gif" alt="Reply" border="0" /></a></td>
+		
+	
+</tr>
+</table>
+<!-- / controls below postbits -->
+
+
+
+
+<!-- social bookmarking links -->
+	<br />
+	<table cellpadding="3" cellspacing="1" border="0" width="100%" class="tborder" align="center">
+	<tr>
+		<td class="thead">Bookmarks</td>
+	</tr>
+	<tr>
+		<td class="alt2" style="padding-top:0px"><div style="clear:both"></div><ul style="list-style-type:none; margin:0px; padding:0px"><li class="smallfont" style="width:20%; min-width:160px; float:left; margin-top:3px">
+	
+		<a href="http://digg.com/submit?phrase=2&amp;url=http%3A%2F%2Fwww.linuxquestions.org%2Fquestions%2Fshowthread.php%3Ft%3D608702&amp;title=mutt%2Ffetchmail" target="socialbookmark"><img src="http://linuxquestions.cachefly.net/images/questions/images/misc/bookmarksite_digg.gif" border="0" alt="Submit Thread to Digg" class="inlineimg" /></a>
+	
+	<a href="http://digg.com/submit?phrase=2&amp;url=http%3A%2F%2Fwww.linuxquestions.org%2Fquestions%2Fshowthread.php%3Ft%3D608702&amp;title=mutt%2Ffetchmail" target="socialbookmark" style="text-decoration:none">Digg</a>
+</li><li class="smallfont" style="width:20%; min-width:160px; float:left; margin-top:3px">
+	
+		<a href="http://del.icio.us/post?url=http%3A%2F%2Fwww.linuxquestions.org%2Fquestions%2Fshowthread.php%3Ft%3D608702&amp;title=mutt%2Ffetchmail" target="socialbookmark"><img src="http://linuxquestions.cachefly.net/images/questions/images/misc/bookmarksite_delicious.gif" border="0" alt="Submit Thread to del.icio.us" class="inlineimg" /></a>
+	
+	<a href="http://del.icio.us/post?url=http%3A%2F%2Fwww.linuxquestions.org%2Fquestions%2Fshowthread.php%3Ft%3D608702&amp;title=mutt%2Ffetchmail" target="socialbookmark" style="text-decoration:none">del.icio.us</a>
+</li><li class="smallfont" style="width:20%; min-width:160px; float:left; margin-top:3px">
+	
+		<a href="http://www.stumbleupon.com/submit?url=http%3A%2F%2Fwww.linuxquestions.org%2Fquestions%2Fshowthread.php%3Ft%3D608702&amp;title=mutt%2Ffetchmail" target="socialbookmark"><img src="http://linuxquestions.cachefly.net/images/questions/images/misc/bookmarksite_stumbleupon.gif" border="0" alt="Submit Thread to StumbleUpon" class="inlineimg" /></a>
+	
+	<a href="http://www.stumbleupon.com/submit?url=http%3A%2F%2Fwww.linuxquestions.org%2Fquestions%2Fshowthread.php%3Ft%3D608702&amp;title=mutt%2Ffetchmail" target="socialbookmark" style="text-decoration:none">StumbleUpon</a>
+</li><li class="smallfont" style="width:20%; min-width:160px; float:left; margin-top:3px">
+	
+		<a href="http://www.google.com/bookmarks/mark?op=edit&amp;output=popup&amp;bkmk=http%3A%2F%2Fwww.linuxquestions.org%2Fquestions%2Fshowthread.php%3Ft%3D608702&amp;title=mutt%2Ffetchmail" target="socialbookmark"><img src="http://linuxquestions.cachefly.net/images/questions/images/misc/bookmarksite_google.gif" border="0" alt="Submit Thread to Google" class="inlineimg" /></a>
+	
+	<a href="http://www.google.com/bookmarks/mark?op=edit&amp;output=popup&amp;bkmk=http%3A%2F%2Fwww.linuxquestions.org%2Fquestions%2Fshowthread.php%3Ft%3D608702&amp;title=mutt%2Ffetchmail" target="socialbookmark" style="text-decoration:none">Google</a>
+</li><li class="smallfont" style="width:20%; min-width:160px; float:left; margin-top:3px">
+	
+		<a href="http://www.linuxquestions.org/bookmarks/user/?action=add&amp;address=http%3A%2F%2Fwww.linuxquestions.org%2Fquestions%2Fshowthread.php%3Ft%3D608702&amp;title=mutt%2Ffetchmail" target="socialbookmark"><img src="http://linuxquestions.cachefly.net/images/questions/images/misc/bookmarksite_lq.gif" border="0" alt="Submit Thread to LinuxQuestions.org" class="inlineimg" /></a>
+	
+	<a href="http://www.linuxquestions.org/bookmarks/user/?action=add&amp;address=http%3A%2F%2Fwww.linuxquestions.org%2Fquestions%2Fshowthread.php%3Ft%3D608702&amp;title=mutt%2Ffetchmail" target="socialbookmark" style="text-decoration:none">LinuxQuestions.org</a>
+</li></ul><div style="clear:both"></div></td>
+	</tr>
+	</table>
+<!-- / social bookmarking links -->
+
+
+
+
+
+
+
+
+<br />
+<br />
+
+<!-- currently active users -->
+
+<!-- end currently active users -->
+
+
+<!-- controls for non-popup browsers -->
+
+
+<table class="tborder" cellpadding="3" cellspacing="1" border="0" width="100%" align="center" style="border-top-width:0px">
+<tr>
+	<td class="thead" colspan="2">Thread Tools<a name="goto_threadtools"></a></td>
+	
+</tr>
+<tr valign="top">
+	<td class="alt1" colspan="2">
+	
+	<!-- thread tools -->
+	<div class="smallfont">
+		
+			<div><img class="inlineimg" src="http://linuxquestions.cachefly.net/images/questions/images/buttons/printer.gif" alt="Show Printable Version" vspace="1" /> <a href="printthread.php?t=608702" rel="nofollow">Show Printable Version</a></div>
+			<div><img class="inlineimg" src="http://linuxquestions.cachefly.net/images/questions/images/buttons/sendtofriend.gif" alt="Email this Page" vspace="1" /> <a href="sendmessage.php?do=sendtofriend&amp;t=608702" rel="nofollow">Email this Page</a></div>
+		
+		
+		
+		
+			
+		
+	</div>
+	<!-- / thread tools -->
+	
+	</td>
+	
+</tr>
+
+</table>
+<br />
+
+
+<!-- / controls for non-popup browsers -->
+
+
+<!-- forum rules and admin links -->
+<table cellpadding="0" cellspacing="0" border="0" width="100%" align="center">
+<tr valign="bottom">
+	<td class="smallfont" align="left">
+		<table class="tborder" cellpadding="3" cellspacing="1" border="0" width="210">
+<thead>
+<tr>
+	<td class="thead">
+		<a style="float:right" href="#top" onclick="return toggle_collapse('forumrules')"><img id="collapseimg_forumrules" src="http://linuxquestions.cachefly.net/images/questions/images/buttons/collapse_thead.gif" alt="" border="0" /></a>
+		Posting Rules
+	</td>
+</tr>
+</thead>
+<tbody id="collapseobj_forumrules" style="">
+<tr>
+	<td class="alt1" nowrap="nowrap"><div class="smallfont">
+		
+		<div>You <strong>may not</strong> post new threads</div>
+		<div>You <strong>may not</strong> post replies</div>
+		<div>You <strong>may not</strong> post attachments</div>
+		<div>You <strong>may not</strong> edit your posts</div>
+		<hr />
+		
+		<div><a href="misc.php?do=bbcode" target="_blank">BB code</a> is <strong>On</strong></div>
+		<div><a href="misc.php?do=showsmilies" target="_blank">Smilies</a> are <strong>On</strong></div>
+		<div><a href="misc.php?do=bbcode#imgcode" target="_blank">[IMG]</a> code is <strong>Off</strong></div>
+		<div>HTML code is <strong>Off</strong></div>
+		<hr />
+		<div><a href="misc.php?do=showrules" target="_blank">Forum Rules</a></div>
+	</div></td>
+</tr>
+</tbody>
+</table>
+	</td>
+	<td class="smallfont" align="right">
+		<table cellpadding="0" cellspacing="0" border="0">
+		
+		<tr>
+			<td>
+			
+			</td>
+		</tr>		
+		</table>
+	</td>
+</tr>
+</table>
+<!-- /forum rules and admin links -->
+
+<br />
+
+<table class="tborder" cellpadding="3" cellspacing="1" border="0" width="100%" align="center">
+<thead>
+	<tr>
+		<td class="tcat" width="100%" colspan="5">
+			<a style="float:right" href="#top" onclick="return toggle_collapse('similarthreads')"><img id="collapseimg_similarthreads" src="http://linuxquestions.cachefly.net/images/questions/images/buttons/collapse_tcat.gif" alt="" border="0" /></a>
+			Similar Threads<a name="similarthreads"></a>
+		</td>
+	</tr>
+</thead>
+<tbody id="collapseobj_similarthreads" style="">
+<tr class="thead" align="center">
+	<td class="thead" width="40%">Thread</td>
+	<td class="thead" width="15%" nowrap="nowrap">Thread Starter</td>
+	<td class="thead" width="20%">Forum</td>
+	<td class="thead" width="5%">Replies</td>
+	<td class="thead" width="20%">Last Post</td>
+</tr>
+<tr>
+	<td class="alt1" align="left">
+		
+		<span class="smallfont"> <a href="showthread.php?t=592137" title="How can I change the location of where fetchmail downloads emails to the mbox file? Each time I start mutt, it asks me if I want to create a Mail..." target="_blank">fetchmail and mutt</a></span>
+	</td>
+	<td class="alt2" nowrap="nowrap"><span class="smallfont">fakie_flip</span></td>
+	<td class="alt1" nowrap="nowrap"><span class="smallfont">Linux - Software</span></td>
+	<td class="alt2" align="center"><span class="smallfont">2</span></td>
+	<td class="alt1" align="right"><span class="smallfont">10-18-2007 <span class="time">03:19 AM</span></span></td>
+</tr><tr>
+	<td class="alt1" align="left">
+		
+		<span class="smallfont"> <a href="showthread.php?t=591117" title="I have fetchmail downloading my emails from gmail and fetchyahoo downloading my emails from yahoo mail. I need to learn how to setup procmail to..." target="_blank">procmail, mutt, evolution, fetchmail</a></span>
+	</td>
+	<td class="alt2" nowrap="nowrap"><span class="smallfont">fakie_flip</span></td>
+	<td class="alt1" nowrap="nowrap"><span class="smallfont">Linux - Software</span></td>
+	<td class="alt2" align="center"><span class="smallfont">3</span></td>
+	<td class="alt1" align="right"><span class="smallfont">10-15-2007 <span class="time">12:12 PM</span></span></td>
+</tr><tr>
+	<td class="alt1" align="left">
+		
+		<span class="smallfont"> <a href="showthread.php?t=580560" title="hello all, 
+ 
+I'm trying to set up mutt on my account, with fetchmail to pull email from my pop3 account, along with procmail to process it.  
+ 
+The..." target="_blank">Help with mutt/procmail/fetchmail configs</a></span>
+	</td>
+	<td class="alt2" nowrap="nowrap"><span class="smallfont">evilchild</span></td>
+	<td class="alt1" nowrap="nowrap"><span class="smallfont">Linux - Newbie</span></td>
+	<td class="alt2" align="center"><span class="smallfont">1</span></td>
+	<td class="alt1" align="right"><span class="smallfont">08-30-2007 <span class="time">08:09 AM</span></span></td>
+</tr><tr>
+	<td class="alt1" align="left">
+		
+		<span class="smallfont"> <a href="showthread.php?t=483774" title="I use fetchmail,mutt,procmail,sendmail on RH 9.0. I 
+need to configure a slack 10.0 partition for the same. 
+ 
+Not being familiar with slackware, I'd..." target="_blank">config fetchmail,mutt,procmail,sendmail</a></span>
+	</td>
+	<td class="alt2" nowrap="nowrap"><span class="smallfont">Tim Johnson</span></td>
+	<td class="alt1" nowrap="nowrap"><span class="smallfont">Slackware</span></td>
+	<td class="alt2" align="center"><span class="smallfont">2</span></td>
+	<td class="alt1" align="right"><span class="smallfont">09-15-2006 <span class="time">02:20 PM</span></span></td>
+</tr><tr>
+	<td class="alt1" align="left">
+		
+		<span class="smallfont"> <a href="showthread.php?t=153479" title="I'm trying to set things up so that I can read/send email from the console. I want to use Mutt to read mail, but I have several pop3 accounts on..." target="_blank">email from the console (fetchmail/procmail/mutt/postfix)</a></span>
+	</td>
+	<td class="alt2" nowrap="nowrap"><span class="smallfont">TedMaul</span></td>
+	<td class="alt1" nowrap="nowrap"><span class="smallfont">Linux - Software</span></td>
+	<td class="alt2" align="center"><span class="smallfont">0</span></td>
+	<td class="alt1" align="right"><span class="smallfont">03-04-2004 <span class="time">12:07 PM</span></span></td>
+</tr>
+</tbody>
+</table>
+
+<br />
+
+<!-- end content table  -->
+
+		</div>
+	</div>
+</div>
+
+<!-- / close content container -->
+<!-- / end content table -->
+
+</div>
+
+<br />
+<div class="smallfont" align="center">All times are GMT -5. The time now is <span class="time">03:40 AM</span>.</div>
+<br />
+<!-- /content area table -->
+
+<form action="index.php" method="get">
+<table cellpadding="3" cellspacing="0" border="0" width="100%" class="page" align="center">
+<tr>
+	
+	
+	<td class="tfoot" align="right" width="100%">
+		<div class="smallfont">
+			<strong>
+				<a href="/questions/sendmessage.php" rel="nofollow">Contact Us</a> -
+				<a href="/linux/adinfo.html">Advertising Info</a> - 
+				<a href="/linux/rules.html">Rules</a> - 
+				<a href="http://www.cafeshops.com/linuxquestions">LQ Merchandise</a> - 
+				<a href="/linux/donation.html">Donations</a> - 
+				<a href="/linux/member.html">Contributing Member</a> - 
+				<a href="http://www.linuxquestions.org/linux/sitemap.html">LQ Sitemap</a> - 
+				<a href="http://www.linuxquestions.org/">LinuxQuestions.org</a> -
+				
+				
+				
+				<a href="/questions/">Linux Forums</a>
+			</strong>
+		</div>
+	</td>
+</tr>
+</table>
+
+</form>
+
+
+<!-- START: LQ Table Bottom -->
+</td>
+<td width="165px" class="page" style="padding-left:5px" valign="top">
+<table style="margin-bottom:5px" cellpadding="2" cellspacing="0" border="0" width="100%" class="tborder" align="center">
+<tr><td class="vbmenu_control">Main Menu</td></tr>
+<tr><td class="alt1">
+<ul class="lqrightmenu">
+<li><a href="/questions/index.php">Linux Forums</a></li>
+<li><a href="/questions/search.php">Search</a></li>
+<li><a href="/questions/lqtags.php">LQ Tags</a></li>
+<li><a href="/hcl/">Linux HCL</a></li>
+<li><a href="/linux/answers/">Linux Tutorials</a></li>
+<li><a href="/jobs">LQ Job Marketplace</a></li>
+<li><a href="http://wiki.linuxquestions.org/">Linux Wiki</a></li>
+<li><a href="/reviews/index.php/cat/2">Distro Reviews</a></li>
+<li><a href="/reviews/index.php/cat/15">Book Reviews</a></li>
+<li><a href="http://iso.linuxquestions.org/">Download Linux</a></li>
+<li><a href="/bookmarks/">Linux Bookmarks</a></li>
+<li><a href="/linux/press/">Press Releases</a></li>
+<li><a href="http://radio.linuxquestions.org/linux/lq-podcasts/">Linux Podcast</a></li>
+<li><a href="/questions/group.php">Social Groups</a></li>
+<li><a href="/blog/">LQ Blogs</a></li>
+<li><a href="http://radio.linuxquestions.org/">LQ Radio</a></li>
+<li><a href="http://radio.linuxquestions.org/player/player.php" onclick="window.open('http://radio.linuxquestions.org/player/player.php','wimpyMP3player','width=540,height=320');return false">LQ Radio Jukebox</a></li>
+<li><a href="/">Home</a></li>
+<div align="center"><a href="/questions/linux-software-2/muttfetchmail-608702/#main_cont">(Con't)</a></div>
+</ul>
+</td></tr>
+</table>
+<div style="text-align:center;margin-bottom:5px">
+<script language="javascript"><!--
+document.write('<scr'+'ipt language="javascript1.1" src="http://adserver.adtechus.com/addyn/3.0/5159/409336/0/154/ADTECH;loc=100;target=_blank;key=key1+key2+key3+key4;grp=[group];misc='+new Date().getTime()+'"></scri'+'pt>');
+//-->
+</script><noscript><a href="http://adserver.adtechus.com/adlink/3.0/5159/409336/0/154/ADTECH;loc=300;key=key1+key2+key3+key4;grp=[group]" target="_blank"><img src="http://adserver.adtechus.com/adserv/3.0/5159/409336/0/154/ADTECH;loc=300;key=key1+key2+key3+key4;grp=[group]" border="0" width="160" height="600"></a></noscript></div>
+
+
+<div style="text-align:center;margin-bottom:5px" class="alt1">
+<script language="javascript"><!--
+
+document.write('<scr'+'ipt language="javascript1.1" src="http://adserver.adtechus.com/addyn/3.0/5159/892944/0/277/ADTECH;loc=100;target=_blank;key=key1+key2+key3+key4;grp=[group];misc='+new Date().getTime()+'"></scri'+'pt>');
+
+//-->
+
+</script><noscript><a href="http://adserver.adtechus.com/adlink/3.0/5159/892944/0/277/ADTECH;loc=300;key=key1+key2+key3+key4;grp=[group]" target="_blank"><img src="http://adserver.adtechus.com/adserv/3.0/5159/892944/0/277/ADTECH;loc=300;key=key1+key2+key3+key4;grp=[group]" border="0" width="2" height="2"></a></noscript></div>
+
+
+<table style="margin-bottom:5px" cellpadding="2" cellspacing="0" border="0" width="100%" class="tborder" align="center">
+<tr><td class="vbmenu_control">My LQ</td></tr>
+<tr><td class="alt1"><ul class="lqrightmenu">
+<li><a href="/questions/lqlogin.php">Login</a></li>
+<li><a href="/questions/register.php">Register</a></li>
+
+</ul>
+</td></tr>
+</table>
+
+<table style="margin-bottom:5px" cellpadding="2" cellspacing="0" border="0" width="100%" class="tborder" align="center">
+<tr><td class="vbmenu_control">Write for LQ</td></tr>
+<tr><td class="alt1">
+LinuxQuestions.org is looking for people interested in writing
+Editorials, Articles, Reviews, and more. If you'd like to contribute
+content, <a href="/questions/sendmessage.php">let us know</a>.
+</td></tr>
+</table>
+
+<table style="margin-bottom:5px" cellpadding="2" cellspacing="0" border="0" width="100%" class="tborder" align="center">
+<tr><td class="alt1">
+<script type="text/javascript"><!--
+google_ad_client = "pub-4420048478783872";
+google_ad_width = 160;
+google_ad_height = 90;
+google_ad_format = "160x90_0ads_al_s";
+google_ad_channel ="";
+google_color_border = "336699";
+google_color_bg = "E6E6E6";
+google_color_link = "336699";
+google_color_url = "008000";
+google_color_text = "000000";
+//--></script>
+<script type="text/javascript"
+  src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+</script>
+</td></tr>
+</table>
+
+<table style="margin-bottom:5px" cellpadding="2" cellspacing="0" border="0" width="100%" class="tborder" align="center">
+<tr><td class="vbmenu_control" id="main_cont">Main Menu</td></tr>
+<tr><td class="alt1">
+<ul class="lqrightmenu">
+<li><a href="/questions/calendar.php">LQ Calendar</a></li>
+<li><a href="/linux/rules.html">LQ Rules</a></li>
+<li><a href="/linux/sitemap.html">LQ Sitemap</a></li>
+<li><a href="/questions/faq.php">Site FAQ</a></li>
+<li><a href="http://www.linuxquestions.org/bookmarks/">Linux Links</a></li>
+<li><a href="/questions/search.php?do=getnew">View New Posts</a></li>
+<li><a href="/questions/lqsearch.php?do=getnew&amp;daysprune=7">View Latest Posts</a></li>
+<li><a href="/questions/lqsearch.php?do=noreplies">Zero Reply Threads</a></li>
+<li><a href="http://wiki.linuxquestions.org/wiki/Special:Wantedpages">LQ Wiki Most Wanted</a></li>
+<li><a href="http://jeremy.linuxquestions.org/">Jeremy's Blog</a></li>
+<li><a href="/questions/project.php">Report LQ Bug</a></li>
+<li><a href="http://linuxquestions.tradepub.com/" rel="nofollow">Tech Magazines</a></li>
+<li><a href="http://linuxquestions.tradepub.com/?pt=cat&page=Infosoft&flt=wpr" rel="nofollow">Tech Whitepapers</a></li>
+<li><a href="http://www.treoquestions.org/">TreoQuestions.org</a></li>
+<li><a href="http://www.treoquestions.org/questions/">Treo Forum</a></li>
+<li><a href="http://www.treoquestions.org/questions/downloads.php">Treo Downloads</a></li>
+</ul>
+</td></tr>
+</table>
+<table style="margin-bottom:5px" cellpadding="2" cellspacing="0" border="0" width="100%" class="tborder" align="center">
+<tr><td class="vbmenu_control">Syndicate</td></tr>
+<tr><td class="alt1">
+<a href="http://www.linuxquestions.org/syndicate/lqlatest.xml"><img src="http://linuxquestions.cachefly.net/images/questions/images/misc/rss.gif" alt="RSS1" border="0" width="16" height="16" /></a>&nbsp; Latest Threads<br />
+<a href="http://www.linuxquestions.org/syndicate/lqnews.rss"><img src="http://linuxquestions.cachefly.net/images/questions/images/misc/rss.gif" alt="RSS1" border="0" width="16" height="16" /></a>&nbsp; LQ News<br />
+<a href="http://radio.linuxquestions.org/syndicate/lqpodcast.php"><img src="http://linuxquestions.cachefly.net/images/questions/images/misc/rss.gif" alt="RSS2" border="0" width="16" height="16" /></a>&nbsp; LQ Podcast<br />
+<a href="http://radio.linuxquestions.org/syndicate/lqradio.php"><img src="http://linuxquestions.cachefly.net/images/questions/images/misc/rss.gif" alt="RSS2" border="0" width="16" height="16" /></a>&nbsp; LQ Radio<br />
+<div class="smallfont">Twitter: <a href="http://twitter.com/linuxquestions" rel="nofollow">@linuxquestions</a><br />
+identi.ca: <a href="http://identi.ca/linuxquestions" rel="nofollow">@linuxquestions</a><br />
+Facebook: <a href="http://www.facebook.com/LinuxQuestions.org" rel="nofollow">@linuxquestions</a>
+</div>
+</td></tr>
+</table>
+</td>
+</tr>
+</table>
+<!-- END: LQ Table Bottom -->
+
+
+		</div>
+	</div>
+</div>
+
+<!-- / close content container -->
+
+<div align="center">
+	<div class="smallfont" align="center">
+<a href="http://www.lqconsulting.com/">Open Source Consulting</a> |
+<a href="http://www.lqconsulting.com/services/Web/Domain-Registration">Domain Registration</a>
+</div><br /><br />
+	
+	<div class="smallfont" align="center">
+	
+	</div>
+</div>
+
+
+<script type="text/javascript">
+<!--
+	// Main vBulletin Javascript Initialization
+	vBulletin_init();
+//-->
+</script>
+
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+
+<script type="text/javascript">
+var pageTracker = _gat._getTracker("UA-71419-4");
+pageTracker._initData();
+pageTracker._trackPageview();
+</script>
+
+
+
+<script type="text/javascript">
+var dc_UnitID = 14;
+var dc_PublisherID = 4566;
+var dc_AdLinkColor = 'blue';
+var dc_adprod='ADL';
+</script>
+<script type="text/javascript" src="http://kona.kontera.com/javascript/lib/KonaLibInline.js"></script>
+<div id="presence-container"><div class="presence-contents">no new posts</div></div><script src="clientscript/yui/animation/animation-min.js" type="text/javascript"></script>
+			<script type="text/javascript" src="clientscript/livetopic.js"></script>
+			<script type="text/javascript">
+				var threadid = 608702;
+				var ajax_last_edit = 0;
+				livetopic.old_topic = 600;
+				livetopic.interval_time = 5000;
+				livetopic.ajax_max_visibleposts = 30;
+
+				vbphrase["livetopic_maxpostnotice"] = "The maximum amount of posts on this page can display has been reached. Posts will now start to disappear from oldest to newest.";
+				vbphrase["livetopic_edit_message"] = "<img alt=\'live topic\' src=\'images/statusicon/thread_livetopic.gif\' title=\'live topic\'/>&nbsp; <span style=\'font-weight: bold;\'>This post has been added by another user.</span> <br /><br />Since this is an active topic, this post has been automatically added to the thread while you were reading it. If you are replying to this thread you might want to read this post before doing so.";
+				vbphrase["livetopic_newresponses"] = "%1 new responses (<a href=\'showthread.php?t=%2&goto=newpost\'>live topic</a>)";
+			</script>
+			
+
+<!-- temp -->
+<div style="display:none">
+	<!-- thread rate -->
+	
+		
+	
+	<!-- / thread rate -->
+</div>
+
+</body>
+</html>

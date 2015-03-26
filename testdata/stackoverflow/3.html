@@ -1,0 +1,1450 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head><title>
+	What is the best way to check the strength of a password? - Stack Overflow
+</title><meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><link href="/Content/all.css?cachebreaker=20080918.1" rel="stylesheet" type="text/css" /><link href="/Content/print.css" rel="stylesheet" media="print" type="text/css" /><link rel="shortcut icon" href="/favicon.ico" /><link rel="apple-itouch-icon" href="/Content/Img/apple-touch-icon.png" /><link rel="search" type="application/opensearchdescription+xml" title="Stack Overflow" href="/opensearch.xml" />    
+    <script type="text/javascript" src="/Content/Js/jquery.package.master.js?cachebreaker=20080930"></script>
+    
+    <link rel="alternate" type="application/atom+xml" title="RSS" href="/feeds/question/75057" />    
+    
+    <script src="/content/js/jquery.package.question.js?cachebreaker=20081003.3" type="text/javascript"></script>
+    
+    <script type="text/javascript">
+        var fkey = "";
+        var repNeededForComments = 50;
+        
+        $().ready(function() {    
+            setupFormValidation('#post-form');
+            vote.initForShow(false, 75057); 
+            styleCode();
+        });
+    </script>
+    <link href="/questions/75057/increment-view-count" type="text/css" rel="stylesheet" />
+</head>
+
+<body>
+
+
+
+    <div class="container">
+    
+        <div id="header">
+        
+        <table width="950px" class="header-table">
+            <tr>            
+            <td style="vertical-align:middle; padding-top:22px;" width="260px">
+            <a href="/"><img src="/Content/Img/stackoverflow-logo-250.png" width="250" height="70" alt="logo link to homepage" /></a>
+            </td>
+            <td style="vertical-align:top; width:690px;">
+            <table>
+            <!--row-->
+            <tr>
+            <td style="vertical-align:middle; height:40px; text-align:left; width:430px">
+            <div id="headerlinks">
+            
+            <a href="/users/login?returnurl=%2fquestions%2f75057%2fwhat-is-the-best-way-to-check-the-strength-of-a-password">login</a><span class="link-separator">|</span>
+            <a href="/about">about</a>
+            <span class="link-separator">|</span>
+            <a href="/faq">faq</a>   
+            </div>
+            </td>
+            <td style="text-align:right; vertical-align:middle; width:270px;">
+            <form id="search" action="/search" method="get">
+                <input name="q" class="textbox" type="text" maxlength="80" size="27" value="" style="margin:0px;" />&nbsp;
+                <input type="submit" class="button" value="Search" style="margin:0px; padding:2px; padding: 0px !ie7;" />
+            </form>          
+            </td>
+            </tr>
+            <!--row-->
+            <tr><td colspan="2">
+            <div class="betamessage-top">This is a <b>public beta</b>. Found a bug? Want to make a feature request? <b><a href="http://stackoverflow.uservoice.com/">stackoverflow.uservoice.com</a></b></div>                        
+            </td></tr>
+            <!--row-->
+            <tr>
+            <td style="text-align:left; vertical-align:middle; height:40px">
+            <div class="nav">            
+                <ul class="primarynav">
+                    <li class="youarehere">
+                        <a href="/questions">Questions</a>
+                    </li>
+                    <li class="">
+                        <a href="/tags">Tags</a>
+                    </li>
+                    <li class="">
+                        <a href="/users">Users</a>
+                    </li>
+                    <li class="">
+                        <a href="/badges">Badges</a>
+                    </li>
+                </ul> 
+             </div>                           
+             </td>
+             <td style="text-align:right; vertical-align:middle;">
+                <div class="nav" style="float:right; margin-right:-5px;">
+                <ul class="primarynav">
+                    <li class="">
+                    
+                    <a href="/questions/ask">Ask Question</a>
+                    
+                    </li>
+                </ul>                            
+                </div>
+            </td>            
+
+            </tr>
+            </table>
+            </td>
+        </tr>
+        </table> 
+        
+        </div>      
+        
+        <div id="content">
+            
+
+<div id="question-header">
+    <h2><a href="/questions/75057/what-is-the-best-way-to-check-the-strength-of-a-password">What is the best way to check the strength of a password?</a></h2>
+</div>
+
+<div id="mainbar">
+
+<div id="question" class="" style="width:710px;">
+    <table width="710px">
+    <tr>
+    <td width="60px" style="vertical-align:top;">
+        
+<div class="vote">
+
+    <input type="hidden" value="75057" />
+    <img class="vote-up" src="/content/img/vote-arrow-up.png" width="40" height="25" alt="vote up" title="This was helpful (click again to undo)" />
+    <span class="vote-count-post">
+    10
+    </span>
+    <img class="vote-down" src="/content/img/vote-arrow-down.png" width="40" height="25" alt="vote down" title="This was not helpful (click again to undo)" />
+    <br />  
+    
+    <img class="vote-favorite" src="/content/img/vote-favorite-off.png" width="32" height="31" alt="star" title="This is a favorite question (click again to undo)" />
+    <div class="favoritecount"><b>
+        
+    </b></div>
+        
+
+</div>
+        
+        <div class="viewcount">
+            views<br />
+            <b>318</b>            
+        </div>
+    </td>
+    <td>
+        <div>          
+            <div class="post-text">
+                <p>What is the best way of ensuring that a user supplied password is a strong password in a registration or change password form?</p>
+
+<p>EDIT: one idea I had (in python)</p>
+
+<pre><code>def validate_password(passwd):
+    conditions_met = 0
+    conditions_total = 3
+    if len(passwd) &gt;= 6: 
+        if passwd.lower() != passwd: conditions_met += 1
+        if len([x for x in passwd if x.isdigit()]) &gt; 0: conditions_met += 1
+        if len([x for x in passwd if not x.isalnum()]) &gt; 0: conditions_met += 1
+    result = False
+    print conditions_met
+    if conditions_met &gt;= 2: result = True
+    return result
+</code></pre>
+
+            </div>            
+            <div class="post-taglist">
+                <a href="/questions/tagged/algorithm" class="post-tag" title="show questions tagged 'algorithm'" rel="tag">algorithm</a> <a href="/questions/tagged/security" class="post-tag" title="show questions tagged 'security'" rel="tag">security</a> <a href="/questions/tagged/passwords" class="post-tag" title="show questions tagged 'passwords'" rel="tag">passwords</a> 
+            </div>
+            <table width="100%">
+            <tr>
+            <td align="left" style="vertical-align:top;">            
+                <div class="post-menu"><a id="vote-offensive-75057" title="flag this post as hate speech, spam, or abuse">offensive?</a> <span class="vote-offensive-count"></span></div>                            
+            </td>
+            
+            <td align="right" class="post-signature">
+            
+<div class="user-info">
+    
+    <div class="user-action-time">edited <a href="/revisions/75057/list" title="show all edits to this post"><span title="9/19/2008 7:18:57 PM UTC" class="relativetime">Sep 19 at 19:18</span></a><br /></div>
+    <div class="user-gravatar32"></div>
+    <div class="user-details"><br/></div>
+    
+</div>
+            </td>
+            
+            <td class="post-signature owner">                                                
+            
+<div class="user-info">
+    
+    <div class="user-action-time">asked <span title="9/16/2008 5:53:22 PM UTC" class="relativetime">Sep 16 at 17:53</span><br /></div>
+    <div class="user-gravatar32"><a href="/users/13099/ed-l"><img src="http://www.gravatar.com/avatar/d8c0312aba4b30a918e49932051d48de?s=32&d=identicon&r=PG" height=32 width=32 alt="gravatar image" /></a></div>
+    <div class="user-details"><a href="/users/13099/ed-l">Ed L</a><br/><span class="reputation-score" title="reputation score">112</span><span title="8 bronze badges"><span class="badge3">&#9679;</span><span class="badgecount">8</span></span></div>
+    
+</div>
+            </td>
+            </tr>
+            </table>
+        </div>
+    </td>
+    </tr>
+
+    
+
+<tr>
+<td width="60" height="20"></td>
+<td>
+    <div class="post-menu">
+        <input id="can-post-comments-75057" type="hidden" value="false"/>
+        <a id="comments-link-75057" class="comments-link">add comment</a><noscript>&nbsp;JavaScript is needed to access comments.</noscript>
+        <div id="comments-75057" class="comments-container">
+            <div class="comments"></div>
+        </div>
+    </div>
+</td>
+</tr>
+
+    </table>
+    
+</div>
+
+<div id="answers">
+
+    <a name="sort-top"></a>
+    <div id="answer-header">
+        <div id="subheader">
+            <h2>13 Answers:</h2>
+            <div id="tabs">
+                <a href="/questions/75057?sort=oldest#sort-top" title="Answers in the order they were given">Oldest</a><a href="/questions/75057?sort=newest#sort-top" title="Most recent answers first">Newest</a><a class="youarehere" href="/questions/75057?sort=votes#sort-top" title="Answers with the most votes first">Votes</a>
+            </div>    
+        </div>
+    </div>    
+
+
+
+    <a name="75149"></a>
+    
+    <div id="answer-75149" class="answer accepted-answer">    
+        <table style="width:710px">
+        <tr>
+        <td width="60px" style="vertical-align:top;">
+            
+<div class="vote">
+
+    <input type="hidden" value="75149" />
+    <img class="vote-up" src="/content/img/vote-arrow-up.png" width="40" height="25" alt="vote up" title="This was helpful (click again to undo)" />
+    <span class="vote-count-post">
+    3
+    </span>
+    <img class="vote-down" src="/content/img/vote-arrow-down.png" width="40" height="25" alt="vote down" title="This was not helpful (click again to undo)" />
+    <br />  
+        
+
+</div>
+
+            <div style="text-align:center; width:60px; margin-top:5px;" title="the question owner accepted this as the best answer to their question">
+            <img src="/Content/Img/accepted-answer.png" width="30" height="32" alt="accepted answer" />
+            </div>
+            
+        </td>
+        <td>
+            <div class="post-text"><p>Depending on the language, I usually use regular expressions to check if it has:</p>
+
+<ul>
+<li>At least one uppercase and one
+lowercase letter</li>
+<li>At least one number</li>
+<li>At least one special character</li>
+<li>A length of at least six characters</li>
+</ul>
+
+<p>You can require all of the above, or use a strength meter type of script. For my strength meter, if the password has the right length, it is evaluated as follows:</p>
+
+<ul>
+<li>One condition met: weak password</li>
+<li>Two conditions met: medium password</li>
+<li>All conditions met: strong password</li>
+</ul>
+
+<p>You can adjust the above to meet your needs.</p>
+</div>            
+            <table style="width:100%">
+            <tr>
+            <td style="vertical-align:top;" align="left">
+                <div class="post-menu"><a href="/questions/75057/what-is-the-best-way-to-check-the-strength-of-a-password#75149" title="permalink to this answer">link</a><span class="link-separator">|</span><a id="vote-offensive-75149" title="flag this post as hate speech, spam, or abuse">offensive?</a> <span class="vote-offensive-count"></span></div>
+            </td>
+            
+            <td align="right" class="post-signature">
+            
+<div class="user-info">
+    
+    <div class="user-action-time">edited <a href="/revisions/75149/list" title="show all edits to this post"><span title="9/16/2008 6:11:49 PM UTC" class="relativetime">Sep 16 at 18:11</span></a><br /></div>
+    <div class="user-gravatar32"></div>
+    <div class="user-details"><br/></div>
+    
+</div>
+            </td>
+            
+            
+            <td align="right" class="post-signature">                   
+            
+<div class="user-info">
+    
+    <div class="user-action-time">answered <span title="9/16/2008 6:02:24 PM UTC" class="relativetime">Sep 16 at 18:02</span><br /></div>
+    <div class="user-gravatar32"><a href="/users/13281/virtuosimedia"><img src="http://www.gravatar.com/avatar/aa705a09f888ce9f4712be2177f57bc8?s=32&d=identicon&r=PG" height=32 width=32 alt="gravatar image" /></a></div>
+    <div class="user-details"><a href="/users/13281/virtuosimedia">VirtuosiMedia</a><br/><span class="reputation-score" title="reputation score">764</span><span title="10 bronze badges"><span class="badge3">&#9679;</span><span class="badgecount">10</span></span></div>
+    
+</div>    
+            </td>
+            </tr>
+            </table>
+        </td>
+        </tr>
+        
+        
+
+<tr>
+<td width="60" height="20"></td>
+<td>
+    <div class="post-menu">
+        <input id="can-post-comments-75149" type="hidden" value="false"/>
+        <a id="comments-link-75149" class="comments-link-accepted ">add comment</a><noscript>&nbsp;JavaScript is needed to access comments.</noscript>
+        <div id="comments-75149" class="comments-container-accepted ">
+            <div class="comments"></div>
+        </div>
+    </div>
+</td>
+</tr>
+        
+        </table>
+    </div>
+
+
+    <a name="75090"></a>
+    
+    <div id="answer-75090" class="answer ">    
+        <table style="width:710px">
+        <tr>
+        <td width="60px" style="vertical-align:top;">
+            
+<div class="vote">
+
+    <input type="hidden" value="75090" />
+    <img class="vote-up" src="/content/img/vote-arrow-up.png" width="40" height="25" alt="vote up" title="This was helpful (click again to undo)" />
+    <span class="vote-count-post">
+    6
+    </span>
+    <img class="vote-down" src="/content/img/vote-arrow-down.png" width="40" height="25" alt="vote down" title="This was not helpful (click again to undo)" />
+    <br />  
+        
+
+</div>
+
+        </td>
+        <td>
+            <div class="post-text"><p><a href="http://webtecker.com/2008/03/26/collection-of-password-strength-scripts/" rel="nofollow">http://webtecker.com/2008/03/26/collection-of-password-strength-scripts/</a></p>
+</div>            
+            <table style="width:100%">
+            <tr>
+            <td style="vertical-align:top;" align="left">
+                <div class="post-menu"><a href="/questions/75057/what-is-the-best-way-to-check-the-strength-of-a-password#75090" title="permalink to this answer">link</a><span class="link-separator">|</span><a id="vote-offensive-75090" title="flag this post as hate speech, spam, or abuse">offensive?</a> <span class="vote-offensive-count"></span></div>
+            </td>
+            
+            
+            <td align="right" class="post-signature">                   
+            
+<div class="user-info">
+    
+    <div class="user-action-time">answered <span title="9/16/2008 5:56:01 PM UTC" class="relativetime">Sep 16 at 17:56</span><br /></div>
+    <div class="user-gravatar32"><a href="/users/590/kevin-sheffield"><img src="http://www.gravatar.com/avatar/d9b7ac035518c66fce28db83d10ac736?s=32&d=identicon&r=PG" height=32 width=32 alt="gravatar image" /></a></div>
+    <div class="user-details"><a href="/users/590/kevin-sheffield">Kevin Sheffield</a><br/><span class="reputation-score" title="reputation score">851</span><span title="1 silver badges"><span class="badge2">&#9679;</span><span class="badgecount">1</span></span><span title="10 bronze badges"><span class="badge3">&#9679;</span><span class="badgecount">10</span></span></div>
+    
+</div>    
+            </td>
+            </tr>
+            </table>
+        </td>
+        </tr>
+        
+        
+
+<tr>
+<td width="60" height="20"></td>
+<td>
+    <div class="post-menu">
+        <input id="can-post-comments-75090" type="hidden" value="false"/>
+        <a id="comments-link-75090" class="comments-link">add comment</a><noscript>&nbsp;JavaScript is needed to access comments.</noscript>
+        <div id="comments-75090" class="comments-container">
+            <div class="comments"></div>
+        </div>
+    </div>
+</td>
+</tr>
+        
+        </table>
+    </div>
+
+
+    <a name="75173"></a>
+    
+    <div id="answer-75173" class="answer ">    
+        <table style="width:710px">
+        <tr>
+        <td width="60px" style="vertical-align:top;">
+            
+<div class="vote">
+
+    <input type="hidden" value="75173" />
+    <img class="vote-up" src="/content/img/vote-arrow-up.png" width="40" height="25" alt="vote up" title="This was helpful (click again to undo)" />
+    <span class="vote-count-post">
+    1
+    </span>
+    <img class="vote-down" src="/content/img/vote-arrow-down.png" width="40" height="25" alt="vote down" title="This was not helpful (click again to undo)" />
+    <br />  
+        
+
+</div>
+
+        </td>
+        <td>
+            <div class="post-text"><p>The two simplest metrics to check for are:</p>
+
+<ol>
+<li>Length.  I'd say 8 characters as a minimum.</li>
+<li>Number of different character classes the password contains.  These are usually, lowercase letters, uppercase letters, numbers and punctuation and other symbols.  A strong  password will contain characters from at least three of these classes; if you force a number or other non-alphabetic character you significantly reduce the effectiveness of dictionary attacks.</li>
+</ol>
+</div>            
+            <table style="width:100%">
+            <tr>
+            <td style="vertical-align:top;" align="left">
+                <div class="post-menu"><a href="/questions/75057/what-is-the-best-way-to-check-the-strength-of-a-password#75173" title="permalink to this answer">link</a><span class="link-separator">|</span><a id="vote-offensive-75173" title="flag this post as hate speech, spam, or abuse">offensive?</a> <span class="vote-offensive-count"></span></div>
+            </td>
+            
+            
+            <td align="right" class="post-signature">                   
+            
+<div class="user-info">
+    
+    <div class="user-action-time">answered <span title="9/16/2008 6:04:19 PM UTC" class="relativetime">Sep 16 at 18:04</span><br /></div>
+    <div class="user-gravatar32"><a href="/users/3171/dave-webb"><img src="http://www.gravatar.com/avatar/a780bab849bc39176f044f5effbba7da?s=32&d=identicon&r=PG" height=32 width=32 alt="gravatar image" /></a></div>
+    <div class="user-details"><a href="/users/3171/dave-webb">Dave Webb</a><br/><span class="reputation-score" title="reputation score">3,403</span><span title="4 silver badges"><span class="badge2">&#9679;</span><span class="badgecount">4</span></span><span title="14 bronze badges"><span class="badge3">&#9679;</span><span class="badgecount">14</span></span></div>
+    
+</div>    
+            </td>
+            </tr>
+            </table>
+        </td>
+        </tr>
+        
+        
+
+<tr>
+<td width="60" height="20"></td>
+<td>
+    <div class="post-menu">
+        <input id="can-post-comments-75173" type="hidden" value="false"/>
+        <a id="comments-link-75173" class="comments-link">add comment</a><noscript>&nbsp;JavaScript is needed to access comments.</noscript>
+        <div id="comments-75173" class="comments-container">
+            <div class="comments"></div>
+        </div>
+    </div>
+</td>
+</tr>
+        
+        </table>
+    </div>
+
+
+    <a name="75078"></a>
+    
+    <div id="answer-75078" class="answer ">    
+        <table style="width:710px">
+        <tr>
+        <td width="60px" style="vertical-align:top;">
+            
+<div class="vote">
+
+    <input type="hidden" value="75078" />
+    <img class="vote-up" src="/content/img/vote-arrow-up.png" width="40" height="25" alt="vote up" title="This was helpful (click again to undo)" />
+    <span class="vote-count-post">
+    0
+    </span>
+    <img class="vote-down" src="/content/img/vote-arrow-down.png" width="40" height="25" alt="vote down" title="This was not helpful (click again to undo)" />
+    <br />  
+        
+
+</div>
+
+        </td>
+        <td>
+            <div class="post-text"><p>I like using <a href="http://www.microsoft.com/protect/yourself/password/checker.mspx" rel="nofollow" title="Microsoft Password Checker">Microsoft's password checker</a></p>
+</div>            
+            <table style="width:100%">
+            <tr>
+            <td style="vertical-align:top;" align="left">
+                <div class="post-menu"><a href="/questions/75057/what-is-the-best-way-to-check-the-strength-of-a-password#75078" title="permalink to this answer">link</a><span class="link-separator">|</span><a id="vote-offensive-75078" title="flag this post as hate speech, spam, or abuse">offensive?</a> <span class="vote-offensive-count"></span></div>
+            </td>
+            
+            
+            <td align="right" class="post-signature">                   
+            
+<div class="user-info">
+    
+    <div class="user-action-time">answered <span title="9/16/2008 5:55:11 PM UTC" class="relativetime">Sep 16 at 17:55</span><br /></div>
+    <div class="user-gravatar32"><a href="/users/12999/bob"><img src="http://www.gravatar.com/avatar/d88325659ebcac5f75b6765374f57f5a?s=32&d=identicon&r=PG" height=32 width=32 alt="gravatar image" /></a></div>
+    <div class="user-details"><a href="/users/12999/bob">Bob</a><br/><span class="reputation-score" title="reputation score">194</span><span title="4 bronze badges"><span class="badge3">&#9679;</span><span class="badgecount">4</span></span></div>
+    
+</div>    
+            </td>
+            </tr>
+            </table>
+        </td>
+        </tr>
+        
+        
+
+<tr>
+<td width="60" height="20"></td>
+<td>
+    <div class="post-menu">
+        <input id="can-post-comments-75078" type="hidden" value="false"/>
+        <a id="comments-link-75078" class="comments-link">add comment</a><noscript>&nbsp;JavaScript is needed to access comments.</noscript>
+        <div id="comments-75078" class="comments-container">
+            <div class="comments"></div>
+        </div>
+    </div>
+</td>
+</tr>
+        
+        </table>
+    </div>
+
+
+    <a name="75082"></a>
+    
+    <div id="answer-75082" class="answer ">    
+        <table style="width:710px">
+        <tr>
+        <td width="60px" style="vertical-align:top;">
+            
+<div class="vote">
+
+    <input type="hidden" value="75082" />
+    <img class="vote-up" src="/content/img/vote-arrow-up.png" width="40" height="25" alt="vote up" title="This was helpful (click again to undo)" />
+    <span class="vote-count-post">
+    0
+    </span>
+    <img class="vote-down" src="/content/img/vote-arrow-down.png" width="40" height="25" alt="vote down" title="This was not helpful (click again to undo)" />
+    <br />  
+        
+
+</div>
+
+        </td>
+        <td>
+            <div class="post-text"><p>If you have the time, run a password cracker against it.</p>
+</div>            
+            <table style="width:100%">
+            <tr>
+            <td style="vertical-align:top;" align="left">
+                <div class="post-menu"><a href="/questions/75057/what-is-the-best-way-to-check-the-strength-of-a-password#75082" title="permalink to this answer">link</a><span class="link-separator">|</span><a id="vote-offensive-75082" title="flag this post as hate speech, spam, or abuse">offensive?</a> <span class="vote-offensive-count"></span></div>
+            </td>
+            
+            
+            <td align="right" class="post-signature">                   
+            
+<div class="user-info">
+    
+    <div class="user-action-time">answered <span title="9/16/2008 5:55:22 PM UTC" class="relativetime">Sep 16 at 17:55</span><br /></div>
+    <div class="user-gravatar32"><a href="/users/7548/daniel-papasian"><img src="http://www.gravatar.com/avatar/b8bf5bc5ccc5a85512d90512022e57bb?s=32&d=identicon&r=PG" height=32 width=32 alt="gravatar image" /></a></div>
+    <div class="user-details"><a href="/users/7548/daniel-papasian">Daniel Papasian</a><br/><span class="reputation-score" title="reputation score">1,288</span><span title="8 bronze badges"><span class="badge3">&#9679;</span><span class="badgecount">8</span></span></div>
+    
+</div>    
+            </td>
+            </tr>
+            </table>
+        </td>
+        </tr>
+        
+        
+
+<tr>
+<td width="60" height="20"></td>
+<td>
+    <div class="post-menu">
+        <input id="can-post-comments-75082" type="hidden" value="false"/>
+        <a id="comments-link-75082" class="comments-link">add comment</a><noscript>&nbsp;JavaScript is needed to access comments.</noscript>
+        <div id="comments-75082" class="comments-container">
+            <div class="comments"></div>
+        </div>
+    </div>
+</td>
+</tr>
+        
+        </table>
+    </div>
+
+
+    <a name="75094"></a>
+    
+    <div id="answer-75094" class="answer ">    
+        <table style="width:710px">
+        <tr>
+        <td width="60px" style="vertical-align:top;">
+            
+<div class="vote">
+
+    <input type="hidden" value="75094" />
+    <img class="vote-up" src="/content/img/vote-arrow-up.png" width="40" height="25" alt="vote up" title="This was helpful (click again to undo)" />
+    <span class="vote-count-post">
+    0
+    </span>
+    <img class="vote-down" src="/content/img/vote-arrow-down.png" width="40" height="25" alt="vote down" title="This was not helpful (click again to undo)" />
+    <br />  
+        
+
+</div>
+
+        </td>
+        <td>
+            <div class="post-text"><p>I've always like the Google password strength api.</p>
+
+<p>you can find some information here</p>
+
+<p><a href="http://www.codeproject.com/KB/ajax/GooglePasswordStrength.aspx" rel="nofollow">http://www.codeproject.com/KB/ajax/GooglePasswordStrength.aspx</a></p>
+</div>            
+            <table style="width:100%">
+            <tr>
+            <td style="vertical-align:top;" align="left">
+                <div class="post-menu"><a href="/questions/75057/what-is-the-best-way-to-check-the-strength-of-a-password#75094" title="permalink to this answer">link</a><span class="link-separator">|</span><a id="vote-offensive-75094" title="flag this post as hate speech, spam, or abuse">offensive?</a> <span class="vote-offensive-count"></span></div>
+            </td>
+            
+            
+            <td align="right" class="post-signature">                   
+            
+<div class="user-info">
+    
+    <div class="user-action-time">answered <span title="9/16/2008 5:56:23 PM UTC" class="relativetime">Sep 16 at 17:56</span><br /></div>
+    <div class="user-gravatar32"><a href="/users/12298/erratic"><img src="http://www.gravatar.com/avatar/9041f177235d808d22ba7f2ef2254a64?s=32&d=identicon&r=PG" height=32 width=32 alt="gravatar image" /></a></div>
+    <div class="user-details"><a href="/users/12298/erratic">Erratic</a><br/><span class="reputation-score" title="reputation score">188</span><span title="6 bronze badges"><span class="badge3">&#9679;</span><span class="badgecount">6</span></span></div>
+    
+</div>    
+            </td>
+            </tr>
+            </table>
+        </td>
+        </tr>
+        
+        
+
+<tr>
+<td width="60" height="20"></td>
+<td>
+    <div class="post-menu">
+        <input id="can-post-comments-75094" type="hidden" value="false"/>
+        <a id="comments-link-75094" class="comments-link">comments (<b>2</b>)</a><noscript>&nbsp;JavaScript is needed to access comments.</noscript>
+        <div id="comments-75094" class="comments-container">
+            <div class="comments"></div>
+        </div>
+    </div>
+</td>
+</tr>
+        
+        </table>
+    </div>
+
+
+    <a name="75096"></a>
+    
+    <div id="answer-75096" class="answer ">    
+        <table style="width:710px">
+        <tr>
+        <td width="60px" style="vertical-align:top;">
+            
+<div class="vote">
+
+    <input type="hidden" value="75096" />
+    <img class="vote-up" src="/content/img/vote-arrow-up.png" width="40" height="25" alt="vote up" title="This was helpful (click again to undo)" />
+    <span class="vote-count-post">
+    0
+    </span>
+    <img class="vote-down" src="/content/img/vote-arrow-down.png" width="40" height="25" alt="vote down" title="This was not helpful (click again to undo)" />
+    <br />  
+        
+
+</div>
+
+        </td>
+        <td>
+            <div class="post-text"><p>There's the open and free <a href="http://www.openwall.com/john/" rel="nofollow">John the Ripper</a> password cracker which is a great way to check an existing password database.</p>
+</div>            
+            <table style="width:100%">
+            <tr>
+            <td style="vertical-align:top;" align="left">
+                <div class="post-menu"><a href="/questions/75057/what-is-the-best-way-to-check-the-strength-of-a-password#75096" title="permalink to this answer">link</a><span class="link-separator">|</span><a id="vote-offensive-75096" title="flag this post as hate speech, spam, or abuse">offensive?</a> <span class="vote-offensive-count"></span></div>
+            </td>
+            
+            
+            <td align="right" class="post-signature">                   
+            
+<div class="user-info">
+    
+    <div class="user-action-time">answered <span title="9/16/2008 5:56:47 PM UTC" class="relativetime">Sep 16 at 17:56</span><br /></div>
+    <div class="user-gravatar32"><a href="/users/11812/tante"><img src="http://www.gravatar.com/avatar/0c33c286d05e17bea51be91a0a0074dc?s=32&d=identicon&r=PG" height=32 width=32 alt="gravatar image" /></a></div>
+    <div class="user-details"><a href="/users/11812/tante">tante</a><br/><span class="reputation-score" title="reputation score">81</span><span title="3 bronze badges"><span class="badge3">&#9679;</span><span class="badgecount">3</span></span></div>
+    
+</div>    
+            </td>
+            </tr>
+            </table>
+        </td>
+        </tr>
+        
+        
+
+<tr>
+<td width="60" height="20"></td>
+<td>
+    <div class="post-menu">
+        <input id="can-post-comments-75096" type="hidden" value="false"/>
+        <a id="comments-link-75096" class="comments-link">add comment</a><noscript>&nbsp;JavaScript is needed to access comments.</noscript>
+        <div id="comments-75096" class="comments-container">
+            <div class="comments"></div>
+        </div>
+    </div>
+</td>
+</tr>
+        
+        </table>
+    </div>
+
+
+    <a name="75108"></a>
+    
+    <div id="answer-75108" class="answer ">    
+        <table style="width:710px">
+        <tr>
+        <td width="60px" style="vertical-align:top;">
+            
+<div class="vote">
+
+    <input type="hidden" value="75108" />
+    <img class="vote-up" src="/content/img/vote-arrow-up.png" width="40" height="25" alt="vote up" title="This was helpful (click again to undo)" />
+    <span class="vote-count-post">
+    0
+    </span>
+    <img class="vote-down" src="/content/img/vote-arrow-down.png" width="40" height="25" alt="vote down" title="This was not helpful (click again to undo)" />
+    <br />  
+        
+
+</div>
+
+        </td>
+        <td>
+            <div class="post-text"><p>Password strength checkers, and if you have time+resources (its justified only if you are checking for more than a few passwords) use Rainbow Tables.</p>
+</div>            
+            <table style="width:100%">
+            <tr>
+            <td style="vertical-align:top;" align="left">
+                <div class="post-menu"><a href="/questions/75057/what-is-the-best-way-to-check-the-strength-of-a-password#75108" title="permalink to this answer">link</a><span class="link-separator">|</span><a id="vote-offensive-75108" title="flag this post as hate speech, spam, or abuse">offensive?</a> <span class="vote-offensive-count"></span></div>
+            </td>
+            
+            
+            <td align="right" class="post-signature">                   
+            
+<div class="user-info">
+    
+    <div class="user-action-time">answered <span title="9/16/2008 5:58:12 PM UTC" class="relativetime">Sep 16 at 17:58</span><br /></div>
+    <div class="user-gravatar32"><a href="/users/12881/mostlyharmless"><img src="http://www.gravatar.com/avatar/0f2079d7a101102631f6a40a0a439e8d?s=32&d=identicon&r=PG" height=32 width=32 alt="gravatar image" /></a></div>
+    <div class="user-details"><a href="/users/12881/mostlyharmless">Mostlyharmless</a><br/><span class="reputation-score" title="reputation score">937</span><span title="7 bronze badges"><span class="badge3">&#9679;</span><span class="badgecount">7</span></span></div>
+    
+</div>    
+            </td>
+            </tr>
+            </table>
+        </td>
+        </tr>
+        
+        
+
+<tr>
+<td width="60" height="20"></td>
+<td>
+    <div class="post-menu">
+        <input id="can-post-comments-75108" type="hidden" value="false"/>
+        <a id="comments-link-75108" class="comments-link">add comment</a><noscript>&nbsp;JavaScript is needed to access comments.</noscript>
+        <div id="comments-75108" class="comments-container">
+            <div class="comments"></div>
+        </div>
+    </div>
+</td>
+</tr>
+        
+        </table>
+    </div>
+
+
+    <a name="75109"></a>
+    
+    <div id="answer-75109" class="answer ">    
+        <table style="width:710px">
+        <tr>
+        <td width="60px" style="vertical-align:top;">
+            
+<div class="vote">
+
+    <input type="hidden" value="75109" />
+    <img class="vote-up" src="/content/img/vote-arrow-up.png" width="40" height="25" alt="vote up" title="This was helpful (click again to undo)" />
+    <span class="vote-count-post">
+    0
+    </span>
+    <img class="vote-down" src="/content/img/vote-arrow-down.png" width="40" height="25" alt="vote down" title="This was not helpful (click again to undo)" />
+    <br />  
+        
+
+</div>
+
+        </td>
+        <td>
+            <div class="post-text"><p>With a series of checks to ensure it meets minimum criteria:<ul>
+<li>at least 8 characters long</li>
+<li>contains at least one non-alphanumeric symbol</li>
+<li>does not match or contain username/email/etc.</li>
+<li>etc</li>
+</ul></p>
+
+<p>Here's a jQuery plugin that reports password strength (not tried it myself):
+<a href="http://phiras.wordpress.com/2007/04/08/password-strength-meter-a-jquery-plugin/" rel="nofollow">http://phiras.wordpress.com/2007/04/08/password-strength-meter-a-jquery-plugin/</a></p>
+
+<p>And the same thing ported to PHP:
+<a href="http://www.alixaxel.com/wordpress/2007/06/09/php-password-strength-algorithm/" rel="nofollow">http://www.alixaxel.com/wordpress/2007/06/09/php-password-strength-algorithm/</a></p>
+</div>            
+            <table style="width:100%">
+            <tr>
+            <td style="vertical-align:top;" align="left">
+                <div class="post-menu"><a href="/questions/75057/what-is-the-best-way-to-check-the-strength-of-a-password#75109" title="permalink to this answer">link</a><span class="link-separator">|</span><a id="vote-offensive-75109" title="flag this post as hate speech, spam, or abuse">offensive?</a> <span class="vote-offensive-count"></span></div>
+            </td>
+            
+            
+            <td align="right" class="post-signature">                   
+            
+<div class="user-info">
+    
+    <div class="user-action-time">answered <span title="9/16/2008 5:58:28 PM UTC" class="relativetime">Sep 16 at 17:58</span><br /></div>
+    <div class="user-gravatar32"><a href="/users/9360/peter-boughton"><img src="http://www.gravatar.com/avatar/a17a7b2048799c3d2c2f9aa4f8ec97c8?s=32&d=identicon&r=PG" height=32 width=32 alt="gravatar image" /></a></div>
+    <div class="user-details"><a href="/users/9360/peter-boughton">Peter Boughton</a><br/><span class="reputation-score" title="reputation score">719</span><span title="10 bronze badges"><span class="badge3">&#9679;</span><span class="badgecount">10</span></span></div>
+    
+</div>    
+            </td>
+            </tr>
+            </table>
+        </td>
+        </tr>
+        
+        
+
+<tr>
+<td width="60" height="20"></td>
+<td>
+    <div class="post-menu">
+        <input id="can-post-comments-75109" type="hidden" value="false"/>
+        <a id="comments-link-75109" class="comments-link">add comment</a><noscript>&nbsp;JavaScript is needed to access comments.</noscript>
+        <div id="comments-75109" class="comments-container">
+            <div class="comments"></div>
+        </div>
+    </div>
+</td>
+</tr>
+        
+        </table>
+    </div>
+
+
+    <a name="75150"></a>
+    
+    <div id="answer-75150" class="answer ">    
+        <table style="width:710px">
+        <tr>
+        <td width="60px" style="vertical-align:top;">
+            
+<div class="vote">
+
+    <input type="hidden" value="75150" />
+    <img class="vote-up" src="/content/img/vote-arrow-up.png" width="40" height="25" alt="vote up" title="This was helpful (click again to undo)" />
+    <span class="vote-count-post">
+    0
+    </span>
+    <img class="vote-down" src="/content/img/vote-arrow-down.png" width="40" height="25" alt="vote down" title="This was not helpful (click again to undo)" />
+    <br />  
+        
+
+</div>
+
+        </td>
+        <td>
+            <div class="post-text"><p>Alec Muffett's <a href="http://sourceforge.net/projects/cracklib/" rel="nofollow">CrackLib</a> is good for this.</p>
+</div>            
+            <table style="width:100%">
+            <tr>
+            <td style="vertical-align:top;" align="left">
+                <div class="post-menu"><a href="/questions/75057/what-is-the-best-way-to-check-the-strength-of-a-password#75150" title="permalink to this answer">link</a><span class="link-separator">|</span><a id="vote-offensive-75150" title="flag this post as hate speech, spam, or abuse">offensive?</a> <span class="vote-offensive-count"></span></div>
+            </td>
+            
+            
+            <td align="right" class="post-signature">                   
+            
+<div class="user-info">
+    
+    <div class="user-action-time">answered <span title="9/16/2008 6:02:32 PM UTC" class="relativetime">Sep 16 at 18:02</span><br /></div>
+    <div class="user-gravatar32"><a href="/users/7648/paul-reiners"><img src="http://www.gravatar.com/avatar/1a27e9fea3c16775a54ee5f437af3db1?s=32&d=identicon&r=PG" height=32 width=32 alt="gravatar image" /></a></div>
+    <div class="user-details"><a href="/users/7648/paul-reiners">Paul Reiners</a><br/><span class="reputation-score" title="reputation score">392</span><span title="1 silver badges"><span class="badge2">&#9679;</span><span class="badgecount">1</span></span><span title="9 bronze badges"><span class="badge3">&#9679;</span><span class="badgecount">9</span></span></div>
+    
+</div>    
+            </td>
+            </tr>
+            </table>
+        </td>
+        </tr>
+        
+        
+
+<tr>
+<td width="60" height="20"></td>
+<td>
+    <div class="post-menu">
+        <input id="can-post-comments-75150" type="hidden" value="false"/>
+        <a id="comments-link-75150" class="comments-link">add comment</a><noscript>&nbsp;JavaScript is needed to access comments.</noscript>
+        <div id="comments-75150" class="comments-container">
+            <div class="comments"></div>
+        </div>
+    </div>
+</td>
+</tr>
+        
+        </table>
+    </div>
+
+
+    <a name="75294"></a>
+    
+    <div id="answer-75294" class="answer ">    
+        <table style="width:710px">
+        <tr>
+        <td width="60px" style="vertical-align:top;">
+            
+<div class="vote">
+
+    <input type="hidden" value="75294" />
+    <img class="vote-up" src="/content/img/vote-arrow-up.png" width="40" height="25" alt="vote up" title="This was helpful (click again to undo)" />
+    <span class="vote-count-post">
+    0
+    </span>
+    <img class="vote-down" src="/content/img/vote-arrow-down.png" width="40" height="25" alt="vote down" title="This was not helpful (click again to undo)" />
+    <br />  
+        
+
+</div>
+
+        </td>
+        <td>
+            <div class="post-text"><p>A general algorithm is outlined in the wikipedia page at <a href="http://en.wikipedia.org/wiki/Random_password_generator#Stronger_methods" rel="nofollow">http://en.wikipedia.org/wiki/Random_password_generator#Stronger_methods</a> . I also found a couple of scripts here - <a href="http://webtecker.com/2008/03/26/collection-of-password-strength-scripts/" rel="nofollow">http://webtecker.com/2008/03/26/collection-of-password-strength-scripts/</a>. Some of those are under the MIT License, so you can look at the code and figure out how they calculate the strength. I found the wikipedia entry helpful too.</p>
+</div>            
+            <table style="width:100%">
+            <tr>
+            <td style="vertical-align:top;" align="left">
+                <div class="post-menu"><a href="/questions/75057/what-is-the-best-way-to-check-the-strength-of-a-password#75294" title="permalink to this answer">link</a><span class="link-separator">|</span><a id="vote-offensive-75294" title="flag this post as hate speech, spam, or abuse">offensive?</a> <span class="vote-offensive-count"></span></div>
+            </td>
+            
+            
+            <td align="right" class="post-signature">                   
+            
+<div class="user-info">
+    
+    <div class="user-action-time">answered <span title="9/16/2008 6:13:29 PM UTC" class="relativetime">Sep 16 at 18:13</span><br /></div>
+    <div class="user-gravatar32"><a href="/users/9761/socratees"><img src="http://www.gravatar.com/avatar/850473ee273596abe671b36684e36e57?s=32&d=identicon&r=PG" height=32 width=32 alt="gravatar image" /></a></div>
+    <div class="user-details"><a href="/users/9761/socratees">Socratees</a><br/><span class="reputation-score" title="reputation score">91</span><span title="7 bronze badges"><span class="badge3">&#9679;</span><span class="badgecount">7</span></span></div>
+    
+</div>    
+            </td>
+            </tr>
+            </table>
+        </td>
+        </tr>
+        
+        
+
+<tr>
+<td width="60" height="20"></td>
+<td>
+    <div class="post-menu">
+        <input id="can-post-comments-75294" type="hidden" value="false"/>
+        <a id="comments-link-75294" class="comments-link">add comment</a><noscript>&nbsp;JavaScript is needed to access comments.</noscript>
+        <div id="comments-75294" class="comments-container">
+            <div class="comments"></div>
+        </div>
+    </div>
+</td>
+</tr>
+        
+        </table>
+    </div>
+
+
+    <a name="75477"></a>
+    
+    <div id="answer-75477" class="answer ">    
+        <table style="width:710px">
+        <tr>
+        <td width="60px" style="vertical-align:top;">
+            
+<div class="vote">
+
+    <input type="hidden" value="75477" />
+    <img class="vote-up" src="/content/img/vote-arrow-up.png" width="40" height="25" alt="vote up" title="This was helpful (click again to undo)" />
+    <span class="vote-count-post">
+    0
+    </span>
+    <img class="vote-down" src="/content/img/vote-arrow-down.png" width="40" height="25" alt="vote down" title="This was not helpful (click again to undo)" />
+    <br />  
+        
+
+</div>
+
+        </td>
+        <td>
+            <div class="post-text"><p>In addition to the standard approach of mixing alpha,numeric and symbols, I noticed when I registered with MyOpenId last week, the password checker tells you if your password is based on a dictionary word, even if you add numbers or replace alphas with similar numbers (using zero instead of 'o', '1' instead of 'i', etc.).</p>
+
+<p>I was quite impressed.</p>
+</div>            
+            <table style="width:100%">
+            <tr>
+            <td style="vertical-align:top;" align="left">
+                <div class="post-menu"><a href="/questions/75057/what-is-the-best-way-to-check-the-strength-of-a-password#75477" title="permalink to this answer">link</a><span class="link-separator">|</span><a id="vote-offensive-75477" title="flag this post as hate speech, spam, or abuse">offensive?</a> <span class="vote-offensive-count"></span></div>
+            </td>
+            
+            
+            <td align="right" class="post-signature">                   
+            
+<div class="user-info">
+    
+    <div class="user-action-time">answered <span title="9/16/2008 6:30:06 PM UTC" class="relativetime">Sep 16 at 18:30</span><br /></div>
+    <div class="user-gravatar32"><a href="/users/5806/steve-morgan"><img src="http://www.gravatar.com/avatar/9f6ba5de98ec886fcfa519ffa21d1eaa?s=32&d=identicon&r=PG" height=32 width=32 alt="gravatar image" /></a></div>
+    <div class="user-details"><a href="/users/5806/steve-morgan">Steve Morgan</a><br/><span class="reputation-score" title="reputation score">779</span><span title="1 silver badges"><span class="badge2">&#9679;</span><span class="badgecount">1</span></span><span title="8 bronze badges"><span class="badge3">&#9679;</span><span class="badgecount">8</span></span></div>
+    
+</div>    
+            </td>
+            </tr>
+            </table>
+        </td>
+        </tr>
+        
+        
+
+<tr>
+<td width="60" height="20"></td>
+<td>
+    <div class="post-menu">
+        <input id="can-post-comments-75477" type="hidden" value="false"/>
+        <a id="comments-link-75477" class="comments-link">add comment</a><noscript>&nbsp;JavaScript is needed to access comments.</noscript>
+        <div id="comments-75477" class="comments-container">
+            <div class="comments"></div>
+        </div>
+    </div>
+</td>
+</tr>
+        
+        </table>
+    </div>
+
+
+    <a name="75498"></a>
+    
+    <div id="answer-75498" class="answer ">    
+        <table style="width:710px">
+        <tr>
+        <td width="60px" style="vertical-align:top;">
+            
+<div class="vote">
+
+    <input type="hidden" value="75498" />
+    <img class="vote-up" src="/content/img/vote-arrow-up.png" width="40" height="25" alt="vote up" title="This was helpful (click again to undo)" />
+    <span class="vote-count-post">
+    0
+    </span>
+    <img class="vote-down" src="/content/img/vote-arrow-down.png" width="40" height="25" alt="vote down" title="This was not helpful (click again to undo)" />
+    <br />  
+        
+
+</div>
+
+        </td>
+        <td>
+            <div class="post-text"><p>The object-oriented approach would be a set of rules. Assign a weight to each rule and iterate through them. In psuedo-code:</p>
+
+<pre><code>abstract class Rule {
+
+    float weight;
+
+    float calculateScore( string password );
+
+}
+</code></pre>
+
+<p>Calculating the total score:</p>
+
+<pre><code>float getPasswordStrength( string password ) {     
+
+    float totalWeight = 0.0f;
+    float totalScore  = 0.0f;
+
+    foreach ( rule in rules ) {
+
+       totalWeight += weight;
+       totalScore  += rule.calculateScore( password ) * rule.weight;
+
+    }
+
+    return (totalScore / totalWeight) / rules.count;
+
+}
+</code></pre>
+
+<p>An example rule algorithm, based on number of character classes present:</p>
+
+<pre><code>float calculateScore( string password ) {
+
+    float score = 0.0f;
+
+    // NUMBER_CLASS is a constant char array { '0', '1', '2', ... }
+    if ( password.contains( NUMBER_CLASS ) )
+        score += 1.0f;
+
+    if ( password.contains( UPPERCASE_CLASS ) )
+        score += 1.0f;
+
+    if ( password.contains( LOWERCASE_CLASS ) )
+        score += 1.0f;
+
+    // Sub rule as private method
+    if ( containsPunctuation( password ) )
+        score += 1.0f;
+
+    return score / 4.0f;
+
+}
+</code></pre>
+</div>            
+            <table style="width:100%">
+            <tr>
+            <td style="vertical-align:top;" align="left">
+                <div class="post-menu"><a href="/questions/75057/what-is-the-best-way-to-check-the-strength-of-a-password#75498" title="permalink to this answer">link</a><span class="link-separator">|</span><a id="vote-offensive-75498" title="flag this post as hate speech, spam, or abuse">offensive?</a> <span class="vote-offensive-count"></span></div>
+            </td>
+            
+            
+            <td align="right" class="post-signature">                   
+            
+<div class="user-info">
+    
+    <div class="user-action-time">answered <span title="9/16/2008 6:32:22 PM UTC" class="relativetime">Sep 16 at 18:32</span><br /></div>
+    <div class="user-gravatar32"><a href="/users/9116/phearmyopenidcom"><img src="http://www.gravatar.com/avatar/0517adf13697fa73e00809dc0d812d6e?s=32&d=identicon&r=PG" height=32 width=32 alt="gravatar image" /></a></div>
+    <div class="user-details"><a href="/users/9116/phearmyopenidcom">phear.myopenid.com</a><br/><span class="reputation-score" title="reputation score">127</span><span title="3 bronze badges"><span class="badge3">&#9679;</span><span class="badgecount">3</span></span></div>
+    
+</div>    
+            </td>
+            </tr>
+            </table>
+        </td>
+        </tr>
+        
+        
+
+<tr>
+<td width="60" height="20"></td>
+<td>
+    <div class="post-menu">
+        <input id="can-post-comments-75498" type="hidden" value="false"/>
+        <a id="comments-link-75498" class="comments-link">add comment</a><noscript>&nbsp;JavaScript is needed to access comments.</noscript>
+        <div id="comments-75498" class="comments-container">
+            <div class="comments"></div>
+        </div>
+    </div>
+</td>
+</tr>
+        
+        </table>
+    </div>
+
+
+<div style="height:20px; clear:both;"></div>
+
+
+    <form id="post-form" action="/questions/75057/answer?sort=Votes" method="post">
+        <h2>Your Answer:</h2>
+        
+
+<script src="/Content/Js/jquery.package.editor.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+
+$().ready(function() {
+    initStyleCode();
+    initValidation();
+    initWMDToggle();
+    initResizer();
+    initBullet();
+});
+
+function initBullet() {
+    $.get("/questions/ticks", function(txt) {
+        $("#comment-div").append("<input type='hidden' name='bullet' value='" + txt + "' />");        
+    });
+}
+
+function initResizer() {
+    $("#post-text:not(.processed)").TextAreaResizer();
+}
+
+function initWMDToggle() {
+    var WMD_HIDE_COOKIE = 'wmdhide';
+    
+    $("#previewToggle").toggle(function() {
+        $(this).text("show preview");
+        $.cookie(WMD_HIDE_COOKIE, 'false', { path: '/', expires: 60 });
+        $("#post-preview").hide();
+     }, function() {
+        $(this).text("hide preview");        
+        $.cookie(WMD_HIDE_COOKIE, 'true', { path: '/', expires: 60 });
+        $("#post-preview").show();
+        styleCode();
+     });
+     
+     if($.cookie(WMD_HIDE_COOKIE) == 'false') {
+        $("#previewToggle").click();
+     }  
+}
+
+function initStyleCode() {
+    $("#post-text").typeWatch( { highlight:false, wait:5000, captureLength: 5, callback:styleCode } );
+}
+
+function initValidation() {
+    $("#post-text").rules("add", { required: true, minlength: 10 });
+    if ($("#title").length > 0) {
+        $("#title").rules("add", { required: true, minlength: 10 });
+    }
+}
+</script>
+
+<input id="fkey" name="fkey" type="hidden" value="" />
+
+<div id="comment-div">
+    <input id="comment" name="comment" type="text" />
+</div>
+
+
+
+<div class="form-item" style="margin-bottom:-50px;">
+
+    <div id="post-text-container" class="resizable-textarea">
+        <textarea id="post-text" name="post-text" cols="90" rows="10" tabindex="101" ></textarea>
+    </div>
+    
+    <div style="float:right; width:200px; text-align:right; margin-right:20px;">
+    <input id="communitymode" name="communitymode" type="checkbox"/>
+    <label for="communitymode" style="display:inline;"><span title="community owned posts do not generate any reputation for the owner, and have a lower reputation barrier for collaborative editing" style="color: #888; font-weight:normal; font-size:90%;">community wiki</span></label> 
+    </div>
+    
+    <br />    
+    <span class="form-error"></span>    
+    <a id="previewToggle" title="Show or hide the real time as-you-type Markdown preview" href="javascript:void(0);" tabindex="-1" >hide preview</a>
+</div>
+
+<div class="form-item" style="width: 680px; padding-top:0; margin-top:40px">
+    <div id="preview-container">
+        <div id="post-preview" class="wmd-preview form-item">
+        </div>
+    </div>
+</div>
+    
+<div class="form-item">
+    <table>
+    <tr>
+    <td style="vertical-align:middle;">
+        <label for="openid_identifier">OpenID Login: <span class="form-error"></span></label>
+        <input id="openid_identifier" name="openid_identifier" type="text" size="40" maxlength="200" value="" tabindex="104" />
+        <div class="form-item-info">
+            Get an <a href="https://www.myopenid.com/" target="_blank">OpenID</a>.
+        </div>
+    </td>
+    <td style="vertical-align:middle; padding: 0px 40px 0px 40px">
+        <div style="position: absolute; margin-top:40px; background-color:white; margin-left:-10px; padding:5px;">or</div>
+        <div style="width:1px; border-left:solid 1px #999; height:8em; margin:auto;"></div>
+    </td>
+    <td style="vertical-align:middle;"> 
+        <label for="display-name">Name: <span class="form-error"></span></label>
+        <input id="display-name" name="display-name" type="text" size="30" maxlength="30" value="" tabindex="105" />
+        
+        <label for="email">Email: <span class="form-error"></span><span class="form-detail">(never shown)</span></label>
+        <input id="email" name="email" type="text" size="40" maxlength="100" value="" tabindex="106" />
+        
+        <label for="home-page">Home Page: <span class="form-error"></span></label>
+        <input id="home-page" name="home-page" type="text" size="40" maxlength="200" value="" tabindex="107" />
+    </td>
+    </tr>
+    </table>    
+</div>
+
+<script type="text/javascript">
+    $().ready(function() {
+    
+        $.validator.addMethod("validUserName",
+          function(value, element) {
+          return this.optional(element) || /^[\w\-\sÀÈÌÒÙàèìòùÁÉÍÓÚÝáéíóúýÂÊÎÔÛâêîôûÃÑÕãñõÄËÏÖÜäëïöüçÇßØøÅåÆæÞþÐð]+$/.test(value); },
+          "Can only contain A-Z, 0-9, spaces, and hyphens.");        
+        $.validator.addMethod("alturl", 
+          function (value) { 
+          return /((^https?:\/\/)?.{2,}\.\w{2,4}\/?|^$)/.test(value); }, 
+          "Enter a valid URL.");
+        $.validator.addMethod("requiredUnlessOpenIdAvailable", 
+          function(value) {
+          return (value.length > 2) || ($("#openid_identifier").val().length > 0); },
+          "Required if you're not using an OpenID.");
+        
+        $("#openid_identifier").rules("add", { alturl: true });
+        $("#display-name").rules("add", { validUserName: true, requiredUnlessOpenIdAvailable: true, minlength: 2, maxlength: 25 });
+        $("#email").rules("add", { email: true, requiredUnlessOpenIdAvailable: true });                
+        $("#home-page").rules("add", { alturl: true });        
+    });
+</script>
+    
+
+        
+        <div class="form-submit" style="clear:both;"><input id="submit-button" type="submit" value="Post Your Answer" tabindex="110"/></div>
+    </form>    
+    
+
+
+<h2>
+
+Not the answer you're looking for? 
+
+Browse other questions tagged <a href="/questions/tagged/algorithm" class="post-tag" title="show questions tagged 'algorithm'" rel="tag">algorithm</a> <a href="/questions/tagged/security" class="post-tag" title="show questions tagged 'security'" rel="tag">security</a> <a href="/questions/tagged/passwords" class="post-tag" title="show questions tagged 'passwords'" rel="tag">passwords</a>  or <a href="/questions/ask">ask your own question</a>.
+</h2>
+
+</div>
+
+</div>
+
+<div id="sidebar" style="width:220px">
+    
+<div class="module newuser">
+    <h4>Welcome!</h4>
+    <div class="box">
+        <p>Stack Overflow is a <b>collaboratively edited question and answer site for programmers</b> &mdash; regardless of platform or language. Jump in and share your software engineering expertise! No registration or account required.</p>
+        <p style="text-align:right;"><a href="/about">about &raquo;</a><br /><a href="/faq">faq &raquo;</a></p>
+    </div>
+</div>
+
+    <div class="module">    
+    <p>You're viewing a single question tagged</p>
+    <div style="margin-bottom:10px;margin-top:5px;">
+        <a href="/questions/tagged/algorithm" class="post-tag" title="show questions tagged 'algorithm'" rel="tag">algorithm</a>&nbsp;<span class="item-multiplier">&times;&nbsp;252</span><br/><a href="/questions/tagged/security" class="post-tag" title="show questions tagged 'security'" rel="tag">security</a>&nbsp;<span class="item-multiplier">&times;&nbsp;250</span><br/><a href="/questions/tagged/passwords" class="post-tag" title="show questions tagged 'passwords'" rel="tag">passwords</a>&nbsp;<span class="item-multiplier">&times;&nbsp;34</span><br/>
+    </div> 
+    <p style="margin-bottom:0">asked</p>
+    <p><b style="font-size:120%;">18 days ago</b></p>
+       
+    <p style="margin-bottom:0">answered by</p>
+    <div class="summarycount" style="text-align:left;">13</div>
+    <p style="margin-bottom:0">users with</p>
+    <div class="summarycount" style="text-align:left;">10</div>
+    <p>total votes</p>
+    <p style="margin-bottom:0">it was answered in</p>
+    <p><b style="font-size:120%;">1 minute</b></p> 
+    <p style="margin-bottom:0">latest activity was</p>
+    <p><b style="font-size:120%;">15 days ago</b></p>
+
+    </div>
+
+
+    <div class="module">
+    <h4>Legend</h4>
+    <table>
+    <tr>
+    <td style="padding:3px 0px 3px 0px;"><div style="height:20px; width:20px; background-color: white; margin-right:10px; border: 1px solid #999;"></div></td>
+    <td style="vertical-align:middle;">answer</td>
+    </tr>
+    <tr>
+    <td style="padding:3px 0px 3px 0px;"><div class="owner-answer" style="height:20px; width:20px; margin-right:10px; border: 1px solid #999;"></div></td>
+    <td style="vertical-align:middle;">question owner</td>
+    </tr>
+    <tr>
+    <td style="padding:3px 0px 3px 0px;"><div class="accepted-answer" style="height:20px; width:20px; margin-right:10px; border: 1px solid #999;"></div></td>
+    <td style="vertical-align:middle;">accepted by owner</td>
+    </tr>
+    </table>
+    </div>
+
+<div class="module">
+<h4>Sponsored By</h4>
+<div class="box" style="margin-bottom:10px;">
+
+<p><b><a href="http://submain.com/landing/codeit.right/?utm_campaign=codeit.right&utm_medium=textad&utm_source=stackoverflow" rel="nofollow"> CodeIt.Right The First Time</a></b></p>
+<p>Deliver secure, quality code with guidelines and best practices at your fingertips!</p>
+<p>Static code analysis and refactoring to best practices in a single application. Automatically correct code errors and violations.</p>
+<p>Delivered by SubMain - your coding standards and best practices experts.</p>
+<p><a href="http://submain.com/landing/codeit.right/?utm_campaign=codeit.right&utm_medium=textad&utm_source=stackoverflow" rel="nofollow">Download now!</a></p>
+
+</div>
+</div>
+
+</div>
+
+<div id="mainbar-footer">    
+    
+<div id="feed-link">
+    <div id="feed-link-image"><a href="/feeds/question/75057" title="a syndicated data feed of this page suitable for your favorite feed reader"><img src="/Content/Img/feed-icon-small.png" width="14" height="14" alt="feed icon"/></a></div>
+    <div id="feed-link-text"><a href="/feeds/question/75057" title="a syndicated data feed of this page suitable for your favorite feed reader">question feed</a></div>
+</div>
+
+</div>
+
+
+        </div>
+                
+        
+    </div>
+            
+    <div id="footer">
+        <div class="container">
+            <div id="footer-menu"><a href="/about">about this site</a> | <a href="/faq">faq</a> | <a href="http://blog.stackoverflow.com/">blog</a> | <a href="http://itc.conversationsnetwork.org/series/stackoverflow.html">podcast</a> | <a href="/privacy">privacy policy</a> | <a href="mailto:team@stackoverflow.com">contact us</a> | <a href="http://stackoverflow.uservoice.com/">report a bug</a></div>
+            <div id="creativecommons"><a href="http://creativecommons.org/licenses/by-sa/2.5/"><img src="/content/img/cc-wiki.png" title="Creative Commons: Attribution - Share Alike" alt="cc-wiki" /></a></div>
+            <div id="betamessage">Using this website may cause <a href="http://www.youtube.com/watch?v=UM64dMoweio">irreversible damage to the kidneys and liver</a>.</div>
+            <div id="svnrevision">svn revision: 1776</div>            
+        </div>
+    </div>
+
+    <script type="text/javascript">
+        var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+        document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+    </script>
+    <script type="text/javascript">
+        var pageTracker = _gat._getTracker("UA-5620270-1");
+        pageTracker._trackPageview();
+    </script>
+
+    <noscript>
+        <style type="text/css">body { margin-top:3.5em; }</style>
+        <div id="noscript-warning" style="">
+            Stack Overflow works best with JavaScript enabled
+        </div>        
+
+    </noscript>
+
+</body>
+
+</html>

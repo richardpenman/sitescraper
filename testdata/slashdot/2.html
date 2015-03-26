@@ -1,0 +1,2773 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
+            "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+
+<meta name="description" content="Damn Small Linux Not So Small -- article related to Software and Linux.">
+<title>Slashdot | Damn Small Linux Not So Small</title>
+
+<link rel="stylesheet" type="text/css" media="screen, projection" href="//images.slashdot.org/core-tidied.css?T_2_5_0_183">
+<link rel="stylesheet" type="text/css" media="screen, projection" href="//images.slashdot.org/comments.css?T_2_5_0_183">
+<!--[if IE]><link rel="stylesheet" type="text/css" media="screen, projection" href="//images.slashdot.org/iestyles.css?T_2_5_0_183"><![endif]-->
+<link rel="stylesheet" type="text/css" media="screen, projection" href="//images.slashdot.org/slashdot_linux.css?T_2_5_0_183">
+<link rel="stylesheet" type="text/css" media="print" href="//images.slashdot.org/print.css?T_2_5_0_183">
+<link rel="stylesheet" type="text/css" media="handheld" href="//images.slashdot.org/handheld.css?T_2_5_0_183">
+
+
+
+<script src="//slashdot.org/all-minified.js?T_2_5_0_183" type="text/javascript"></script>
+
+
+<script type="text/javascript">
+var adpage = 'article';
+</script><link rel="top"       title="News for nerds, stuff that matters" href="//slashdot.org/" >
+<link rel="search"    title="Search Slashdot" href="//linux.slashdot.org/search.pl">
+<link rel="alternate" title="Slashdot RSS" href="http://rss.slashdot.org/Slashdot/slashdotLinux" type="application/rss+xml">
+<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+<!-- DoubleClick Random Number -->
+<script type="text/javascript">
+   dfp_ord=Math.random()*10000000000000000;
+   dfp_tile = 1;
+</script>
+<!-- End DoubleClick Random Number -->
+
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+var pageTracker = _gat._getTracker("UA-32013-5");
+pageTracker._setDomainName("slashdot.org");
+pageTracker._initData();
+</script>
+
+</head>
+<body>
+<div id="top_parent"></div>
+
+
+<div id="jump">
+	<a href="#main-articles">Stories</a>
+	<br>
+	<a href="#blocks">Slash Boxes</a>
+	<br>
+	<a href="#comments">Comments</a>
+</div>
+
+
+<div id="frame">
+<div></div>
+	<div id="topnav">
+		<div id="logo">
+			<h1>
+				<a href="//slashdot.org">Slashdot</a>
+			</h1>
+		</div>
+		<div class="search">
+
+			<form method="get" action="//linux.slashdot.org/search.pl">
+				<fieldset>
+					<legend>Search</legend>
+					<input type="text" name="query" value="">
+					<input type="submit" value="Search" class="button">
+				</fieldset>
+			</form>
+
+		</div>
+	</div> 
+	<div id="slogan">
+		<h2>
+			News for nerds, stuff that matters
+		</h2>
+	</div>
+	<div id="wrapper">
+		<div id="user-section">
+			<div class="content">
+				<ul>
+			
+					<li class="begin"><a id="loginlink" class="collapsed" href="//slashdot.org/login.pl">Log In</a></li>
+					<li><a href="//slashdot.org/login.pl?op=newuserform" title="">Create Account</a></li>
+                                        <li><a href="//slashdot.org/help" title="Get help with your account.">Help</a></li>
+					<li><a href="//slashdot.org/subscribe.pl" title="An option to see Slashdot without these ads">Subscribe</a></li>
+					<li><a href="//slashdot.org/firehose.shtml">Firehose</a></li>
+			
+				</ul>
+				<ul id="user-utils">
+                                
+					<li><a href="//slashdot.org/faq/accounts.shtml#ac050" title="Save preferences, your own Journal, define Friends &amp;  Foes for discussions, participate in Moderation and more ...">Why Log In?</a></li>
+				
+				
+					<li><a href="//slashdot.org/faq/subscriptions.shtml" title="An option to see Slashdot without these ads">Why Subscribe?</a></li>
+				
+				</ul>
+			
+				<div id="loginform">
+					<form action="//slashdot.org/login.pl" method="post">
+<fieldset>
+	<legend>Log In</legend>
+	<label>
+		Nickname
+	</label>
+	<input type="text" name="unickname" size="20" value="">
+	<label>
+		Password
+	</label>
+	<input type="hidden" name="returnto" value="//linux.slashdot.org/">
+	<input type="hidden" name="op" value="userlogin">
+	<input type="password" name="upasswd" size="20">
+	<label class="checkbox">
+		<input type="checkbox" name="login_temp" value="yes">
+		Public Terminal
+	</label>
+	<input type="submit" name="userlogin" value="Log in" class="button">
+	</fieldset>
+</form>
+<p>
+	[ <b>
+		<a href="//slashdot.org/login.pl?op=newuserform">
+			Create a new account
+		</a>
+	</b> ]
+</p>
+				</div>
+			
+			</div>
+		</div>
+		<div id="links">
+			
+			<div class="block" id="links-sections">
+	<div class="title" id="links-sections-title">
+		<h4>
+                        Sections
+		</h4>
+	</div>
+	<div class="content" id="links-sections-content">
+	<ul>
+	<li><a href="//slashdot.org/">Main</a></li>
+	
+	
+	<li><a href="//apple.slashdot.org/">Apple</a></li>
+	
+	
+	
+	<li><a href="//ask.slashdot.org/">AskSlashdot</a></li>
+	
+	
+	
+	<li><a href="//books.slashdot.org/">Books</a></li>
+	
+	
+	
+	<li><a href="//developers.slashdot.org/">Developers</a></li>
+	
+	
+	
+	<li><a href="//games.slashdot.org/">Games</a></li>
+	
+	
+	
+	<li><a href="//hardware.slashdot.org/">Hardware</a></li>
+	
+	
+	
+	<li><a href="//it.slashdot.org/">IT</a></li>
+	
+	
+	
+	<li><a href="//idle.slashdot.org/">Idle</a></li>
+	
+	
+	
+	<li><a href="//slashdot.org/">Index</a></li>
+	
+	
+	
+	<li><a href="//interviews.slashdot.org/">Interviews</a></li>
+	
+	
+	
+	<li><h2><a href="//linux.slashdot.org/">Linux</a></h2></li>
+	
+	
+	
+	<li><a href="//mobile.slashdot.org//" onclick="javascript:pageTracker._trackPageview('/toshiba/mobile_section')">Mobile</a></li>
+	
+	
+	
+	<li><a href="//politics.slashdot.org/">Politics</a></li>
+	
+	
+	
+	<li><a href="//science.slashdot.org/">Science</a></li>
+	
+	
+	
+	<li><a href="//tech.slashdot.org/">Technology</a></li>
+	
+	
+	
+	<li><a href="//yro.slashdot.org/">YRO</a></li>
+	
+
+</ul>
+	</div>
+	
+</div>
+
+<div class="block" id="links-help">
+	<div class="title" id="links-help-title">
+		<h4>Help</h4>
+	</div>
+	<div class="content" id="links-help-content">
+		<ul>
+			<li><a href="//slashdot.org/faq/">FAQ</a></li>
+			<li><a href="http://sourceforge.net/tracker/?func=add&amp;group_id=4421&amp;atid=104421">Bugs</a></li>
+		</ul>
+	</div>
+</div>
+<div class="block" id="links-stories">
+	<div class="title" id="links-stories-title">
+		<h4>Stories</h4>
+	</div>
+	<div class="content" id="links-stories-content">
+		<ul>
+			<li><a href="//slashdot.org/search.pl">Old Stories</a></li>
+			<li><a href="//polls.slashdot.org/">Old Polls</a></li>
+			<li><a href="//slashdot.org/topics.shtml">Topics</a></li>
+			<li><a href="//slashdot.org/hof.shtml">Hall of Fame</a></li>
+			<li><a href="//slashdot.org/bookmarks/">Bookmarks</a></li>
+			<li><a href="//slashdot.org/submit.pl">Submit Story</a></li>
+		</ul>
+	</div>
+</div>
+<div class="block" id="links-about">
+	<div class="title" id="links-about-title">
+		<h4>About</h4>
+	</div>
+	<div class="content" id="links-about-content">
+		<ul>
+			<li><a href="//slashdot.org/supporters.shtml">Supporters</a></li>
+			<li><a href="//slashdot.org/code.shtml">Code</a></li>
+		</ul>
+	</div>
+</div>
+<div class="block" id="links-services">
+	<div class="title" id="links-services-title">
+		<h4>Services</h4>
+	</div>
+	<div class="content" id="links-services-content">
+		<ul>
+			<li><a href="http://jobs.slashdot.org/">Jobs</a></li>
+			<li><a href="//slashdot.org/relocate.pl?id=a27a66150282ba2c8d94d57fabaf3e58">Special Offers</a></li>
+			<li><a href="http://ad.doubleclick.net/clk;172276006;13503038;t?http://www.linux.com/sponsor_solutions/">Sponsor Solutions</a></li>
+		</ul>
+	</div>
+</div> 
+		
+                        
+<div class="block static" id="links-jobs">
+	<div class="title" id="links-jobs-title" style="cursor:pointer;" onclick="window.location='http://jobs.slashdot.org/';">
+		<h4><a href=" http://jobs.slashdot.org/" style="text-decoration:none;border-style:none;">Jobs</a></h4>
+	</div>
+	<div class="content" id="links-jobs-content">
+		<script type="text/javascript" src="http://edge.jobthread.com/feeds/jobroll/?s_user_id=100540&subtype=slashdot "></script>
+	</div>
+</div>
+			
+			
+			
+		</div>
+		<div id="contents">
+
+<div class="lb"><div class="ad1"><!-- placeholder for ad position 1 --></div>
+</div>
+<div id="article" class="aduserbox"><div id="slashboxes">
+	<div class="ad2"><!-- placeholder for ad position 2 --></div>
+
+
+<div class="block">
+	<div class="title" id="userlogin-title">
+		<h4>
+			Slashdot Log In
+		</h4>
+	</div>
+	<div class="content" id="userlogin-content">
+		
+			<form action="//slashdot.org/login.pl" method="post">
+<fieldset>
+	<legend>Log In</legend>
+	<label>
+		Nickname
+	</label>
+	<input type="text" name="unickname" size="20" value="">
+	<label>
+		Password
+	</label>
+	<input type="hidden" name="returnto" value="//linux.slashdot.org/article.pl?sid=06/06/25/1628254">
+	<input type="hidden" name="op" value="userlogin">
+	<input type="password" name="upasswd" size="20">
+	<label class="checkbox">
+		<input type="checkbox" name="login_temp" value="yes">
+		Public Terminal
+	</label>
+	<input type="submit" name="userlogin" value="Log in" class="button">
+	</fieldset>
+</form>
+<p>
+	[ <b>
+		<a href="//slashdot.org/login.pl?op=newuserform">
+			Create a new account
+		</a>
+	</b> ]
+</p>
+		
+	</div>
+</div>
+
+<div class="block">
+	<div class="title" id="related-title">
+		<h4>
+			Related Links
+		</h4>
+	</div>
+	<div class="content" id="related-content">
+		<ul>
+<li><a href="//slashdot.org/relocate.pl?id=0179a2d0472417b24567177bf658cd3e">Compare prices on Software</a></li>
+<li><a href="//slashdot.org/relocate.pl?id=9ab77f91477f848c442c09cb18442f40">HP Sponsored Solutions</a></li>
+<li><a href="//slashdot.org/relocate.pl?id=2d7d819ca8e768eede29a9f5e6a0d183">Compare prices on Linux Software</a></li>
+<li><a href="http://distrocenter.linux.com/article.pl?sid=06/06/15/180221&amp;from=rss">Damn Small Linux</a></li>
+<li><a href="//slashdot.org/search.pl?tid=185">More Software stories</a></li>
+	
+		<li><a href="//slashdot.org/search.pl?tid=106">More Linux stories</a></li>
+</ul>
+	</div>
+</div>
+
+
+
+</div>
+<a name="main-articles"></a>
+<div id="articles">
+
+<div class="article" id="art1">
+
+
+
+<div class="generaltitle" >
+	<div class="title">
+		<h3 >
+			Damn Small Linux Not So Small
+			
+		</h3>
+	</div>
+</div>
+	<div class="details">
+
+	
+	<b>Posted by
+	
+	<a href="http://slashdot.org/~ScuttleMonkey/">ScuttleMonkey</a>
+
+	on Sun Jun 25, 2006 01:29 PM</b><br>
+	<strong>from the <b>web-popularity-contest</b> dept.</strong>
+	</div>
+	<div class="body">
+		<div class="topic">
+		
+		
+		
+			<a href="//linux.slashdot.org/search.pl?tid=185">
+				<img src="//images.slashdot.org/topics/topicsoftware.gif" width="65" height="65" alt="Software" title="Software" >
+			</a>
+		
+		
+			
+			
+			
+			
+				
+					<a href="//linux.slashdot.org/search.pl?tid=106" class="topic2">
+						<img src="//images.slashdot.org/topics/topiclinux.gif" width="60" height="70" alt="Linux" title="Linux" >
+					</a>
+				
+		
+		
+		</div>
+		<div class="intro">
+			An anonymous reader writes <i>"According to DistroWatch, <a href="http://distrocenter.linux.com/article.pl?sid=06/06/15/180221&amp;from=rss">Damn Small Linux</a> (DSL) is currently the most popular microLinux distribution.  Linux.com (Also owned by VA) takes a look at why this might be the case, and how you can best take advantage of it.  From the article: 'What began as a toy project to stuff the maximum software inside a 50MB ISO file has matured into a refined community project known for its speed and versatility. DSL includes the ultra-lightweight FluxBox window manager, two Web browsers, Slypheed email client and news reader, xpdf PDF viewer, XMMS with MPEG media file support for playing audio and video, BashBurn CD burner, XPaint image editing, VNCViewer and rdesktop to control Windows and Linux desktops remotely, and more. If they could do all this in 50 megs, imagine what they could do in more space. Last month the DSL developers released DSL-Not, a.k.a. DSL-N 0.1 RC1. It's 83.5MB of DSL coated with GTK sugar. Yummy!'"</i>
+		</div>
+
+
+
+
+
+		
+
+
+
+
+	<div class="ad6"><!-- ad position 6 -->
+<!-- DoubleClick Ad Tag -->
+
+<script type="text/javascript">
+		var ad6 = 'active';
+</script>
+
+<div id="fad6">
+	<script type="text/javascript">
+	//<![CDATA[
+
+		var hint   = 'linux,linux,software,technology';
+		var parent = 'http://linux.slashdot.org/linux/06/06/25/1628254.shtml';
+
+		document.write('<script type="text/javascript" src="http://ad.doubleclick.net/adj/ostg.slashdot/linux_p6_imu;pg=article;logged_in=0;tile='+dfp_tile+';tpc=linux;tpc=software;tpc=technology;ord='+dfp_ord+'?"><\/script>');
+		dfp_tile++;
+	//]]>
+	</script>
+</div>
+<!-- End DoubleClick Ad Tag --></div>
+
+
+	</div>
+</div><div id="tagbox-06:06:25:1628254" class="tags">
+
+<div id="tagbox-title-06:06:25:1628254" class="tagtitleclosed">&nbsp;<a href="//linux.slashdot.org/login.pl"><span class="tagsheader" id="toggletags-button-06:06:25:1628254">[+]</span></a>
+
+			<span class="tagname"><a href="/tags/linux">linux</a></span>, 		<span class="tagname"><a href="/tags/damnsmalllinux">damnsmalllinux</a></span>, 		<span class="tagname"><a href="/tags/dsl">dsl</a></span>
+<i>(<a href="/faq/tags.shtml">tagging beta</a>)</i>
+</div>
+
+
+
+</div>
+<div class="prev-next">
+
+</div>
+
+
+
+
+
+</div><a name="comments"></a>
+<div class="commentwrap">
+<div class="commentBox">
+			
+
+		
+			
+				This discussion has been archived.
+			
+			No new comments can be posted.
+		
+	
+</div>
+</div><a name="acomments"></a>
+<div class="commentwrap" id="commentwrap">
+
+
+
+<div class="commentBox">
+
+	<a href="//linux.slashdot.org/article.pl?sid=06/06/25/1628254">Damn Small Linux Not So Small</a>
+
+
+	|
+
+
+	<a href="//linux.slashdot.org/users.pl">Log In/Create an Account</a>
+
+
+		| <a href="//linux.slashdot.org/comments.pl?sid=189477&amp;threshold=1&amp;commentsort=0&amp;mode=thread&amp;pid=0">Top</a>
+
+
+
+	| <b>222</b> comments
+
+
+
+
+
+
+		| <a href="//linux.slashdot.org/search.pl?op=comments&amp;sid=189477">Search Discussion</a>
+	</div>
+
+	<div class="commentBoxForm" id="commentControlBox">
+
+		<form action="//linux.slashdot.org/comments.pl">
+		<fieldset>
+		<legend>Display Options</legend>
+		
+		
+		Threshold: <select id="threshold" name="threshold">
+	<option value="-1">-1: 222 comments</option>
+	<option value="0">0: 214 comments</option>
+	<option value="1" selected>1: 183 comments</option>
+	<option value="2">2: 141 comments</option>
+	<option value="3">3: 71 comments</option>
+	<option value="4">4: 49 comments</option>
+	<option value="5">5: 31 comments</option>
+</select><select id="mode" name="mode">
+	<option value="flat">Flat</option>
+	<option value="nested">Nested</option>
+	<option value="nocomment">No Comments</option>
+	<option value="thread" selected>Threaded</option>
+</select><select id="commentsort" name="commentsort">
+	<option value="0" selected>Oldest First</option>
+	<option value="1">Newest First</option>
+	<option value="3">Highest Scores First</option>
+	<option value="4">Oldest First (Ignore Threads)</option>
+	<option value="5">Newest First (Ignore Threads)</option>
+</select>
+		
+
+	
+		
+		<input type="submit" name="op" value="Change" class="button">
+		
+
+		<input type="hidden" name="sid" value="189477">
+		
+		
+		
+		
+
+		</fieldset>
+		</form>
+<div></div>
+	<div class="commentBox">
+		<small>
+		<b>The Fine Print:</b> The following comments are owned by whoever posted them.  We are not responsible for them in any way.
+		</small>
+<noscript><br><small>Without JavaScript enabled, you might want to use <a href="//linux.slashdot.org/comments.pl?sid=189477&amp;threshold=1&amp;commentsort=0&amp;mode=thread&amp;no_d2=1&amp;pid=0">the classic discussion system</a> instead.  If you <a href="//linux.slashdot.org/login.pl">login</a>, you can remember this preference.</small></noscript>
+	</div>
+	</div>
+	
+</div>
+<a name="topcomment"></a><ul id="commentlisting">
+			<li id="tree_15601356" class="comment">
+<div id="comment_status_15601356" class="commentstatus"></div>
+<div id="comment_15601356">
+	<div id="comment_top_15601356" class="commentTop newcomment">
+		<div class="title">
+			<h4><a name="15601356">Awesome</a>
+
+
+		 	<span id="comment_score_15601356" class="score"> (Score:5, Insightful)</span></h4>
+		</div>
+		<div class="details">
+			by <a href="//slashdot.org/~ThinkingInBinary">ThinkingInBinary (899485)</a> 
+			<span class="otherdetails" id="comment_otherdetails_15601356">		 &lt;<a href="mailto:thinkinginbinaryNO%40SPAMgmail.com">thinkinginbinaryNO@SPAMgmail.com</a>&gt;
+		on Sunday June 25 2006, @01:31PM (<a href="//linux.slashdot.org/comments.pl?sid=189477&amp;cid=15601356">#15601356</a>)
+		<small><br>(<a href="http://www.ttuttle.net/">http://www.ttuttle.net/</a>) </small>
+</span>
+		</div>
+	</div>
+	<div class="commentBody">	
+		<div id="comment_body_15601356"><p>Despite the increasing size, DSL is still an awesome tool.  It manages to pack almost as much coolness as Knoppix (less cohesive, 'cause it's not all KDE, but most of the functionality is still there in discrete applications) in a much smaller size that is more convenient to download when you need a quick but useful bootable Linux disc.</p>
+<p>Kudos to the developers, keep up the good work!</p></div>
+	</div>
+
+	<div class="commentSub" id="comment_sub_15601356">
+
+</div>
+</div>
+
+<ul id="commtree_15601356"><li id="tree_15601717" class="comment">
+<div id="comment_status_15601717" class="commentstatus"></div>
+<div id="comment_15601717">
+	<div id="comment_top_15601717" class="commentTop newcomment">
+		<div class="title">
+			<h4><a name="15601717">PuppyLinux with 2.6?</a>
+
+
+		 	<span id="comment_score_15601717" class="score"> (Score:4, Interesting)</span></h4>
+		</div>
+		<div class="details">
+			by <a href="//slashdot.org/~molarmass192">molarmass192 (608071)</a> 
+			<span class="otherdetails" id="comment_otherdetails_15601717">		
+		on Sunday June 25 2006, @03:18PM (<a href="//linux.slashdot.org/comments.pl?sid=189477&amp;cid=15601717">#15601717</a>)
+		<small><br>(<a href="http://en.wikipedia.org/wiki/Molar_mass">http://en.wikipedia.org/wiki/Molar_mass</a> | Last Journal: <a href="//slashdot.org/~molarmass192/journal/">Friday September 19 2003, @11:21AM</a>) </small>
+</span>
+		</div>
+	</div>
+	<div class="commentBody">	
+		<div id="comment_body_15601717">DSL is nice, but it's got a 2.4 kernel, PuppyLinux (one bone) fits in 25M and gives you a 2.6 kernel with all the accompanying hardware support goodness. To me that makes DSL very 2003, it's playing catch up in my books.</div>
+	</div>
+
+	<div class="commentSub" id="comment_sub_15601717">
+[ <a href="//linux.slashdot.org/comments.pl?sid=189477&amp;threshold=1&amp;commentsort=0&amp;mode=thread&amp;cid=15601356">Parent</a> ]
+</div>
+</div>
+
+<ul id="commtree_15601717"><li id="tree_15601726" class="comment">
+<div id="comment_status_15601726" class="commentstatus"></div>
+<div id="comment_15601726">
+	<div id="comment_top_15601726" class="commentTop newcomment">
+		<div class="title">
+			<h4><a name="15601726">Re:PuppyLinux with 2.6?</a>
+
+
+		 	<span id="comment_score_15601726" class="score"> (Score:5, Informative)</span></h4>
+		</div>
+		<div class="details">
+			by <a href="//slashdot.org/~Mistshadow2k4">Mistshadow2k4 (748958)</a> 
+			<span class="otherdetails" id="comment_otherdetails_15601726">		
+		on Sunday June 25 2006, @03:23PM (<a href="//linux.slashdot.org/comments.pl?sid=189477&amp;cid=15601726">#15601726</a>)
+		<small><br>(<a href="http://mistshadow2k4.deviantart.com/">http://mistshadow2k4.deviantart.com/</a> | Last Journal: <a href="//slashdot.org/~Mistshadow2k4/journal/">Wednesday May 31 2006, @02:37PM</a>) </small>
+</span>
+		</div>
+	</div>
+	<div class="commentBody">	
+		<div id="comment_body_15601726">It has a 2.4 kernel because it still supports older hardware. 2.6 does not. It doesn't even support some not-so-old hardware that 2.4 did, as I've elarned from personal experience.</div>
+	</div>
+
+	<div class="commentSub" id="comment_sub_15601726">
+[ <a href="//linux.slashdot.org/comments.pl?sid=189477&amp;threshold=1&amp;commentsort=0&amp;mode=thread&amp;cid=15601717">Parent</a> ]
+</div>
+</div>
+
+<ul id="commtree_15601726"><li><a href="//linux.slashdot.org/comments.pl?sid=189477&amp;threshold=1&amp;commentsort=0&amp;mode=thread&amp;pid=15601726#15602575">Re:PuppyLinux with 2.6?</a> by Arker (Score:2) Sunday June 25 2006, @06:52PM</li><li id="tree_15603176" class="comment">
+<div id="comment_status_15603176" class="commentstatus"></div>
+<div id="comment_15603176">
+	<div id="comment_top_15603176" class="commentTop newcomment">
+		<div class="title">
+			<h4><a name="15603176">Re:PuppyLinux with 2.6?</a>
+
+
+		 	<span id="comment_score_15603176" class="score"> (Score:5, Informative)</span></h4>
+		</div>
+		<div class="details">
+			by <a href="//slashdot.org/~rapidweather">rapidweather (567364)</a> 
+			<span class="otherdetails" id="comment_otherdetails_15603176">		
+		on Sunday June 25 2006, @09:47PM (<a href="//linux.slashdot.org/comments.pl?sid=189477&amp;cid=15603176">#15603176</a>)
+		<small><br>(<a href="http://www.rapidweather.com/">http://www.rapidweather.com/</a>) </small>
+</span>
+		</div>
+	</div>
+	<div class="commentBody">	
+		<div id="comment_body_15603176">I got my start remastering DSL, often winding up with 75 MB or so once I put Firefox, etc. in there.<br>I then switched to Knoppix 3.4, using the 2.4 kernel to support older hardware as mentioned.<br>Here is my <a href="http://www.geocities.com/rapidweather/getting_started.html" title="geocities.com">Getting Started Guide</a> [geocities.com], also have a technical blog <a href="http://rapidweatherlinux.blogspot.com/" title="blogspot.com">here.</a> [blogspot.com]<br>There are some screenshots available there.<br>One post that I need to draw your attention to is the one about <a href="http://rapidweatherlinux.blogspot.com/2005_11_01_rapidweatherlinux_archive.html" title="blogspot.com">"testcd"</a> [blogspot.com] for Knoppix remasters. I did run into problems with some versions of DSL using isolinux, in that they would not boot on many of my older computers, due perhaps to the "testcd" problem. It is extremely important that any knoppix remaster pass that test, or there will be complaints concerning no-booting on boxes that used to run the distro flawlessly in an earlier syslinux version.<br>For that reason, DSL often offers syslinux versions alongside isolinux versions.<br>I don't feel that I have to, since I pass "testcd" 100%, and mine boots on all my older boxes, in addition to the newer P4 ones.<br>One clue that I did take from DSL is to include lots of custom-made applications, found nowhere else. That makes a remaster different, and not just a re-arrangement of stock applications.<br>I do have a bright yellow boot: command line against a black background, making it easy to enter long cheatcodes when trying out a new build. So many knoppix builds have a pale gray boot: command line with black background, very hard to see what you are doing!<br><br>Also, see the main screenshots page link in my signature, below.</div>
+	</div>
+
+	<div class="commentSub" id="comment_sub_15603176">
+[ <a href="//linux.slashdot.org/comments.pl?sid=189477&amp;threshold=1&amp;commentsort=0&amp;mode=thread&amp;cid=15601726">Parent</a> ]
+</div>
+</div>
+
+</li><li><a href="//linux.slashdot.org/comments.pl?sid=189477&amp;threshold=1&amp;commentsort=0&amp;mode=thread&amp;pid=15601726#15606825">Re:PuppyLinux with 2.6?</a> by bill_mcgonigle (Score:2) Monday June 26 2006, @12:31PM</li><li><b><a href="//linux.slashdot.org/comments.pl?sid=189477&amp;threshold=-1&amp;commentsort=0&amp;mode=thread&amp;pid=15601726">1 reply</a> beneath your current threshold.</b></li></ul></li><li id="tree_15601749" class="comment">
+<div id="comment_status_15601749" class="commentstatus"></div>
+<div id="comment_15601749">
+	<div id="comment_top_15601749" class="commentTop newcomment">
+		<div class="title">
+			<h4><a name="15601749">Re:PuppyLinux with 2.6?</a>
+
+
+		 	<span id="comment_score_15601749" class="score"> (Score:4, Informative)</span></h4>
+		</div>
+		<div class="details">
+			by <a href="//slashdot.org/~Red+Alastor">Red Alastor (742410)</a> 
+			<span class="otherdetails" id="comment_otherdetails_15601749">		
+		on Sunday June 25 2006, @03:30PM (<a href="//linux.slashdot.org/comments.pl?sid=189477&amp;cid=15601749">#15601749</a>)
+		<small> </small>
+</span>
+		</div>
+	</div>
+	<div class="commentBody">	
+		<div id="comment_body_15601749">What I like about Puppy is that it can save back to its own CD/DVD.  If you burn it on a DVD, you almost have a hard drive.  And like DSL, you can install more stuff on it automatically.
+<p>
+Oh and it can be installed to hard disk to give a new life to old computer.
+</p><p> <a href="http://www.puppyos.com/" title="puppyos.com">http://www.puppyos.com/</a> [puppyos.com]</p></div>
+	</div>
+
+	<div class="commentSub" id="comment_sub_15601749">
+[ <a href="//linux.slashdot.org/comments.pl?sid=189477&amp;threshold=1&amp;commentsort=0&amp;mode=thread&amp;cid=15601717">Parent</a> ]
+</div>
+</div>
+
+<ul id="commtree_15601749"><li><a href="//linux.slashdot.org/comments.pl?sid=189477&amp;threshold=1&amp;commentsort=0&amp;mode=thread&amp;pid=15601749#15601816">Re:PuppyLinux with 2.6?</a> by sketchman (Score:1) Sunday June 25 2006, @03:48PM<ul id="commtree_15601816"><li id="tree_15602736" class="comment">
+<div id="comment_status_15602736" class="commentstatus"></div>
+<div id="comment_15602736">
+	<div id="comment_top_15602736" class="commentTop newcomment">
+		<div class="title">
+			<h4><a name="15602736">Re:PuppyLinux with 2.6?</a>
+
+
+		 	<span id="comment_score_15602736" class="score"> (Score:4, Insightful)</span></h4>
+		</div>
+		<div class="details">
+			by <a href="//slashdot.org/~MobileTatsu-NJG">MobileTatsu-NJG (946591)</a> 
+			<span class="otherdetails" id="comment_otherdetails_15602736">		
+		on Sunday June 25 2006, @07:33PM (<a href="//linux.slashdot.org/comments.pl?sid=189477&amp;cid=15602736">#15602736</a>)
+		<small> </small>
+</span>
+		</div>
+	</div>
+	<div class="commentBody">	
+		<div id="comment_body_15602736"><i>"I have it running on the hd of a PII 350mhz machine with a joke of a video card and only 64mb ram, and it will fly. Takes no longer than a minute to boot. Win98SE, on the same PC, took 5-10 minutes just to get to the login screen."</i><br><br>Really?  Years ago, I had a P2 350 with 64 meg of RAM and Windows 98. (not Special Edition.  If it has a 'boot slower' feature, I'd be interested to hear about it...) That didn't take 10 minutes to boot.  Maybe 2, but nowhere near 10.  If it did, I would have switched to NT far earlier than I did.</div>
+	</div>
+
+	<div class="commentSub" id="comment_sub_15602736">
+[ <a href="//linux.slashdot.org/comments.pl?sid=189477&amp;threshold=1&amp;commentsort=0&amp;mode=thread&amp;cid=15601816">Parent</a> ]
+</div>
+</div>
+
+<ul id="commtree_15602736"><li id="tree_15603005" class="comment">
+<div id="comment_status_15603005" class="commentstatus"></div>
+<div id="comment_15603005">
+	<div id="comment_top_15603005" class="commentTop newcomment">
+		<div class="title">
+			<h4><a name="15603005">Re:PuppyLinux with 2.6?</a>
+
+
+		 	<span id="comment_score_15603005" class="score"> (Score:4, Informative)</span></h4>
+		</div>
+		<div class="details">
+			by <a href="//slashdot.org/~im_thatoneguy">im_thatoneguy (819432)</a> 
+			<span class="otherdetails" id="comment_otherdetails_15603005">		
+		on Sunday June 25 2006, @08:54PM (<a href="//linux.slashdot.org/comments.pl?sid=189477&amp;cid=15603005">#15603005</a>)
+		<small> </small>
+</span>
+		</div>
+	</div>
+	<div class="commentBody">	
+		<div id="comment_body_15603005">My 98 used to go from power button to booted in 38 seconds.  That beats my current average of 52 for Ubuntu.</div>
+	</div>
+
+	<div class="commentSub" id="comment_sub_15603005">
+[ <a href="//linux.slashdot.org/comments.pl?sid=189477&amp;threshold=1&amp;commentsort=0&amp;mode=thread&amp;cid=15602736">Parent</a> ]
+</div>
+</div>
+
+<ul id="commtree_15603005"><li id="tree_15604186" class="comment">
+<div id="comment_status_15604186" class="commentstatus"></div>
+<div id="comment_15604186">
+	<div id="comment_top_15604186" class="commentTop newcomment">
+		<div class="title">
+			<h4><a name="15604186">Re:PuppyLinux with 2.6?</a>
+
+
+		 	<span id="comment_score_15604186" class="score"> (Score:4, Funny)</span></h4>
+		</div>
+		<div class="details">
+			by <a href="//slashdot.org/~kobolt_115">kobolt_115 (902047)</a> 
+			<span class="otherdetails" id="comment_otherdetails_15604186">		
+		on Monday June 26 2006, @04:33AM (<a href="//linux.slashdot.org/comments.pl?sid=189477&amp;cid=15604186">#15604186</a>)
+		<small> </small>
+</span>
+		</div>
+	</div>
+	<div class="commentBody">	
+		<div id="comment_body_15604186">My Commodore 64 goes from power button to booted in 2 seconds, beat that!</div>
+	</div>
+
+	<div class="commentSub" id="comment_sub_15604186">
+[ <a href="//linux.slashdot.org/comments.pl?sid=189477&amp;threshold=1&amp;commentsort=0&amp;mode=thread&amp;cid=15603005">Parent</a> ]
+</div>
+</div>
+
+</li><li><a href="//linux.slashdot.org/comments.pl?sid=189477&amp;threshold=1&amp;commentsort=0&amp;mode=thread&amp;pid=15603005#15605107">Re:PuppyLinux with 2.6?</a> by mikael (Score:2) Monday June 26 2006, @08:43AM</li><li><a href="//linux.slashdot.org/comments.pl?sid=189477&amp;threshold=1&amp;commentsort=0&amp;mode=thread&amp;pid=15603005#15605700">Re:PuppyLinux with 2.6?</a> by belal1 (Score:1) Monday June 26 2006, @10:14AM</li><li><a href="//linux.slashdot.org/comments.pl?sid=189477&amp;threshold=1&amp;commentsort=0&amp;mode=thread&amp;pid=15603005#15606545">Re:PuppyLinux with 2.6?</a> by drinkypoo (Score:2) Monday June 26 2006, @11:59AM</li><li><a href="//linux.slashdot.org/comments.pl?sid=189477&amp;threshold=1&amp;commentsort=0&amp;mode=thread&amp;pid=15603005#15608733">Re:PuppyLinux with 2.6?</a> by jonadab (Score:1) Monday June 26 2006, @04:23PM</li><li><a href="//linux.slashdot.org/comments.pl?sid=189477&amp;threshold=1&amp;commentsort=0&amp;mode=thread&amp;pid=15604186#15604756">Re:PuppyLinux with 2.6?</a> by Random Destruction (Score:2) Monday June 26 2006, @07:47AM</li><li><a href="//linux.slashdot.org/comments.pl?sid=189477&amp;threshold=1&amp;commentsort=0&amp;mode=thread&amp;pid=15604186#15605640">Re:PuppyLinux with 2.6?</a> by gosand (Score:2) Monday June 26 2006, @10:05AM</li><li><b><a href="//linux.slashdot.org/comments.pl?sid=189477&amp;threshold=-1&amp;commentsort=0&amp;mode=thread&amp;pid=15603005">2 replies</a> beneath your current threshold.</b></li></ul></li><li><a href="//linux.slashdot.org/comments.pl?sid=189477&amp;threshold=1&amp;commentsort=0&amp;mode=thread&amp;pid=15602736#15604935">Re:PuppyLinux with 2.6?</a> by sketchman (Score:1) Monday June 26 2006, @08:17AM<ul id="commtree_15604935"><li><a href="//linux.slashdot.org/comments.pl?sid=189477&amp;threshold=1&amp;commentsort=0&amp;mode=thread&amp;pid=15604935#15605739">Re:PuppyLinux with 2.6?</a> by MobileTatsu-NJG (Score:2) Monday June 26 2006, @10:21AM</li><li><a href="//linux.slashdot.org/comments.pl?sid=189477&amp;threshold=1&amp;commentsort=0&amp;mode=thread&amp;pid=15605739#15617477">Re:PuppyLinux with 2.6?</a> by sketchman (Score:1) Tuesday June 27 2006, @07:58PM</li><li><a href="//linux.slashdot.org/comments.pl?sid=189477&amp;threshold=1&amp;commentsort=0&amp;mode=thread&amp;pid=15617477#15618191">Re:PuppyLinux with 2.6?</a> by MobileTatsu-NJG (Score:2) Tuesday June 27 2006, @10:37PM</li></ul></li><li><a href="//linux.slashdot.org/comments.pl?sid=189477&amp;threshold=1&amp;commentsort=0&amp;mode=thread&amp;pid=15602736#15608706">Re:PuppyLinux with 2.6?</a> by jonadab (Score:1) Monday June 26 2006, @04:19PM</li></ul></li><li><a href="//linux.slashdot.org/comments.pl?sid=189477&amp;threshold=1&amp;commentsort=0&amp;mode=thread&amp;pid=15602619#15603505">Re:PuppyLinux with 2.6?</a> by G Morgan (Score:1) Sunday June 25 2006, @11:41PM</li><li><b><a href="//linux.slashdot.org/comments.pl?sid=189477&amp;threshold=-1&amp;commentsort=0&amp;mode=thread&amp;pid=15601816">1 reply</a> beneath your current threshold.</b></li></ul></li></ul></li><li><a href="//linux.slashdot.org/comments.pl?sid=189477&amp;threshold=1&amp;commentsort=0&amp;mode=thread&amp;pid=15601717#15602765">Re:PuppyLinux with 2.6?</a> by binarybum (Score:1) Sunday June 25 2006, @07:39PM</li><li><a href="//linux.slashdot.org/comments.pl?sid=189477&amp;threshold=1&amp;commentsort=0&amp;mode=thread&amp;pid=15601717#15603056">Re:PuppyLinux with 2.6?</a> by Ferretski (Score:2) Sunday June 25 2006, @09:10PM</li><li><a href="//linux.slashdot.org/comments.pl?sid=189477&amp;threshold=1&amp;commentsort=0&amp;mode=thread&amp;pid=15601717#15603137">Re:PuppyLinux with 2.6?</a> by Captain BooBoo (Score:2) Sunday June 25 2006, @09:35PM<ul id="commtree_15603137"><li><a href="//linux.slashdot.org/comments.pl?sid=189477&amp;threshold=1&amp;commentsort=0&amp;mode=thread&amp;pid=15603137#15603662">Re:PuppyLinux with 2.6?</a> by wed128 (Score:2) Monday June 26 2006, @12:45AM</li></ul></li><li id="tree_15604822" class="comment">
+<div id="comment_status_15604822" class="commentstatus"></div>
+<div id="comment_15604822">
+	<div id="comment_top_15604822" class="commentTop newcomment">
+		<div class="title">
+			<h4><a name="15604822">Re:PuppyLinux with 2.6?</a>
+
+
+		 	<span id="comment_score_15604822" class="score"> (Score:4, Informative)</span></h4>
+		</div>
+		<div class="details">
+			by <a href="//slashdot.org/~MrCopilot">MrCopilot (871878)</a> 
+			<span class="otherdetails" id="comment_otherdetails_15604822">		
+		on Monday June 26 2006, @07:56AM (<a href="//linux.slashdot.org/comments.pl?sid=189477&amp;cid=15604822">#15604822</a>)
+		<small><br>(<a href="http://www.mrcopilot.com/">http://www.mrcopilot.com/</a> | Last Journal: <a href="//slashdot.org/~MrCopilot/journal/">Tuesday August 02 2005, @10:10AM</a>) </small>
+</span>
+		</div>
+	</div>
+	<div class="commentBody">	
+		<div id="comment_body_15604822">From dsl N <a href="http://www.damnsmalllinux.org/dsl-n/f/viewtopic/3.html" title="damnsmalllinux.org">http://www.damnsmalllinux.org/dsl-n/f/viewtopic/3<nobr>.<wbr></nobr> html</a> [damnsmalllinux.org]
+<p> <b>
+1. Kernel 2.6.11 and modules</b> <br>
+2. Mozilla Suite 1.7.12, browser,mail,irc,etc.<br>
+3. Mplayer 3.3.5 audio and video<br>
+4. Leafpad 0.7.9 editor/notepad<br>
+5. Abiword 2.2.7 wordprocessor<br>
+6. Gnumeric 1.4.3 spreadsheet<br>
+7. gTFP 2.0.18 ftp client<br>
+8. gaim 0.77 IM client<br>
+9. Xpdf 3.0.0 pdf viewer<br>
+10.Emelfm 0.9.2 file manager<br>
+11.Xpaint 2.7.6 paint program<br>
+12.Cups 1.1.14 printing<br>
+13.unionfs supported as an optional boot parameter<br>
+14.MyDSL system of extensions<br>
+15.Frugal Installs<br>
+16.USB Pendrive Install<br>
+
+<i>To me that makes DSL very 2003, it's playing catch up in my books.</i>
+</p><p>
+Update Your Books.</p></div>
+	</div>
+
+	<div class="commentSub" id="comment_sub_15604822">
+[ <a href="//linux.slashdot.org/comments.pl?sid=189477&amp;threshold=1&amp;commentsort=0&amp;mode=thread&amp;cid=15601717">Parent</a> ]
+</div>
+</div>
+
+</li><li><a href="//linux.slashdot.org/comments.pl?sid=189477&amp;threshold=1&amp;commentsort=0&amp;mode=thread&amp;pid=15601717#15606561">Re:PuppyLinux with 2.6?</a> by cgreuter (Score:2) Monday June 26 2006, @12:00PM</li></ul></li><li><a href="//linux.slashdot.org/comments.pl?sid=189477&amp;threshold=1&amp;commentsort=0&amp;mode=thread&amp;pid=15601356#15604513">Re:Awesome</a> by jrmcferren (Score:1) Monday June 26 2006, @06:54AM</li><li><a href="//linux.slashdot.org/comments.pl?sid=189477&amp;threshold=1&amp;commentsort=0&amp;mode=thread&amp;pid=15601666#15601696">Re:Awesome</a> by LocalH (Score:1) Sunday June 25 2006, @03:10PM</li><li><b><a href="//linux.slashdot.org/comments.pl?sid=189477&amp;threshold=-1&amp;commentsort=0&amp;mode=thread&amp;pid=15601356">1 reply</a> beneath your current threshold.</b></li></ul></li><li id="tree_15601357" class="comment">
+<div id="comment_status_15601357" class="commentstatus"></div>
+<div id="comment_15601357">
+	<div id="comment_top_15601357" class="commentTop newcomment">
+		<div class="title">
+			<h4><a name="15601357">Begun,</a>
+
+
+		 	<span id="comment_score_15601357" class="score"> (Score:3, Funny)</span></h4>
+		</div>
+		<div class="details">
+			by <a href="//slashdot.org/~giorgiofr">giorgiofr (887762)</a> 
+			<span class="otherdetails" id="comment_otherdetails_15601357">		
+		on Sunday June 25 2006, @01:31PM (<a href="//linux.slashdot.org/comments.pl?sid=189477&amp;cid=15601357">#15601357</a>)
+		<small> </small>
+</span>
+		</div>
+	</div>
+	<div class="commentBody">	
+		<div id="comment_body_15601357">the bloat war has.<br>
+(bloat war/bloatware? get it? get it?! ah I am teh funny<nobr> <wbr></nobr>:D)</div>
+	</div>
+
+	<div class="commentSub" id="comment_sub_15601357">
+
+</div>
+</div>
+
+<ul id="commtree_15601357"><li id="tree_15601366" class="comment">
+<div id="comment_status_15601366" class="commentstatus"></div>
+<div id="comment_15601366">
+	<div id="comment_top_15601366" class="commentTop newcomment">
+		<div class="title">
+			<h4><a name="15601366">Re:Begun,</a>
+
+
+		 	<span id="comment_score_15601366" class="score"> (Score:5, Funny)</span></h4>
+		</div>
+		<div class="details">
+			by <a href="//slashdot.org/~scenestar">scenestar (828656)</a> 
+			<span class="otherdetails" id="comment_otherdetails_15601366">		
+		on Sunday June 25 2006, @01:34PM (<a href="//linux.slashdot.org/comments.pl?sid=189477&amp;cid=15601366">#15601366</a>)
+		<small><br>(<a href="http://easyvpshost.com/" rel="nofollow">http://easyvpshost.com/</a> | Last Journal: <a href="//slashdot.org/~scenestar/journal/">Friday August 26 2005, @06:58PM</a>) </small>
+</span>
+		</div>
+	</div>
+	<div class="commentBody">	
+		<div id="comment_body_15601366">You are going to die alone.</div>
+	</div>
+
+	<div class="commentSub" id="comment_sub_15601366">
+[ <a href="//linux.slashdot.org/comments.pl?sid=189477&amp;threshold=1&amp;commentsort=0&amp;mode=thread&amp;cid=15601357">Parent</a> ]
+</div>
+</div>
+
+<ul id="commtree_15601366"><li><b><a href="//linux.slashdot.org/comments.pl?sid=189477&amp;threshold=-1&amp;commentsort=0&amp;mode=thread&amp;pid=15601366">1 reply</a> beneath your current threshold.</b></li></ul></li><li><a href="//linux.slashdot.org/comments.pl?sid=189477&amp;threshold=1&amp;commentsort=0&amp;mode=thread&amp;pid=15601357#15602521">Re:Begun,</a> by WilliamSChips (Score:1) Sunday June 25 2006, @06:37PM</li></ul></li><li id="tree_15601371" class="comment">
+<div id="comment_status_15601371" class="commentstatus"></div>
+<div id="comment_15601371">
+	<div id="comment_top_15601371" class="commentTop newcomment">
+		<div class="title">
+			<h4><a name="15601371">No Firefox ?</a>
+
+
+		 	<span id="comment_score_15601371" class="score"> (Score:2, Funny)</span></h4>
+		</div>
+		<div class="details">
+			by Anonymous Coward 
+			<span class="otherdetails" id="comment_otherdetails_15601371">		
+		on Sunday June 25 2006, @01:35PM (<a href="//linux.slashdot.org/comments.pl?sid=189477&amp;cid=15601371">#15601371</a>)
+		<small> </small>
+</span>
+		</div>
+	</div>
+	<div class="commentBody">	
+		<div id="comment_body_15601371"><br>just give me Firefox, a net connection and leave the rest to extensions<br><br></div>
+	</div>
+
+	<div class="commentSub" id="comment_sub_15601371">
+
+</div>
+</div>
+
+<ul id="commtree_15601371"><li id="tree_15601467" class="comment">
+<div id="comment_status_15601467" class="commentstatus"></div>
+<div id="comment_15601467">
+	<div id="comment_top_15601467" class="commentTop newcomment">
+		<div class="title">
+			<h4><a name="15601467">Re:No Firefox ?</a>
+
+
+		 	<span id="comment_score_15601467" class="score"> (Score:4, Informative)</span></h4>
+		</div>
+		<div class="details">
+			by <a href="//slashdot.org/~DrSkwid">DrSkwid (118965)</a> 
+			<span class="otherdetails" id="comment_otherdetails_15601467">		
+		on Sunday June 25 2006, @02:00PM (<a href="//linux.slashdot.org/comments.pl?sid=189477&amp;cid=15601467">#15601467</a>)
+		<small><br>(<a href="http://www.milksucks.com/">http://www.milksucks.com/</a> | Last Journal: <a href="//slashdot.org/~DrSkwid/journal/">Monday September 15 2003, @12:30PM</a>) </small>
+</span>
+		</div>
+	</div>
+	<div class="commentBody">	
+		<div id="comment_body_15601467">The DSL I have has Firefox.<br><br>And though it I had the introduction to the excellent <a href="http://siag.nu/siag/" title="siag.nu">Scheme In A Grid</a> [siag.nu]<br><br>DSL recently had a "Donate a Dollar" fundraising drive. I don't know how much money they made but I gave them a $. Who says you can't make monet from free software !</div>
+	</div>
+
+	<div class="commentSub" id="comment_sub_15601467">
+[ <a href="//linux.slashdot.org/comments.pl?sid=189477&amp;threshold=1&amp;commentsort=0&amp;mode=thread&amp;cid=15601371">Parent</a> ]
+</div>
+</div>
+
+<ul id="commtree_15601467"><li><a href="//linux.slashdot.org/comments.pl?sid=189477&amp;threshold=1&amp;commentsort=0&amp;mode=thread&amp;pid=15601467#15601571">Re:No Firefox ?</a> by zbyte64 (Score:1) Sunday June 25 2006, @02:26PM</li><li><a href="//linux.slashdot.org/comments.pl?sid=189477&amp;threshold=1&amp;commentsort=0&amp;mode=thread&amp;pid=15601467#15601624">Re:No Firefox ?</a> by Cal Paterson (Score:2) Sunday June 25 2006, @02:48PM</li><li id="tree_15602750" class="comment">
+<div id="comment_status_15602750" class="commentstatus"></div>
+<div id="comment_15602750">
+	<div id="comment_top_15602750" class="commentTop newcomment">
+		<div class="title">
+			<h4><a name="15602750">Re:No Firefox ?</a>
+
+
+		 	<span id="comment_score_15602750" class="score"> (Score:5, Funny)</span></h4>
+		</div>
+		<div class="details">
+			by <a href="//slashdot.org/~MobileTatsu-NJG">MobileTatsu-NJG (946591)</a> 
+			<span class="otherdetails" id="comment_otherdetails_15602750">		
+		on Sunday June 25 2006, @07:35PM (<a href="//linux.slashdot.org/comments.pl?sid=189477&amp;cid=15602750">#15602750</a>)
+		<small> </small>
+</span>
+		</div>
+	</div>
+	<div class="commentBody">	
+		<div id="comment_body_15602750"><i>"Who says you can't make monet from free software !"</i><br><br>Well.. I suppose the GIMP's good enough these days to create a monet, but you'd stil be far better off springing for Photoshop.</div>
+	</div>
+
+	<div class="commentSub" id="comment_sub_15602750">
+[ <a href="//linux.slashdot.org/comments.pl?sid=189477&amp;threshold=1&amp;commentsort=0&amp;mode=thread&amp;cid=15601467">Parent</a> ]
+</div>
+</div>
+
+<ul id="commtree_15602750"><li><b><a href="//linux.slashdot.org/comments.pl?sid=189477&amp;threshold=-1&amp;commentsort=0&amp;mode=thread&amp;pid=15602750">1 reply</a> beneath your current threshold.</b></li></ul></li></ul></li><li><a href="//linux.slashdot.org/comments.pl?sid=189477&amp;threshold=1&amp;commentsort=0&amp;mode=thread&amp;pid=15601371#15601474">Re:No Firefox ?</a> by paulthomas (Score:1) Sunday June 25 2006, @02:01PM<ul id="commtree_15601474"><li id="tree_15601496" class="comment">
+<div id="comment_status_15601496" class="commentstatus"></div>
+<div id="comment_15601496">
+	<div id="comment_top_15601496" class="commentTop newcomment">
+		<div class="title">
+			<h4><a name="15601496">Re:No Firefox ?</a>
+
+
+		 	<span id="comment_score_15601496" class="score"> (Score:5, Funny)</span></h4>
+		</div>
+		<div class="details">
+			by <a href="//slashdot.org/~stjobe">stjobe (78285)</a> 
+			<span class="otherdetails" id="comment_otherdetails_15601496">		
+		on Sunday June 25 2006, @02:06PM (<a href="//linux.slashdot.org/comments.pl?sid=189477&amp;cid=15601496">#15601496</a>)
+		<small><br>(<a href="http://slashdot.org/">http://slashdot.org/</a>) </small>
+</span>
+		</div>
+	</div>
+	<div class="commentBody">	
+		<div id="comment_body_15601496"><i>Nah, just give me emacs.</i><br><p><br>But then it wouldn't be Damn Small, now would it?<nobr> <wbr></nobr>;)</p></div>
+	</div>
+
+	<div class="commentSub" id="comment_sub_15601496">
+[ <a href="//linux.slashdot.org/comments.pl?sid=189477&amp;threshold=1&amp;commentsort=0&amp;mode=thread&amp;cid=15601474">Parent</a> ]
+</div>
+</div>
+
+<ul id="commtree_15601496"><li><a href="//linux.slashdot.org/comments.pl?sid=189477&amp;threshold=1&amp;commentsort=0&amp;mode=thread&amp;pid=15601496#15603129">Re:No Firefox ?</a> by level_headed_midwest (Score:2) Sunday June 25 2006, @09:32PM</li></ul></li><li><b><a href="//linux.slashdot.org/comments.pl?sid=189477&amp;threshold=-1&amp;commentsort=0&amp;mode=thread&amp;pid=15601474">1 reply</a> beneath your current threshold.</b></li></ul></li><li><a href="//linux.slashdot.org/comments.pl?sid=189477&amp;threshold=1&amp;commentsort=0&amp;mode=thread&amp;pid=15601371#15603435">Re:No Firefox ?</a> by jZnat (Score:2) Sunday June 25 2006, @11:15PM<ul id="commtree_15603435"><li><a href="//linux.slashdot.org/comments.pl?sid=189477&amp;threshold=1&amp;commentsort=0&amp;mode=thread&amp;pid=15603435#15603668">Re:No Firefox ?</a> by wed128 (Score:2) Monday June 26 2006, @12:48AM</li></ul></li></ul></li><li id="tree_15601373" class="comment">
+<div id="comment_status_15601373" class="commentstatus"></div>
+<div id="comment_15601373">
+	<div id="comment_top_15601373" class="commentTop newcomment">
+		<div class="title">
+			<h4><a name="15601373">Sylpheed is an awesome email client</a>
+
+
+		 	<span id="comment_score_15601373" class="score"> (Score:5, Informative)</span></h4>
+		</div>
+		<div class="details">
+			by <a href="//slashdot.org/~ThinkingInBinary">ThinkingInBinary (899485)</a> 
+			<span class="otherdetails" id="comment_otherdetails_15601373">		 &lt;<a href="mailto:thinkinginbinaryNO%40SPAMgmail.com">thinkinginbinaryNO@SPAMgmail.com</a>&gt;
+		on Sunday June 25 2006, @01:35PM (<a href="//linux.slashdot.org/comments.pl?sid=189477&amp;cid=15601373">#15601373</a>)
+		<small><br>(<a href="http://www.ttuttle.net/">http://www.ttuttle.net/</a>) </small>
+</span>
+		</div>
+	</div>
+	<div class="commentBody">	
+		<div id="comment_body_15601373"><p>Sylpheed is pretty nice.  Back when I used GNOME, I <a href="https://www.thomastuttle.mooo.com/blog/reviews/sylpheed.html" title="mooo.com">tried it</a> [mooo.com] as my email client.  Really nice, great performance on large folders.  (Now I use mutt.)</p></div>
+	</div>
+
+	<div class="commentSub" id="comment_sub_15601373">
+
+</div>
+</div>
+
+</li><li id="tree_15601390" class="comment">
+<div id="comment_status_15601390" class="commentstatus"></div>
+<div id="comment_15601390">
+	<div id="comment_top_15601390" class="commentTop newcomment">
+		<div class="title">
+			<h4><a name="15601390">Not that big Linux</a>
+
+
+		 	<span id="comment_score_15601390" class="score"> (Score:4, Insightful)</span></h4>
+		</div>
+		<div class="details">
+			by <a href="//slashdot.org/~zaphod_es">zaphod_es (613312)</a> 
+			<span class="otherdetails" id="comment_otherdetails_15601390">		
+		on Sunday June 25 2006, @01:39PM (<a href="//linux.slashdot.org/comments.pl?sid=189477&amp;cid=15601390">#15601390</a>)
+		<small> </small>
+</span>
+		</div>
+	</div>
+	<div class="commentBody">	
+		<div id="comment_body_15601390">&gt;  If they could do all this in 50 megs, imagine what they could do in more space.<br> <br>
+
+The OP seems to have missed the whole point of DSL. There are plenty of other choices of distro if you take away the size limit.</div>
+	</div>
+
+	<div class="commentSub" id="comment_sub_15601390">
+
+</div>
+</div>
+
+<ul id="commtree_15601390"><li id="tree_15601492" class="comment">
+<div id="comment_status_15601492" class="commentstatus"></div>
+<div id="comment_15601492">
+	<div id="comment_top_15601492" class="commentTop newcomment">
+		<div class="title">
+			<h4><a name="15601492">Re:Not that big Linux</a>
+
+
+		 	<span id="comment_score_15601492" class="score"> (Score:5, Insightful)</span></h4>
+		</div>
+		<div class="details">
+			by <a href="//slashdot.org/~theshowmecanuck">theshowmecanuck (703852)</a> 
+			<span class="otherdetails" id="comment_otherdetails_15601492">		
+		on Sunday June 25 2006, @02:04PM (<a href="//linux.slashdot.org/comments.pl?sid=189477&amp;cid=15601492">#15601492</a>)
+		<small><br>(Last Journal: <a href="//slashdot.org/~theshowmecanuck/journal/">Sunday August 20 2006, @01:37PM</a>) </small>
+</span>
+		</div>
+	</div>
+	<div class="commentBody">	
+		<div id="comment_body_15601492"><blockquote><div>The OP seems to have missed the whole point of DSL. There are plenty of other choices of distro if you take away the size limit.</div></blockquote>
+<p>I think what they meant was, "imagine what it would be like to have a distro that wasn't full of bloat."</p>
+<p>You may now begin telling us how <i>#insert_your_favourite_distro_here#</i> is bloat free.<nobr> <wbr></nobr>:-)  </p></div>
+	</div>
+
+	<div class="commentSub" id="comment_sub_15601492">
+[ <a href="//linux.slashdot.org/comments.pl?sid=189477&amp;threshold=1&amp;commentsort=0&amp;mode=thread&amp;cid=15601390">Parent</a> ]
+</div>
+</div>
+
+<ul id="commtree_15601492"><li id="tree_15601526" class="comment">
+<div id="comment_status_15601526" class="commentstatus"></div>
+<div id="comment_15601526">
+	<div id="comment_top_15601526" class="commentTop newcomment">
+		<div class="title">
+			<h4><a name="15601526">Re:Not that big Linux</a>
+
+
+		 	<span id="comment_score_15601526" class="score"> (Score:5, Insightful)</span></h4>
+		</div>
+		<div class="details">
+			by <a href="//slashdot.org/~k33l0r">k33l0r (808028)</a> 
+			<span class="otherdetails" id="comment_otherdetails_15601526">		
+		on Sunday June 25 2006, @02:13PM (<a href="//linux.slashdot.org/comments.pl?sid=189477&amp;cid=15601526">#15601526</a>)
+		<small><br>(<a href="http://korhonen.matt.googlepages.com/" rel="nofollow">http://korhonen.matt.googlepages.com/</a> | Last Journal: <a href="//slashdot.org/~k33l0r/journal/">Sunday October 15 2006, @04:44AM</a>) </small>
+</span>
+		</div>
+	</div>
+	<div class="commentBody">	
+		<div id="comment_body_15601526">Problem is that the more features (ie. bloat) you lose the smaller your potential userbase becomes.  One man's feature is another man's bloat...  You could have a distro with only the things one person wants but then someone else might see it as lacking in some essential area...<br><br>That's one of the reasons why all modern OSes are so large, they all strive to attract as wide a userbase as possible.  They want to appeal to EVERYONE.</div>
+	</div>
+
+	<div class="commentSub" id="comment_sub_15601526">
+[ <a href="//linux.slashdot.org/comments.pl?sid=189477&amp;threshold=1&amp;commentsort=0&amp;mode=thread&amp;cid=15601492">Parent</a> ]
+</div>
+</div>
+
+<ul id="commtree_15601526"><li><a href="//linux.slashdot.org/comments.pl?sid=189477&amp;threshold=1&amp;commentsort=0&amp;mode=thread&amp;pid=15601526#15601630">Re:Not that big Linux</a> by Plaid Phantom (Score:1) Sunday June 25 2006, @02:49PM</li><li id="tree_15601889" class="comment">
+<div id="comment_status_15601889" class="commentstatus"></div>
+<div id="comment_15601889">
+	<div id="comment_top_15601889" class="commentTop newcomment">
+		<div class="title">
+			<h4><a name="15601889">That and</a>
+
+
+		 	<span id="comment_score_15601889" class="score"> (Score:5, Insightful)</span></h4>
+		</div>
+		<div class="details">
+			by <a href="//slashdot.org/~Sycraft-fu">Sycraft-fu (314770)</a> 
+			<span class="otherdetails" id="comment_otherdetails_15601889">		
+		on Sunday June 25 2006, @04:03PM (<a href="//linux.slashdot.org/comments.pl?sid=189477&amp;cid=15601889">#15601889</a>)
+		<small> </small>
+</span>
+		</div>
+	</div>
+	<div class="commentBody">	
+		<div id="comment_body_15601889">Something that people see as bloat aren't, really. Take, for example, a good configuration interface. You decide instead of a rigidly defined text file or a simple binary dump you are going to have XML files underlying your config. Further, there's going to be a nice GUI interface to access them, with checks to make sure all input is in an acceptable range not just to predefined limits but with regards to other options chosen, and a robust context help system. You might find in the end that this is a significant part of your program. It's not trivial to do all that. However it's not bloat, it makes it much easier to use your program and to interact with it. The GUI/help aspect means that users need bery little knowledge to get things set how they want. The robust XML config files mean that other programs can easily interface with yours.<br><br>Programs are much larger these days then they used to be but that's not a bad thing. EVen if it is because of something like moving to a managed language that needs runtimes and generates larger code, it's not bad if it makes it easier to maintain. You can still step back to more compact, less feature rich designs when needed as DSL demonstrates.</div>
+	</div>
+
+	<div class="commentSub" id="comment_sub_15601889">
+[ <a href="//linux.slashdot.org/comments.pl?sid=189477&amp;threshold=1&amp;commentsort=0&amp;mode=thread&amp;cid=15601526">Parent</a> ]
+</div>
+</div>
+
+</li><li><a href="//linux.slashdot.org/comments.pl?sid=189477&amp;threshold=1&amp;commentsort=0&amp;mode=thread&amp;pid=15601526#15602367">Re:Not that big Linux</a> by Sathias (Score:1) Sunday June 25 2006, @06:00PM<ul id="commtree_15602367"><li><a href="//linux.slashdot.org/comments.pl?sid=189477&amp;threshold=1&amp;commentsort=0&amp;mode=thread&amp;pid=15602367#15603446">Re:Not that big Linux</a> by jZnat (Score:2) Sunday June 25 2006, @11:18PM</li></ul></li><li id="tree_15603165" class="comment">
+<div id="comment_status_15603165" class="commentstatus"></div>
+<div id="comment_15603165">
+	<div id="comment_top_15603165" class="commentTop newcomment">
+		<div class="title">
+			<h4><a name="15603165">Re:Not that big Linux</a>
+
+
+		 	<span id="comment_score_15603165" class="score"> (Score:5, Insightful)</span></h4>
+		</div>
+		<div class="details">
+			by <a href="//slashdot.org/~level_headed_midwest">level_headed_midwest (888889)</a> 
+			<span class="otherdetails" id="comment_otherdetails_15603165">		
+		on Sunday June 25 2006, @09:44PM (<a href="//linux.slashdot.org/comments.pl?sid=189477&amp;cid=15603165">#15603165</a>)
+		<small> </small>
+</span>
+		</div>
+	</div>
+	<div class="commentBody">	
+		<div id="comment_body_15603165">Well, you could use Linux From Scratch or Gentoo to simply compile and install anything you want exactly how you want to have it. Or you could install a Linux distribution in terminal-only "server" mode and then add from there with binary distributions that don't just dump a standard set of stuff upon install. Everybody is never going to be 100% pleased with any certain distribution's default setup because people have different needs. But the ability to pick and choose not only packages and programs but entire distributions is really Linux's strength. If somebody doesn't like Mandriva's setup but likes Slackware's, then they install Slack because it fits them and it works for them. At least we Linux users <i>get</i> the opportunity to choose the setup, default packages, and distribution of the OS we run. So the moral of the story is if you're the Slack user before, sure, say how and why you like Slack but DON'T go start a flamewar on<nobr> <wbr></nobr>/. about how Mandriva sucks because as long as a distribution is still being made, it must work for somebody and be their right tool for the job. If there was only one distro, that would literally make Linux just another Windows or MacOS X take-it-or-leave-it OS.</div>
+	</div>
+
+	<div class="commentSub" id="comment_sub_15603165">
+[ <a href="//linux.slashdot.org/comments.pl?sid=189477&amp;threshold=1&amp;commentsort=0&amp;mode=thread&amp;cid=15601526">Parent</a> ]
+</div>
+</div>
+
+</li><li><a href="//linux.slashdot.org/comments.pl?sid=189477&amp;threshold=1&amp;commentsort=0&amp;mode=thread&amp;pid=15601633#15601705">Re:Not that big Linux</a> by HateBreeder (Score:2) Sunday June 25 2006, @03:14PM</li><li><a href="//linux.slashdot.org/comments.pl?sid=189477&amp;threshold=1&amp;commentsort=0&amp;mode=thread&amp;pid=15601633#15602134">Re:Not that big Linux</a> by badfish99 (Score:2) Sunday June 25 2006, @05:05PM<ul id="commtree_15602134"><li><b><a href="//linux.slashdot.org/comments.pl?sid=189477&amp;threshold=-1&amp;commentsort=0&amp;mode=thread&amp;pid=15602134">1 reply</a> beneath your current threshold.</b></li></ul></li><li><b><a href="//linux.slashdot.org/comments.pl?sid=189477&amp;threshold=-1&amp;commentsort=0&amp;mode=thread&amp;pid=15601526">1 reply</a> beneath your current threshold.</b></li></ul></li><li><a href="//linux.slashdot.org/comments.pl?sid=189477&amp;threshold=1&amp;commentsort=0&amp;mode=thread&amp;pid=15601492#15602005">Re:Not that big Linux</a> by aichpvee (Score:1) Sunday June 25 2006, @04:29PM</li><li><a href="//linux.slashdot.org/comments.pl?sid=189477&amp;threshold=1&amp;commentsort=0&amp;mode=thread&amp;pid=15601492#15609974">Re:Not that big Linux</a> by click2005 (Score:1) Monday June 26 2006, @08:22PM</li></ul></li><li><a href="//linux.slashdot.org/comments.pl?sid=189477&amp;threshold=1&amp;commentsort=0&amp;mode=thread&amp;pid=15601390#15601552">Re:Not that big Linux</a> by Bloke down the pub (Score:3) Sunday June 25 2006, @02:20PM<ul id="commtree_15601552"><li><a href="//linux.slashdot.org/comments.pl?sid=189477&amp;threshold=1&amp;commentsort=0&amp;mode=thread&amp;pid=15601552#15602825">Re:Not that big Linux</a> by niteice (Score:1) Sunday June 25 2006, @07:57PM<ul id="commtree_15602825"><li><a href="//linux.slashdot.org/comments.pl?sid=189477&amp;threshold=1&amp;commentsort=0&amp;mode=thread&amp;pid=15602825#15604825">Re:Not that big Linux</a> by Bloke down the pub (Score:1) Monday June 26 2006, @07:57AM</li></ul></li><li><a href="//linux.slashdot.org/comments.pl?sid=189477&amp;threshold=1&amp;commentsort=0&amp;mode=thread&amp;pid=15601552#15603736">Bingo!!!</a> by Dante333 (Score:2) Monday June 26 2006, @01:14AM<ul id="commtree_15603736"><li><a href="//linux.slashdot.org/comments.pl?sid=189477&amp;threshold=1&amp;commentsort=0&amp;mode=thread&amp;pid=15604342#15605427">Re:Bingo!!!</a> by toleraen (Score:2) Monday June 26 2006, @09:32AM</li><li><b><a href="//linux.slashdot.org/comments.pl?sid=189477&amp;threshold=-1&amp;commentsort=0&amp;mode=thread&amp;pid=15603736">1 reply</a> beneath your current threshold.</b></li></ul></li></ul></li><li id="tree_15601608" class="comment">
+<div id="comment_status_15601608" class="commentstatus"></div>
+<div id="comment_15601608">
+	<div id="comment_top_15601608" class="commentTop newcomment">
+		<div class="title">
+			<h4><a name="15601608">Re:Not that big Linux</a>
+
+
+		 	<span id="comment_score_15601608" class="score"> (Score:5, Informative)</span></h4>
+		</div>
+		<div class="details">
+			by <a href="//slashdot.org/~foreverdisillusioned">foreverdisillusioned (763799)</a> 
+			<span class="otherdetails" id="comment_otherdetails_15601608">		
+		on Sunday June 25 2006, @02:41PM (<a href="//linux.slashdot.org/comments.pl?sid=189477&amp;cid=15601608">#15601608</a>)
+		<small><br>(Last Journal: <a href="//slashdot.org/~foreverdisillusioned/journal/">Thursday November 10 2005, @01:30AM</a>) </small>
+</span>
+		</div>
+	</div>
+	<div class="commentBody">	
+		<div id="comment_body_15601608">50 megs is a tad arbitrary.  I think that 200~ish would be a better number, as it can fit on mini-CDs (yeah I know business card CDs are 50 megs, but I've never even SEEN one before, whereas I find that mini-CDs are small and handy) and it can fit on cheap 256mb flash drives.  I'm not advocating bloat, but if there has to be a hard limit I think 50mb is a tad small.  I think that the number of people who use mini CD-Rs or 256+ MB flash drives outnumber the people who use business card CD-Rs or 64 MB flash drives by quite a bit.  In a 50 MB setup, extrmely useful apps like the OpenOffice.org suite (I say its "extremely useful" more for its compatibility with MS Office than anything else) will never be included by default.  With 200+ megs to play with, suddenly OO.o seems like a very natural inclusion.   Yes, I know there's an OO.o DSL package; I just think that there should be a default default distro in the 200~ MB range where it (and other useful-but-somewhat-big apps) is included by default.</div>
+	</div>
+
+	<div class="commentSub" id="comment_sub_15601608">
+[ <a href="//linux.slashdot.org/comments.pl?sid=189477&amp;threshold=1&amp;commentsort=0&amp;mode=thread&amp;cid=15601390">Parent</a> ]
+</div>
+</div>
+
+<ul id="commtree_15601608"><li><a href="//linux.slashdot.org/comments.pl?sid=189477&amp;threshold=1&amp;commentsort=0&amp;mode=thread&amp;pid=15601608#15601647">Re:Not that big Linux</a> by ZachPruckowski (Score:3) Sunday June 25 2006, @02:56PM</li><li><a href="//linux.slashdot.org/comments.pl?sid=189477&amp;threshold=1&amp;commentsort=0&amp;mode=thread&amp;pid=15601608#15601902">Re:Not that big Linux</a> by sid77 (Score:3) Sunday June 25 2006, @04:04PM</li><li id="tree_15602152" class="comment">
+<div id="comment_status_15602152" class="commentstatus"></div>
+<div id="comment_15602152">
+	<div id="comment_top_15602152" class="commentTop newcomment">
+		<div class="title">
+			<h4><a name="15602152">Re:Not that big Linux</a>
+
+
+		 	<span id="comment_score_15602152" class="score"> (Score:5, Funny)</span></h4>
+		</div>
+		<div class="details">
+			by <a href="//slashdot.org/~Reverend528">Reverend528 (585549)</a> 
+			<span class="otherdetails" id="comment_otherdetails_15602152">		
+		on Sunday June 25 2006, @05:09PM (<a href="//linux.slashdot.org/comments.pl?sid=189477&amp;cid=15602152">#15602152</a>)
+		<small><br>(<a href="http://reverend.healeys.net/">http://reverend.healeys.net/</a>) </small>
+</span>
+		</div>
+	</div>
+	<div class="commentBody">	
+		<div id="comment_body_15602152"><blockquote><div>50 megs is a tad arbitrary. I think that 200~ish would be a better number,</div></blockquote>
+<p>Plus, with the extra 150 megs, they could ship EMACS.</p></div>
+	</div>
+
+	<div class="commentSub" id="comment_sub_15602152">
+[ <a href="//linux.slashdot.org/comments.pl?sid=189477&amp;threshold=1&amp;commentsort=0&amp;mode=thread&amp;cid=15601608">Parent</a> ]
+</div>
+</div>
+
+<ul id="commtree_15602152"><li><a href="//linux.slashdot.org/comments.pl?sid=189477&amp;threshold=1&amp;commentsort=0&amp;mode=thread&amp;pid=15602152#15602449">Re:Not that big Linux</a> by ksheff (Score:1) Sunday June 25 2006, @06:18PM<ul id="commtree_15602449"><li><a href="//linux.slashdot.org/comments.pl?sid=189477&amp;threshold=1&amp;commentsort=0&amp;mode=thread&amp;pid=15602449#15603894">Re:Not that big Linux</a> by geminidomino (Score:3) Monday June 26 2006, @02:14AM</li></ul></li></ul></li><li><a href="//linux.slashdot.org/comments.pl?sid=189477&amp;threshold=1&amp;commentsort=0&amp;mode=thread&amp;pid=15601608#15602925">Re:Not that big Linux</a> by solafide (Score:2) Sunday June 25 2006, @08:32PM</li><li><a href="//linux.slashdot.org/comments.pl?sid=189477&amp;threshold=1&amp;commentsort=0&amp;mode=thread&amp;pid=15601608#15603506">Re:Not that big Linux</a> by OverflowingBitBucket (Score:2) Sunday June 25 2006, @11:41PM<ul id="commtree_15603506"><li><a href="//linux.slashdot.org/comments.pl?sid=189477&amp;threshold=1&amp;commentsort=0&amp;mode=thread&amp;pid=15603506#15604060">Re:Not that big Linux</a> by nixnutz (Score:1) Monday June 26 2006, @03:24AM<ul id="commtree_15604060"><li><a href="//linux.slashdot.org/comments.pl?sid=189477&amp;threshold=1&amp;commentsort=0&amp;mode=thread&amp;pid=15604060#15604456">Re:Not that big Linux</a> by OverflowingBitBucket (Score:3) Monday June 26 2006, @06:34AM</li></ul></li></ul></li><li><a href="//linux.slashdot.org/comments.pl?sid=189477&amp;threshold=1&amp;commentsort=0&amp;mode=thread&amp;pid=15601608#15606791">Small CD's all suck</a> by bill_mcgonigle (Score:2) Monday June 26 2006, @12:27PM</li><li><a href="//linux.slashdot.org/comments.pl?sid=189477&amp;threshold=1&amp;commentsort=0&amp;mode=thread&amp;pid=15601686#15602151">Re:Not that big Linux</a> by badfish99 (Score:3) Sunday June 25 2006, @05:09PM<ul id="commtree_15602151"><li><a href="//linux.slashdot.org/comments.pl?sid=189477&amp;threshold=1&amp;commentsort=0&amp;mode=thread&amp;pid=15602151#15602225">Re:Not that big Linux</a> by Derek Pomery (Score:2) Sunday June 25 2006, @05:31PM</li></ul></li><li><b><a href="//linux.slashdot.org/comments.pl?sid=189477&amp;threshold=-1&amp;commentsort=0&amp;mode=thread&amp;pid=15601608">3 replies</a> beneath your current threshold.</b></li></ul></li></ul></li><li id="tree_15601391" class="comment">
+<div id="comment_status_15601391" class="commentstatus"></div>
+<div id="comment_15601391">
+	<div id="comment_top_15601391" class="commentTop newcomment">
+		<div class="title">
+			<h4><a name="15601391">I use it all the time</a>
+
+
+		 	<span id="comment_score_15601391" class="score"> (Score:5, Insightful)</span></h4>
+		</div>
+		<div class="details">
+			by <a href="//slashdot.org/~mr_stinky_britches">mr_stinky_britches (926212)</a> 
+			<span class="otherdetails" id="comment_otherdetails_15601391">		
+		on Sunday June 25 2006, @01:40PM (<a href="//linux.slashdot.org/comments.pl?sid=189477&amp;cid=15601391">#15601391</a>)
+		<small><br>(<a href="http://wi-fizzle.com/" rel="nofollow">http://wi-fizzle.com/</a> | Last Journal: <a href="//slashdot.org/~mr_stinky_britches/journal/">Wednesday July 04, @11:11AM</a>) </small>
+</span>
+		</div>
+	</div>
+	<div class="commentBody">	
+		<div id="comment_body_15601391">and I must say, for desktop use, when you need linux real quick or want to boot off a CF card or USB drive, this will do the job just about every time<nobr> <wbr></nobr>:)</div>
+	</div>
+
+	<div class="commentSub" id="comment_sub_15601391">
+
+</div>
+</div>
+
+</li><li id="tree_15601397" class="comment">
+<div id="comment_status_15601397" class="commentstatus"></div>
+<div id="comment_15601397">
+	<div id="comment_top_15601397" class="commentTop newcomment">
+		<div class="title">
+			<h4><a name="15601397">I would guess at two reasons for the numbers</a>
+
+
+		 	<span id="comment_score_15601397" class="score"> (Score:5, Insightful)</span></h4>
+		</div>
+		<div class="details">
+			by <a href="//slashdot.org/~ahfoo">ahfoo (223186)</a> 
+			<span class="otherdetails" id="comment_otherdetails_15601397">		
+		on Sunday June 25 2006, @01:43PM (<a href="//linux.slashdot.org/comments.pl?sid=189477&amp;cid=15601397">#15601397</a>)
+		<small><br>(Last Journal: <a href="//slashdot.org/~ahfoo/journal/">Friday April 04 2003, @12:49AM</a>) </small>
+</span>
+		</div>
+	</div>
+	<div class="commentBody">	
+		<div id="comment_body_15601397">First, for people who just need a quick formatting tool, it's good enough with the MyDSL extensions making it nice and simple to use for a lot of USB boot type applications.<br><br>Second I have found many non Linux users who think DSL sounds like a good way to start because they're so sick of bloat. Could be that a lot of them download it just to see what it's like. This second reason is probably somewhat unfortunate since DSL can be a bit frustrating for someone unfamiliar with FOSS distros.<br><br>I used to have some machines using DSL, but I found that Knoppix with fluxbox just made it so much simpler.</div>
+	</div>
+
+	<div class="commentSub" id="comment_sub_15601397">
+
+</div>
+</div>
+
+<ul id="commtree_15601397"><li id="tree_15601438" class="comment">
+<div id="comment_status_15601438" class="commentstatus"></div>
+<div id="comment_15601438">
+	<div id="comment_top_15601438" class="commentTop newcomment">
+		<div class="title">
+			<h4><a name="15601438">Re:I would guess at two reasons for the numbers</a>
+
+
+		 	<span id="comment_score_15601438" class="score"> (Score:5, Interesting)</span></h4>
+		</div>
+		<div class="details">
+			by <a href="//slashdot.org/~ZachPruckowski">ZachPruckowski (918562)</a> 
+			<span class="otherdetails" id="comment_otherdetails_15601438">		 &lt;<a href="mailto:zachary.pruckowski%40gmail.com">zachary.pruckowski@gmail.com</a>&gt;
+		on Sunday June 25 2006, @01:51PM (<a href="//linux.slashdot.org/comments.pl?sid=189477&amp;cid=15601438">#15601438</a>)
+		<small> </small>
+</span>
+		</div>
+	</div>
+	<div class="commentBody">	
+		<div id="comment_body_15601438">Or to save a lot of space?  I recall reading an article about making a cheap file server.  It basically consisted of 4 x 250GB HDDs in a case with some crappy Sempron.  They used a cheap $10 USB stick with DSL to run it, and only connected a borrowed monitor and keyboard to set up Samba and the networking.  Otherwise, they'd have had to use space on the disks, or trade one disc out for a CD-ROM to run and boot CD.</div>
+	</div>
+
+	<div class="commentSub" id="comment_sub_15601438">
+[ <a href="//linux.slashdot.org/comments.pl?sid=189477&amp;threshold=1&amp;commentsort=0&amp;mode=thread&amp;cid=15601397">Parent</a> ]
+</div>
+</div>
+
+<ul id="commtree_15601438"><li id="tree_15601704" class="comment">
+<div id="comment_status_15601704" class="commentstatus"></div>
+<div id="comment_15601704">
+	<div id="comment_top_15601704" class="commentTop newcomment">
+		<div class="title">
+			<h4><a name="15601704">Re:I would guess at two reasons for the numbers</a>
+
+
+		 	<span id="comment_score_15601704" class="score"> (Score:4, Interesting)</span></h4>
+		</div>
+		<div class="details">
+			by <a href="//slashdot.org/~Firehed">Firehed (942385)</a> 
+			<span class="otherdetails" id="comment_otherdetails_15601704">		
+		on Sunday June 25 2006, @03:13PM (<a href="//linux.slashdot.org/comments.pl?sid=189477&amp;cid=15601704">#15601704</a>)
+		<small><br>(<a href="http://www.firehed.net/">http://www.firehed.net/</a>) </small>
+</span>
+		</div>
+	</div>
+	<div class="commentBody">	
+		<div id="comment_body_15601704">There's also stuff out there like FreeNAS, which fits on a 16MB USB key or CF card.  Now my experience is that FreeNAS was slow as hell, but I'm inclined to blame that on network drivers.  Also, it's technically FreeBSD-based (and derived from m0n0wall, I think).  Unfortunately I don't know enough about *nix to do a command-line driver update and even if I did, I don't know whether I'd have enough space to do so - maybe this is easier with DSL.  As it is, I'm forced to keep using the horrible Windows filesharing stuff.</div>
+	</div>
+
+	<div class="commentSub" id="comment_sub_15601704">
+[ <a href="//linux.slashdot.org/comments.pl?sid=189477&amp;threshold=1&amp;commentsort=0&amp;mode=thread&amp;cid=15601438">Parent</a> ]
+</div>
+</div>
+
+</li></ul></li><li><a href="//linux.slashdot.org/comments.pl?sid=189477&amp;threshold=1&amp;commentsort=0&amp;mode=thread&amp;pid=15601397#15602116">Re:I would guess at two reasons for the numbers</a> by MrNougat (Score:3) Sunday June 25 2006, @05:01PM</li><li><a href="//linux.slashdot.org/comments.pl?sid=189477&amp;threshold=1&amp;commentsort=0&amp;mode=thread&amp;pid=15601397#15602726">Re:I would guess at two reasons for the numbers</a> by colmore (Score:3) Sunday June 25 2006, @07:31PM</li><li><b><a href="//linux.slashdot.org/comments.pl?sid=189477&amp;threshold=-1&amp;commentsort=0&amp;mode=thread&amp;pid=15601397">1 reply</a> beneath your current threshold.</b></li></ul></li><li id="tree_15601398" class="comment">
+<div id="comment_status_15601398" class="commentstatus"></div>
+<div id="comment_15601398">
+	<div id="comment_top_15601398" class="commentTop newcomment">
+		<div class="title">
+			<h4><a name="15601398">Thumbdrive</a>
+
+
+		 	<span id="comment_score_15601398" class="score"> (Score:5, Interesting)</span></h4>
+		</div>
+		<div class="details">
+			by <a href="//slashdot.org/~daranz">daranz (914716)</a> 
+			<span class="otherdetails" id="comment_otherdetails_15601398">		 &lt;<a href="mailto:daranz%40gmaiTOKYOl.com+minus+city">daranz@gmaiTOKYOl.com minus city</a>&gt;
+		on Sunday June 25 2006, @01:43PM (<a href="//linux.slashdot.org/comments.pl?sid=189477&amp;cid=15601398">#15601398</a>)
+		<small> </small>
+</span>
+		</div>
+	</div>
+	<div class="commentBody">	
+		<div id="comment_body_15601398">Personally, I carry it around on a thumbdrive... with qemu-win. It serves no purpose besides lauching it on people's computers and telling them "Look, it's Linux under your Windows!" Best thing is, I still fit plenty of other crap on the same, 1GB drive.</div>
+	</div>
+
+	<div class="commentSub" id="comment_sub_15601398">
+
+</div>
+</div>
+
+<ul id="commtree_15601398"><li><a href="//linux.slashdot.org/comments.pl?sid=189477&amp;threshold=1&amp;commentsort=0&amp;mode=thread&amp;pid=15601398#15601724">Re:Thumbdrive</a> by The MAZZTer (Score:2) Sunday June 25 2006, @03:22PM<ul id="commtree_15601724"><li id="tree_15601995" class="comment">
+<div id="comment_status_15601995" class="commentstatus"></div>
+<div id="comment_15601995">
+	<div id="comment_top_15601995" class="commentTop newcomment">
+		<div class="title">
+			<h4><a name="15601995">Re:Thumbdrive</a>
+
+
+		 	<span id="comment_score_15601995" class="score"> (Score:4, Informative)</span></h4>
+		</div>
+		<div class="details">
+			by Anonymous Coward 
+			<span class="otherdetails" id="comment_otherdetails_15601995">		
+		on Sunday June 25 2006, @04:26PM (<a href="//linux.slashdot.org/comments.pl?sid=189477&amp;cid=15601995">#15601995</a>)
+		<small> </small>
+</span>
+		</div>
+	</div>
+	<div class="commentBody">	
+		<div id="comment_body_15601995">Umm... no tool for NTFS resizing, you say? How about the cryptically named ntfsresize(8)? Its author claims it does its job better than Partition Magic or any other commercial or non-commercial tool (ie. it is allegedly the best there is) and it is supported by parted(8).</div>
+	</div>
+
+	<div class="commentSub" id="comment_sub_15601995">
+[ <a href="//linux.slashdot.org/comments.pl?sid=189477&amp;threshold=1&amp;commentsort=0&amp;mode=thread&amp;cid=15601724">Parent</a> ]
+</div>
+</div>
+
+<ul id="commtree_15601995"><li><a href="//linux.slashdot.org/comments.pl?sid=189477&amp;threshold=1&amp;commentsort=0&amp;mode=thread&amp;pid=15601995#15603907">Re:Thumbdrive</a> by grimJester (Score:2) Monday June 26 2006, @02:17AM</li></ul></li><li><a href="//linux.slashdot.org/comments.pl?sid=189477&amp;threshold=1&amp;commentsort=0&amp;mode=thread&amp;pid=15601724#15607800">Re:Thumbdrive</a> by KURAAKU Deibiddo (Score:1) Monday June 26 2006, @02:28PM</li></ul></li><li id="tree_15601891" class="comment">
+<div id="comment_status_15601891" class="commentstatus"></div>
+<div id="comment_15601891">
+	<div id="comment_top_15601891" class="commentTop newcomment">
+		<div class="title">
+			<h4><a name="15601891">Re:Thumbdrive</a>
+
+
+		 	<span id="comment_score_15601891" class="score"> (Score:5, Interesting)</span></h4>
+		</div>
+		<div class="details">
+			by Anonymous Coward 
+			<span class="otherdetails" id="comment_otherdetails_15601891">		
+		on Sunday June 25 2006, @04:03PM (<a href="//linux.slashdot.org/comments.pl?sid=189477&amp;cid=15601891">#15601891</a>)
+		<small> </small>
+</span>
+		</div>
+	</div>
+	<div class="commentBody">	
+		<div id="comment_body_15601891">Yeah, I really like the QEMU option.  It is especially comforting to Windows users weary (for good reason, Sony...) about booting or running anything from CD they don't understand.<br><br>Also, when booting from any device is impossible, and you just gotta have your Linux, this makes a great option.<br><br>I've never tried the combo of QEMU and DSL, but I just did, and I'm making this post from within Linux running on top of WinXP.  In fact, I'd never used QEMU before.  It's the itch I didn't know I wanted to scratch until I tried it.<br><br>It's a bit slow, obviously, but it definately gets the job done and done well.  I can't count the number of times I wanted to use a Linux app or CLI while in Windows and didn't want to have to reboot.<br><br>The FOSS community continues to amaze me at least once every month.</div>
+	</div>
+
+	<div class="commentSub" id="comment_sub_15601891">
+[ <a href="//linux.slashdot.org/comments.pl?sid=189477&amp;threshold=1&amp;commentsort=0&amp;mode=thread&amp;cid=15601398">Parent</a> ]
+</div>
+</div>
+
+<ul id="commtree_15601891"><li><a href="//linux.slashdot.org/comments.pl?sid=189477&amp;threshold=1&amp;commentsort=0&amp;mode=thread&amp;pid=15601891#15603949">Re:Thumbdrive</a> by heson (Score:1) Monday June 26 2006, @02:35AM</li></ul></li></ul></li><li id="tree_15601400" class="comment">
+<div id="comment_status_15601400" class="commentstatus"></div>
+<div id="comment_15601400">
+	<div id="comment_top_15601400" class="commentTop newcomment">
+		<div class="title">
+			<h4><a name="15601400">Good, but not perfect... Knoppix is a pain</a>
+
+
+		 	<span id="comment_score_15601400" class="score"> (Score:5, Interesting)</span></h4>
+		</div>
+		<div class="details">
+			by <a href="//slashdot.org/~green+pizza">green pizza (159161)</a> 
+			<span class="otherdetails" id="comment_otherdetails_15601400">		
+		on Sunday June 25 2006, @01:44PM (<a href="//linux.slashdot.org/comments.pl?sid=189477&amp;cid=15601400">#15601400</a>)
+		<small><br>(<a href="http://slashdot.org/">http://slashdot.org/</a>) </small>
+</span>
+		</div>
+	</div>
+	<div class="commentBody">	
+		<div id="comment_body_15601400">I've played with Damn Small Linux, but anymore I pretty much just take the time to roll my own LinuxFromScratch.<br><br>DSL is a nice demo, but the Knoppix structure makes it a real pain to customize.* Say you want a different version of Perl or Xorg, or want to modify the bootloader and kernel to display a full screen banner image/logo, it's a whole heck of a lot of work to rip out the original components and replace them with your own. Rolling your own distro from scratch only requires a bit more work, and you have better control and a better understanding of what's going on.<br><br>* If any DSL experts have advice on how to make these customizations easier, I might give it a try again.</div>
+	</div>
+
+	<div class="commentSub" id="comment_sub_15601400">
+
+</div>
+</div>
+
+<ul id="commtree_15601400"><li id="tree_15601502" class="comment">
+<div id="comment_status_15601502" class="commentstatus"></div>
+<div id="comment_15601502">
+	<div id="comment_top_15601502" class="commentTop newcomment">
+		<div class="title">
+			<h4><a name="15601502">Re:Good, but not perfect... Knoppix is a pain</a>
+
+
+		 	<span id="comment_score_15601502" class="score"> (Score:5, Informative)</span></h4>
+		</div>
+		<div class="details">
+			by <a href="//slashdot.org/~grasshoppa">grasshoppa (657393)</a> 
+			<span class="otherdetails" id="comment_otherdetails_15601502">		 &lt;<a href="mailto:skennedy+AT+tpno-co+DOT+org">skennedy AT tpno-co DOT org</a>&gt;
+		on Sunday June 25 2006, @02:08PM (<a href="//linux.slashdot.org/comments.pl?sid=189477&amp;cid=15601502">#15601502</a>)
+		<small><br>(<a href="http://tpno-co.org/">http://tpno-co.org/</a>) </small>
+</span>
+		</div>
+	</div>
+	<div class="commentBody">	
+		<div id="comment_body_15601502">There is a very real need for a quick and dirty distro.  What you are describing is a situation where another distro would fit better.<br><br>The problem isn't the tool.  The problem is you trying to fit a square peg in a round hole.</div>
+	</div>
+
+	<div class="commentSub" id="comment_sub_15601502">
+[ <a href="//linux.slashdot.org/comments.pl?sid=189477&amp;threshold=1&amp;commentsort=0&amp;mode=thread&amp;cid=15601400">Parent</a> ]
+</div>
+</div>
+
+<ul id="commtree_15601502"><li><a href="//linux.slashdot.org/comments.pl?sid=189477&amp;threshold=1&amp;commentsort=0&amp;mode=thread&amp;pid=15601502#15601930">Re:Good, but not perfect... Knoppix is a pain</a> by Shawn is an Asshole (Score:2) Sunday June 25 2006, @04:11PM</li><li><b><a href="//linux.slashdot.org/comments.pl?sid=189477&amp;threshold=-1&amp;commentsort=0&amp;mode=thread&amp;pid=15601502">1 reply</a> beneath your current threshold.</b></li></ul></li></ul></li><li id="tree_15601402" class="comment">
+<div id="comment_status_15601402" class="commentstatus"></div>
+<div id="comment_15601402">
+	<div id="comment_top_15601402" class="commentTop newcomment">
+		<div class="title">
+			<h4><a name="15601402">DSL and DSL-N</a>
+
+
+		 	<span id="comment_score_15601402" class="score"> (Score:5, Informative)</span></h4>
+		</div>
+		<div class="details">
+			by <a href="//slashdot.org/~aymanh">aymanh (892834)</a> 
+			<span class="otherdetails" id="comment_otherdetails_15601402">		
+		on Sunday June 25 2006, @01:44PM (<a href="//linux.slashdot.org/comments.pl?sid=189477&amp;cid=15601402">#15601402</a>)
+		<small><br>(<a href="http://aymanh.com/" rel="nofollow">http://aymanh.com/</a> | Last Journal: <a href="//slashdot.org/~aymanh/journal/">Wednesday October 25 2006, @04:23AM</a>) </small>
+</span>
+		</div>
+	</div>
+	<div class="commentBody">	
+		<div id="comment_body_15601402"><blockquote><div>Last month the DSL developers released DSL-Not, a.k.a. DSL-N 0.1 RC1. It's 83.5MB of DSL coated with GTK sugar. Yummy!</div></blockquote>Actually, looks like DSL-N is more than just GTK sugar, from <a href="http://www.damnsmalllinux.org/dsl-n/" title="damnsmalllinux.org" rel="nofollow">its web page</a> [damnsmalllinux.org], DSL-N features a modern kernel with more hardware support, in addition to <a href="http://www.damnsmalllinux.org/dsl-n/f/viewtopic/3.html" title="damnsmalllinux.org" rel="nofollow">more apps</a> [damnsmalllinux.org], like MPlayer, Gaim, and gFTP.<br><br>It's also worth mentioning that the original DSL uses a lightweight GUI toolkit called <a href="http://www.fltk.org/" title="fltk.org" rel="nofollow">FLTK</a> [fltk.org] and Lua for its tools, interesting!</div>
+	</div>
+
+	<div class="commentSub" id="comment_sub_15601402">
+
+</div>
+</div>
+
+</li><li id="tree_15601424" class="comment">
+<div id="comment_status_15601424" class="commentstatus"></div>
+<div id="comment_15601424">
+	<div id="comment_top_15601424" class="commentTop newcomment">
+		<div class="title">
+			<h4><a name="15601424">It's popular because..</a>
+
+
+		 	<span id="comment_score_15601424" class="score"> (Score:5, Insightful)</span></h4>
+		</div>
+		<div class="details">
+			by <a href="//slashdot.org/~SillySnake">SillySnake (727102)</a> 
+			<span class="otherdetails" id="comment_otherdetails_15601424">		
+		on Sunday June 25 2006, @01:48PM (<a href="//linux.slashdot.org/comments.pl?sid=189477&amp;cid=15601424">#15601424</a>)
+		<small> </small>
+</span>
+		</div>
+	</div>
+	<div class="commentBody">	
+		<div id="comment_body_15601424">It runs well on old hardware.. Plenty of us have old pentium 1/2 machines around that aren't doing a whole lot.  Windows 98 keeps becoming a worse and worse option with viruses and now the lack of updates.  It provides life for an old computer.  I ran it for a period of time on a 166 when both of my other machines went down, and while it wasn't super fast, it did everything I needed it to.  Plus, I didn't have to go through the trouble of finding a win 98 cd and a key.  It's a neat idea, very portable, and has grown a lot as a distro since its early days.</div>
+	</div>
+
+	<div class="commentSub" id="comment_sub_15601424">
+
+</div>
+</div>
+
+<ul id="commtree_15601424"><li id="tree_15601688" class="comment">
+<div id="comment_status_15601688" class="commentstatus"></div>
+<div id="comment_15601688">
+	<div id="comment_top_15601688" class="commentTop newcomment">
+		<div class="title">
+			<h4><a name="15601688">Re:It's popular because..</a>
+
+
+		 	<span id="comment_score_15601688" class="score"> (Score:4, Funny)</span></h4>
+		</div>
+		<div class="details">
+			by <a href="//slashdot.org/~suffe">suffe (72090)</a> 
+			<span class="otherdetails" id="comment_otherdetails_15601688">		
+		on Sunday June 25 2006, @03:09PM (<a href="//linux.slashdot.org/comments.pl?sid=189477&amp;cid=15601688">#15601688</a>)
+		<small><br>(<a href="http://www.flickr.com/photos/suffe/" rel="nofollow">http://www.flickr.com/photos/suffe/</a>) </small>
+</span>
+		</div>
+	</div>
+	<div class="commentBody">	
+		<div id="comment_body_15601688">Yeah, I hate trying to boot up windows on those pesky pentium 0.5 things. Bogs down the entire setup. And to think they were all the rage before the Pentium and Pentium Pro came out.</div>
+	</div>
+
+	<div class="commentSub" id="comment_sub_15601688">
+[ <a href="//linux.slashdot.org/comments.pl?sid=189477&amp;threshold=1&amp;commentsort=0&amp;mode=thread&amp;cid=15601424">Parent</a> ]
+</div>
+</div>
+
+<ul id="commtree_15601688"><li><a href="//linux.slashdot.org/comments.pl?sid=189477&amp;threshold=1&amp;commentsort=0&amp;mode=thread&amp;pid=15601688#15602153">Re:It's popular because..</a> by SillySnake (Score:2) Sunday June 25 2006, @05:09PM<ul id="commtree_15602153"><li><a href="//linux.slashdot.org/comments.pl?sid=189477&amp;threshold=1&amp;commentsort=0&amp;mode=thread&amp;pid=15602153#15602198">Re:It's popular because..</a> by toddestan (Score:2) Sunday June 25 2006, @05:23PM<ul id="commtree_15602198"><li><a href="//linux.slashdot.org/comments.pl?sid=189477&amp;threshold=1&amp;commentsort=0&amp;mode=thread&amp;pid=15602198#15603704">Re:It's popular because..</a> by G27 Radio (Score:2) Monday June 26 2006, @01:02AM</li></ul></li></ul></li></ul></li><li><a href="//linux.slashdot.org/comments.pl?sid=189477&amp;threshold=1&amp;commentsort=0&amp;mode=thread&amp;pid=15601424#15604076">Re:It's popular because..</a> by uglyduckling (Score:2) Monday June 26 2006, @03:32AM</li></ul></li><li id="tree_15601429" class="comment">
+<div id="comment_status_15601429" class="commentstatus"></div>
+<div id="comment_15601429">
+	<div id="comment_top_15601429" class="commentTop newcomment">
+		<div class="title">
+			<h4><a name="15601429">why I love linux</a>
+
+
+		 	<span id="comment_score_15601429" class="score"> (Score:4, Interesting)</span></h4>
+		</div>
+		<div class="details">
+			by <a href="//slashdot.org/~free+space">free space (13714)</a> 
+			<span class="otherdetails" id="comment_otherdetails_15601429">		
+		on Sunday June 25 2006, @01:49PM (<a href="//linux.slashdot.org/comments.pl?sid=189477&amp;cid=15601429">#15601429</a>)
+		<small> </small>
+</span>
+		</div>
+	</div>
+	<div class="commentBody">	
+		<div id="comment_body_15601429">I had an old unused Pentium II machine running Windows 95. I reformatted the hard drive, installed DSLinux and used it as a file server/CVS repository. It had some glitches but essentially it's like having a new low end PC for free.<br><br>I wonder if the DSL project can be forked to create a "Damn small server" project, so anyone can set it up on an old machine, enable some services, hide it in a corner, and use SSH/VNC to administer it.<br></div>
+	</div>
+
+	<div class="commentSub" id="comment_sub_15601429">
+
+</div>
+</div>
+
+<ul id="commtree_15601429"><li id="tree_15601679" class="comment">
+<div id="comment_status_15601679" class="commentstatus"></div>
+<div id="comment_15601679">
+	<div id="comment_top_15601679" class="commentTop newcomment">
+		<div class="title">
+			<h4><a name="15601679">Smoothwall.</a>
+
+
+		 	<span id="comment_score_15601679" class="score"> (Score:5, Interesting)</span></h4>
+		</div>
+		<div class="details">
+			by <a href="//slashdot.org/~twitter">twitter (104583)</a> 
+			<span class="otherdetails" id="comment_otherdetails_15601679">		
+		on Sunday June 25 2006, @03:08PM (<a href="//linux.slashdot.org/comments.pl?sid=189477&amp;cid=15601679">#15601679</a>)
+		<small><br>(<a href="http://lists.clickers.org/linuxsig/index.html">http://lists.clickers.org/linuxsig/index.html</a> | Last Journal: <a href="//slashdot.org/~twitter/journal/">Friday November 09, @11:00PM</a>) </small>
+</span>
+		</div>
+	</div>
+	<div class="commentBody">	
+		<div id="comment_body_15601679"><i>I had an old unused Pentium II machine running Windows 95. I reformatted the hard drive, installed DSLinux and used it as a file server/CVS repository. It had some glitches but essentially it's like having a new low end PC for free.</i>
+<p>If you have a laptop, you have a computer you want to use for more than a server.  DSL is just the right thing if you have low RAM.  If you have 128 or more MB of RAM, just run Mepis or Debian Sarge.</p>
+<p> <i>I wonder if the DSL project can be forked to create a "Damn small server" project, so anyone can set it up on an old machine, enable some services, hide it in a corner, and use SSH/VNC to administer it.</i> </p>
+<p>Have you looked at Smoothwall yet?</p>
+<p></div>
+	</div>
+
+	<div class="commentSub" id="comment_sub_15601679">
+[ <a href="//linux.slashdot.org/comments.pl?sid=189477&amp;threshold=1&amp;commentsort=0&amp;mode=thread&amp;cid=15601429">Parent</a> ]
+</div>
+</div>
+
+<ul id="commtree_15601679"><li><a href="//linux.slashdot.org/comments.pl?sid=189477&amp;threshold=1&amp;commentsort=0&amp;mode=thread&amp;pid=15601679#15603550">Re:Smoothwall.</a> by free space (Score:2) Sunday June 25 2006, @11:58PM<ul id="commtree_15603550"><li><a href="//linux.slashdot.org/comments.pl?sid=189477&amp;threshold=1&amp;commentsort=0&amp;mode=thread&amp;pid=15603550#15603722">Re:Standalone Server www.clarkconnect.com</a> by Jonah Hex (Score:2) Monday June 26 2006, @01:09AM</li></ul></li><li><a href="//linux.slashdot.org/comments.pl?sid=189477&amp;threshold=1&amp;commentsort=0&amp;mode=thread&amp;pid=15601679#15616817">Re:Smoothwall.</a> by Tribbin (Score:2) Tuesday June 27 2006, @05:49PM</li><li><b><a href="//linux.slashdot.org/comments.pl?sid=189477&amp;threshold=-1&amp;commentsort=0&amp;mode=thread&amp;pid=15601679">2 replies</a> beneath your current threshold.</b></li></ul></li><li><a href="//linux.slashdot.org/comments.pl?sid=189477&amp;threshold=1&amp;commentsort=0&amp;mode=thread&amp;pid=15601429#15603467">Re:why I love linux</a> by foldingstock (Score:1) Sunday June 25 2006, @11:28PM<ul id="commtree_15603467"><li><a href="//linux.slashdot.org/comments.pl?sid=189477&amp;threshold=1&amp;commentsort=0&amp;mode=thread&amp;pid=15603467#15603538">Re:why I love linux</a> by free space (Score:2) Sunday June 25 2006, @11:55PM</li></ul></li><li><a href="//linux.slashdot.org/comments.pl?sid=189477&amp;threshold=1&amp;commentsort=0&amp;mode=thread&amp;pid=15601429#15603664">Re:why I love linux</a> by evilviper (Score:2) Monday June 26 2006, @12:46AM</li><li><b><a href="//linux.slashdot.org/comments.pl?sid=189477&amp;threshold=-1&amp;commentsort=0&amp;mode=thread&amp;pid=15601429">1 reply</a> beneath your current threshold.</b></li></ul></li><li id="tree_15601445" class="comment">
+<div id="comment_status_15601445" class="commentstatus"></div>
+<div id="comment_15601445">
+	<div id="comment_top_15601445" class="commentTop newcomment">
+		<div class="title">
+			<h4><a name="15601445">Hope they keep the original intent and size</a>
+
+
+		 	<span id="comment_score_15601445" class="score"> (Score:2, Interesting)</span></h4>
+		</div>
+		<div class="details">
+			by <a href="//slashdot.org/~Super+Dave+Osbourne">Super Dave Osbourne (688888)</a> 
+			<span class="otherdetails" id="comment_otherdetails_15601445">		
+		on Sunday June 25 2006, @01:54PM (<a href="//linux.slashdot.org/comments.pl?sid=189477&amp;cid=15601445">#15601445</a>)
+		<small> </small>
+</span>
+		</div>
+	</div>
+	<div class="commentBody">	
+		<div id="comment_body_15601445">down to 50 or less megs, even if the markets are driving the size of bloatware or there is actually a market for a phat DSL distro.  One of the cool things about it is the size, not its functionality (other than it is fully functional for more than say 90% of the user's needs in the world).  Its also a really cool little tool to install on used computers that folks are thinking of tossing away, or have tossed away.  I have made inroads with folks using Linux as their major OS with DSL (for size) and Knoppix (for its ease of install and wonderful GUI experience).  Bottomline, keep it small, fast and wonderful.</div>
+	</div>
+
+	<div class="commentSub" id="comment_sub_15601445">
+
+</div>
+</div>
+
+</li><li id="tree_15601473" class="comment">
+<div id="comment_status_15601473" class="commentstatus"></div>
+<div id="comment_15601473">
+	<div id="comment_top_15601473" class="commentTop newcomment">
+		<div class="title">
+			<h4><a name="15601473">missing the point?</a>
+
+
+		 	<span id="comment_score_15601473" class="score"> (Score:5, Funny)</span></h4>
+		</div>
+		<div class="details">
+			by <a href="//slashdot.org/~thelost">thelost (808451)</a> 
+			<span class="otherdetails" id="comment_otherdetails_15601473">		
+		on Sunday June 25 2006, @02:00PM (<a href="//linux.slashdot.org/comments.pl?sid=189477&amp;cid=15601473">#15601473</a>)
+		<small><br>(Last Journal: <a href="//slashdot.org/~thelost/journal/">Saturday January 20 2007, @07:25PM</a>) </small>
+</span>
+		</div>
+	</div>
+	<div class="commentBody">	
+		<div id="comment_body_15601473">"If they could do all this in 50 megs, imagine what they could do in more space."<br><br>stop calling it <b>Damn Small</b> Linux for one.</div>
+	</div>
+
+	<div class="commentSub" id="comment_sub_15601473">
+
+</div>
+</div>
+
+<ul id="commtree_15601473"><li><a href="//linux.slashdot.org/comments.pl?sid=189477&amp;threshold=1&amp;commentsort=0&amp;mode=thread&amp;pid=15601473#15605994">Re:missing the point?</a> by blugu64 (Score:1) Monday June 26 2006, @10:55AM<ul id="commtree_15605994"><li><a href="//linux.slashdot.org/comments.pl?sid=189477&amp;threshold=1&amp;commentsort=0&amp;mode=thread&amp;pid=15605994#15608341">Re:missing the point?</a> by nuzak (Score:2) Monday June 26 2006, @03:36PM<ul id="commtree_15608341"><li><a href="//linux.slashdot.org/comments.pl?sid=189477&amp;threshold=1&amp;commentsort=0&amp;mode=thread&amp;pid=15608341#15614583">Re:missing the point?</a> by blugu64 (Score:1) Tuesday June 27 2006, @01:27PM</li></ul></li></ul></li></ul></li><li id="tree_15601543" class="comment">
+<div id="comment_status_15601543" class="commentstatus"></div>
+<div id="comment_15601543">
+	<div id="comment_top_15601543" class="commentTop newcomment">
+		<div class="title">
+			<h4><a name="15601543">If they could do all this in 50 megs, imagine what</a>
+
+
+		 	<span id="comment_score_15601543" class="score"> (Score:1)</span></h4>
+		</div>
+		<div class="details">
+			by <a href="//slashdot.org/~bayuadri">bayuadri (984926)</a> 
+			<span class="otherdetails" id="comment_otherdetails_15601543">		
+		on Sunday June 25 2006, @02:18PM (<a href="//linux.slashdot.org/comments.pl?sid=189477&amp;cid=15601543">#15601543</a>)
+		<small> </small>
+</span>
+		</div>
+	</div>
+	<div class="commentBody">	
+		<div id="comment_body_15601543"><blockquote><div>If they could do all this in 50 megs, imagine what they could do in more space.</div> </blockquote>
+
+in more space... I imagine they could start selling CDs just like RedHat.</div>
+	</div>
+
+	<div class="commentSub" id="comment_sub_15601543">
+
+</div>
+</div>
+
+</li><li id="tree_15601551" class="comment">
+<div id="comment_status_15601551" class="commentstatus"></div>
+<div id="comment_15601551">
+	<div id="comment_top_15601551" class="commentTop newcomment">
+		<div class="title">
+			<h4><a name="15601551">How the times change</a>
+
+
+		 	<span id="comment_score_15601551" class="score"> (Score:5, Informative)</span></h4>
+		</div>
+		<div class="details">
+			by <a href="//slashdot.org/~r">r (13067)</a> 
+			<span class="otherdetails" id="comment_otherdetails_15601551">		
+		on Sunday June 25 2006, @02:20PM (<a href="//linux.slashdot.org/comments.pl?sid=189477&amp;cid=15601551">#15601551</a>)
+		<small> </small>
+</span>
+		</div>
+	</div>
+	<div class="commentBody">	
+		<div id="comment_body_15601551">A 50MB distro is called "damn small"? Damn. I remember when Slackware 1.x core came on a couple of floppy disks. And if you wanted a good text editor, you had to find one on Archie and get it yourself. But we were happy in those days.<nobr> <wbr></nobr>:)</div>
+	</div>
+
+	<div class="commentSub" id="comment_sub_15601551">
+
+</div>
+</div>
+
+<ul id="commtree_15601551"><li><a href="//linux.slashdot.org/comments.pl?sid=189477&amp;threshold=1&amp;commentsort=0&amp;mode=thread&amp;pid=15601551#15601682">Yes, how they change</a> by Frenchman113 (Score:2) Sunday June 25 2006, @03:09PM</li><li id="tree_15602847" class="comment">
+<div id="comment_status_15602847" class="commentstatus"></div>
+<div id="comment_15602847">
+	<div id="comment_top_15602847" class="commentTop newcomment">
+		<div class="title">
+			<h4><a name="15602847">Re:How the times change</a>
+
+
+		 	<span id="comment_score_15602847" class="score"> (Score:4, Funny)</span></h4>
+		</div>
+		<div class="details">
+			by <a href="//slashdot.org/~slide-rule">slide-rule (153968)</a> 
+			<span class="otherdetails" id="comment_otherdetails_15602847">		
+		on Sunday June 25 2006, @08:03PM (<a href="//linux.slashdot.org/comments.pl?sid=189477&amp;cid=15602847">#15602847</a>)
+		<small> </small>
+</span>
+		</div>
+	</div>
+	<div class="commentBody">	
+		<div id="comment_body_15602847">Moderation:<br><br>+1: Respected elder<br><br>-1: Up hill both ways...<br></div>
+	</div>
+
+	<div class="commentSub" id="comment_sub_15602847">
+[ <a href="//linux.slashdot.org/comments.pl?sid=189477&amp;threshold=1&amp;commentsort=0&amp;mode=thread&amp;cid=15601551">Parent</a> ]
+</div>
+</div>
+
+</li><li><a href="//linux.slashdot.org/comments.pl?sid=189477&amp;threshold=1&amp;commentsort=0&amp;mode=thread&amp;pid=15601551#15602884">Re:How the times change</a> by Spit (Score:1) Sunday June 25 2006, @08:18PM</li><li><a href="//linux.slashdot.org/comments.pl?sid=189477&amp;threshold=1&amp;commentsort=0&amp;mode=thread&amp;pid=15602592#15602967">Re:How the times change</a> by AEton (Score:2) Sunday June 25 2006, @08:42PM</li><li><b><a href="//linux.slashdot.org/comments.pl?sid=189477&amp;threshold=-1&amp;commentsort=0&amp;mode=thread&amp;pid=15601551">2 replies</a> beneath your current threshold.</b></li></ul></li><li id="tree_15601564" class="comment">
+<div id="comment_status_15601564" class="commentstatus"></div>
+<div id="comment_15601564">
+	<div id="comment_top_15601564" class="commentTop newcomment">
+		<div class="title">
+			<h4><a name="15601564">ram drives and solid-state memory</a>
+
+
+		 	<span id="comment_score_15601564" class="score"> (Score:1)</span></h4>
+		</div>
+		<div class="details">
+			by <a href="//slashdot.org/~Jtoxification">Jtoxification (678057)</a> 
+			<span class="otherdetails" id="comment_otherdetails_15601564">		
+		on Sunday June 25 2006, @02:23PM (<a href="//linux.slashdot.org/comments.pl?sid=189477&amp;cid=15601564">#15601564</a>)
+		<small><br>(<a href="http://jtox.blogspot.com/" rel="nofollow">http://jtox.blogspot.com/</a> | Last Journal: <a href="//slashdot.org/~Jtoxification/journal/">Wednesday June 28 2006, @01:32AM</a>) </small>
+</span>
+		</div>
+	</div>
+	<div class="commentBody">	
+		<div id="comment_body_15601564">Wouldn't that be fun! Set it up to load everything to gddr2 memory or one of those new-fangled solid-state drives! (err, the fast ones, anyway)</div>
+	</div>
+
+	<div class="commentSub" id="comment_sub_15601564">
+
+</div>
+</div>
+
+</li><li id="tree_15601567" class="comment">
+<div id="comment_status_15601567" class="commentstatus"></div>
+<div id="comment_15601567">
+	<div id="comment_top_15601567" class="commentTop newcomment">
+		<div class="title">
+			<h4><a name="15601567">Different *DSL sizes make sense</a>
+
+
+		 	<span id="comment_score_15601567" class="score"> (Score:5, Insightful)</span></h4>
+		</div>
+		<div class="details">
+			by <a href="//slashdot.org/~BigFootApe">BigFootApe (264256)</a> 
+			<span class="otherdetails" id="comment_otherdetails_15601567">		
+		on Sunday June 25 2006, @02:25PM (<a href="//linux.slashdot.org/comments.pl?sid=189477&amp;cid=15601567">#15601567</a>)
+		<small> </small>
+</span>
+		</div>
+	</div>
+	<div class="commentBody">	
+		<div id="comment_body_15601567">Not all DSL users stick to the CD based install. Some, I'm sure, switch to USB thumb drives for portable operation.  A version of DSL designed to fit within 150 megs or so would be perfect for larger thumb drives.</div>
+	</div>
+
+	<div class="commentSub" id="comment_sub_15601567">
+
+</div>
+</div>
+
+</li><li id="tree_15601582" class="comment">
+<div id="comment_status_15601582" class="commentstatus"></div>
+<div id="comment_15601582">
+	<div id="comment_top_15601582" class="commentTop newcomment">
+		<div class="title">
+			<h4><a name="15601582">Size/ability tradeoff was always available</a>
+
+
+		 	<span id="comment_score_15601582" class="score"> (Score:5, Interesting)</span></h4>
+		</div>
+		<div class="details">
+			by <a href="//slashdot.org/~rbrander">rbrander (73222)</a> 
+			<span class="otherdetails" id="comment_otherdetails_15601582">		
+		on Sunday June 25 2006, @02:29PM (<a href="//linux.slashdot.org/comments.pl?sid=189477&amp;cid=15601582">#15601582</a>)
+		<small><br>(<a href="http://www.cuug.ab.ca/~branderr">http://www.cuug.ab.ca/~branderr</a>) </small>
+</span>
+		</div>
+	</div>
+	<div class="commentBody">	
+		<div id="comment_body_15601582">I managed to get DSL working on a 256MB USB key.  Then I installed their package for OpenOffice, which was 75MB all by itself.  OK, my USB key is now 50% taken up by DSL+OO, and half empty for my files.<br><br>Then I did nothing more than<br><br>dd if=/dev/sda1  of=DSL_OO.image<br><br>and stuck in other 256MB USB keys and did:<br><br>dd if=DSL_OO.image  of=/dev/sda1<nobr> <wbr></nobr>...to copy the memory key, DSL, OO, 128MB free personal disk space, and all.<br><br>and was able to hand out $25 "thank you" tokens to speakers at our local Unix User Group (www.cuug.ab.ca) that consisted of a bootable USB Linux with full OpenOffice functionality.  Ran fine on 256MB PCs with all software loaded into RAM - OO starts faster on these old machines than much faster ones that have to pull OO off the HD.<br><br>In short, you could ALWAYS pump up DSL with a good selection of softare they've made available in packages.  It only starts off at 50MB.</div>
+	</div>
+
+	<div class="commentSub" id="comment_sub_15601582">
+
+</div>
+</div>
+
+</li><li id="tree_15601597" class="comment">
+<div id="comment_status_15601597" class="commentstatus"></div>
+<div id="comment_15601597">
+	<div id="comment_top_15601597" class="commentTop newcomment">
+		<div class="title">
+			<h4><a name="15601597">Bloatware</a>
+
+
+		 	<span id="comment_score_15601597" class="score"> (Score:3)</span></h4>
+		</div>
+		<div class="details">
+			by <a href="//slashdot.org/~Tim+Ward">Tim Ward (514198)</a> 
+			<span class="otherdetails" id="comment_otherdetails_15601597">		
+		on Sunday June 25 2006, @02:36PM (<a href="//linux.slashdot.org/comments.pl?sid=189477&amp;cid=15601597">#15601597</a>)
+		<small><br>(<a href="http://www.brettward.co.uk">http://www.brettward.co.uk</a>) </small>
+</span>
+		</div>
+	</div>
+	<div class="commentBody">	
+		<div id="comment_body_15601597">50meg? - give me a break!!!<br><br>Mate of mine was in charge of the resident software in one machine<nobr> <wbr></nobr>... which had a 256 byte PROM, everything else needed to be loaded from the teletype.<br><br>Every now and then he's spot an inefficiency in the software, remove an instruction, save three bytes<nobr> <wbr></nobr>... and use the freed-up space to add four new features.<br><br>They dont make 'em like that any more.<br></div>
+	</div>
+
+	<div class="commentSub" id="comment_sub_15601597">
+
+</div>
+</div>
+
+<ul id="commtree_15601597"><li id="tree_15601797" class="comment">
+<div id="comment_status_15601797" class="commentstatus"></div>
+<div id="comment_15601797">
+	<div id="comment_top_15601797" class="commentTop newcomment">
+		<div class="title">
+			<h4><a name="15601797">Re:Bloatware</a>
+
+
+		 	<span id="comment_score_15601797" class="score"> (Score:4, Funny)</span></h4>
+		</div>
+		<div class="details">
+			by <a href="//slashdot.org/~Mathiasdm">Mathiasdm (803983)</a> 
+			<span class="otherdetails" id="comment_otherdetails_15601797">		
+		on Sunday June 25 2006, @03:44PM (<a href="//linux.slashdot.org/comments.pl?sid=189477&amp;cid=15601797">#15601797</a>)
+		<small><br>(<a href="http://mathiasdm.blogspot.com/" rel="nofollow">http://mathiasdm.blogspot.com/</a>) </small>
+</span>
+		</div>
+	</div>
+	<div class="commentBody">	
+		<div id="comment_body_15601797">Ah, that's nothing!<br><br>In my days, we didn't have those fancy 'computer' thingies.<br><br>We only had good old Turing Machines!<br><br>Me and my 27 brothers would sit along an infinite line of paper for 27 hours a day, and we'd constantly move the pointer, change 1's into spaces and the other way around.<br>Then, we barely had time to go home, get a spanking from hour father, rape our oldest sister and run back to work, where we had to arrive the day before!<br><br>Ah yes, those Turing Machines. They don't make 'em like they used to!</div>
+	</div>
+
+	<div class="commentSub" id="comment_sub_15601797">
+[ <a href="//linux.slashdot.org/comments.pl?sid=189477&amp;threshold=1&amp;commentsort=0&amp;mode=thread&amp;cid=15601597">Parent</a> ]
+</div>
+</div>
+
+</li><li><a href="//linux.slashdot.org/comments.pl?sid=189477&amp;threshold=1&amp;commentsort=0&amp;mode=thread&amp;pid=15601597#15602015">Re:Bloatware</a> by Tim Browse (Score:2) Sunday June 25 2006, @04:33PM</li><li><a href="//linux.slashdot.org/comments.pl?sid=189477&amp;threshold=1&amp;commentsort=0&amp;mode=thread&amp;pid=15601597#15603544">Re:Bloatware</a> by glwtta (Score:2) Sunday June 25 2006, @11:56PM</li><li><a href="//linux.slashdot.org/comments.pl?sid=189477&amp;threshold=1&amp;commentsort=0&amp;mode=thread&amp;pid=15601597#15604555">Re:Bloatware</a> by jthill (Score:2) Monday June 26 2006, @07:04AM</li></ul></li><li id="tree_15601618" class="comment">
+<div id="comment_status_15601618" class="commentstatus"></div>
+<div id="comment_15601618">
+	<div id="comment_top_15601618" class="commentTop newcomment">
+		<div class="title">
+			<h4><a name="15601618">Finnix: Obligatory self-promotion</a>
+
+
+		 	<span id="comment_score_15601618" class="score"> (Score:5, Interesting)</span></h4>
+		</div>
+		<div class="details">
+			by <a href="//slashdot.org/~fo0bar">fo0bar (261207)</a> 
+			<span class="otherdetails" id="comment_otherdetails_15601618">		
+		on Sunday June 25 2006, @02:44PM (<a href="//linux.slashdot.org/comments.pl?sid=189477&amp;cid=15601618">#15601618</a>)
+		<small> </small>
+</span>
+		</div>
+	</div>
+	<div class="commentBody">	
+		<div id="comment_body_15601618">I just thought I'd do some shameless advertising and mention my distro, <a href="http://www.finnix.org/" title="finnix.org">Finnix</a> [finnix.org].  It's a 100MB livecd that has no X, desktops, productivity tools, etc...  but makes up for it by having a ton of sysadmin utilities, such as LVM detection and cryptsetup.  It's basically the CD you carry around to help fix broken systems.  There's also a PPC port, obviously can be booted from a thumb drive, as well as within Xen/UML virtualization systems.<br><br>Finnix doesn't really compete with DSL, except for the "damn, this system is hosed, I don't have a recovery CD around, and I don't want to wait to download 700MB for something like Knoppix" crowd.</div>
+	</div>
+
+	<div class="commentSub" id="comment_sub_15601618">
+
+</div>
+</div>
+
+<ul id="commtree_15601618"><li><a href="//linux.slashdot.org/comments.pl?sid=189477&amp;threshold=1&amp;commentsort=0&amp;mode=thread&amp;pid=15601618#15603239">Re:Finnix: Obligatory self-promotion</a> by glwtta (Score:2) Sunday June 25 2006, @10:04PM<ul id="commtree_15603239"><li><a href="//linux.slashdot.org/comments.pl?sid=189477&amp;threshold=1&amp;commentsort=0&amp;mode=thread&amp;pid=15603239#15604016">Re:Finnix: Obligatory self-promotion</a> by fo0bar (Score:2) Monday June 26 2006, @03:05AM</li></ul></li></ul></li><li id="tree_15601626" class="comment">
+<div id="comment_status_15601626" class="commentstatus"></div>
+<div id="comment_15601626">
+	<div id="comment_top_15601626" class="commentTop newcomment">
+		<div class="title">
+			<h4><a name="15601626">DFL</a>
+
+
+		 	<span id="comment_score_15601626" class="score"> (Score:1)</span></h4>
+		</div>
+		<div class="details">
+			by <a href="//slashdot.org/~kybred">kybred (795293)</a> 
+			<span class="otherdetails" id="comment_otherdetails_15601626">		
+		on Sunday June 25 2006, @02:49PM (<a href="//linux.slashdot.org/comments.pl?sid=189477&amp;cid=15601626">#15601626</a>)
+		<small> </small>
+</span>
+		</div>
+	</div>
+	<div class="commentBody">	
+		<div id="comment_body_15601626">Maybe they should rename it <strong>Damn Fine Linux</strong>.</div>
+	</div>
+
+	<div class="commentSub" id="comment_sub_15601626">
+
+</div>
+</div>
+
+<ul id="commtree_15601626"><li><a href="//linux.slashdot.org/comments.pl?sid=189477&amp;threshold=1&amp;commentsort=0&amp;mode=thread&amp;pid=15601626#15609078">Re:DFL</a> by Richard Steiner (Score:2) Monday June 26 2006, @05:07PM</li></ul></li><li id="tree_15601628" class="comment">
+<div id="comment_status_15601628" class="commentstatus"></div>
+<div id="comment_15601628">
+	<div id="comment_top_15601628" class="commentTop newcomment">
+		<div class="title">
+			<h4><a name="15601628">Slax?</a>
+
+
+		 	<span id="comment_score_15601628" class="score"> (Score:2, Informative)</span></h4>
+		</div>
+		<div class="details">
+			by <a href="//slashdot.org/~lRem">lRem (914073)</a> 
+			<span class="otherdetails" id="comment_otherdetails_15601628">		
+		on Sunday June 25 2006, @02:49PM (<a href="//linux.slashdot.org/comments.pl?sid=189477&amp;cid=15601628">#15601628</a>)
+		<small><br>(<a href="http://lrem.net/" rel="nofollow">http://lrem.net/</a>) </small>
+</span>
+		</div>
+	</div>
+	<div class="commentBody">	
+		<div id="comment_body_15601628">There is a good example what can be done within 192 mb what is the smallest practical size - the size of small CD. And the example: <a href="http://slax.org/" title="slax.org" rel="nofollow">http://slax.org/</a> [slax.org] it is a microlinux with KDE and lot's of useful stuff, also modificable with some 800 packages ready to add.</div>
+	</div>
+
+	<div class="commentSub" id="comment_sub_15601628">
+
+</div>
+</div>
+
+<ul id="commtree_15601628"><li><a href="//linux.slashdot.org/comments.pl?sid=189477&amp;threshold=1&amp;commentsort=0&amp;mode=thread&amp;pid=15601628#15601898">Re:Slax?</a> by joe 155 (Score:3) Sunday June 25 2006, @04:04PM</li><li><a href="//linux.slashdot.org/comments.pl?sid=189477&amp;threshold=1&amp;commentsort=0&amp;mode=thread&amp;pid=15601628#15603201">Re:Slax?</a> by TrevorB (Score:2) Sunday June 25 2006, @09:54PM<ul id="commtree_15603201"><li><a href="//linux.slashdot.org/comments.pl?sid=189477&amp;threshold=1&amp;commentsort=0&amp;mode=thread&amp;pid=15603201#15603914">Re:Slax?</a> by geminidomino (Score:2) Monday June 26 2006, @02:22AM</li></ul></li></ul></li><li id="tree_15601634" class="comment">
+<div id="comment_status_15601634" class="commentstatus"></div>
+<div id="comment_15601634">
+	<div id="comment_top_15601634" class="commentTop newcomment">
+		<div class="title">
+			<h4><a name="15601634">Perfect for legacy hardware</a>
+
+
+		 	<span id="comment_score_15601634" class="score"> (Score:2, Informative)</span></h4>
+		</div>
+		<div class="details">
+			by <a href="//slashdot.org/~rabid_sith">rabid_sith (918777)</a> 
+			<span class="otherdetails" id="comment_otherdetails_15601634">		
+		on Sunday June 25 2006, @02:50PM (<a href="//linux.slashdot.org/comments.pl?sid=189477&amp;cid=15601634">#15601634</a>)
+		<small> </small>
+</span>
+		</div>
+	</div>
+	<div class="commentBody">	
+		<div id="comment_body_15601634">The box I play around on is an old i586, so most modern distros won't even get past boot. And if they do, they end up using most if not all of my memory, drive space, and usually a sizeable chunk of the swap as well. And what does DSL go and do? Uses about 30MB of memory, ~1GB of space on a full install, and boots up nice and fast.
+<br> <br>
+And it also lets me practice my machine gun skills in Quake II while I'm waiting for the rest of my party to show up from goodness-knows-where.</div>
+	</div>
+
+	<div class="commentSub" id="comment_sub_15601634">
+
+</div>
+</div>
+
+</li><li id="tree_15601635" class="comment">
+<div id="comment_status_15601635" class="commentstatus"></div>
+<div id="comment_15601635">
+	<div id="comment_top_15601635" class="commentTop newcomment">
+		<div class="title">
+			<h4><a name="15601635">What is up with DSL and Samba?</a>
+
+
+		 	<span id="comment_score_15601635" class="score"> (Score:4, Insightful)</span></h4>
+		</div>
+		<div class="details">
+			by Anonymous Coward 
+			<span class="otherdetails" id="comment_otherdetails_15601635">		
+		on Sunday June 25 2006, @02:51PM (<a href="//linux.slashdot.org/comments.pl?sid=189477&amp;cid=15601635">#15601635</a>)
+		<small> </small>
+</span>
+		</div>
+	</div>
+	<div class="commentBody">	
+		<div id="comment_body_15601635">I like DSL and I've used it extensively, but I cannot deal with having to get online to connec to an on-line download server before having Samba. That just sucks. Sure, you can carry it on a thumb drive as an extension, but it would be so much easier if it was part of DSL.<br>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; I was really disappointed after downloading DSL-N and finding out it still has this same disappointment.<br>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Now, please, somebody make a fool of me. Show me I'm wrong. Tell me there is a way to do a samba connect without downloading anything with DSL or DSL-N.</div>
+	</div>
+
+	<div class="commentSub" id="comment_sub_15601635">
+
+</div>
+</div>
+
+<ul id="commtree_15601635"><li><a href="//linux.slashdot.org/comments.pl?sid=189477&amp;threshold=1&amp;commentsort=0&amp;mode=thread&amp;pid=15601635#15604160">Re:What is up with DSL and Samba?</a> by Slashcrap (Score:1) Monday June 26 2006, @04:22AM</li></ul></li><li id="tree_15601661" class="comment">
+<div id="comment_status_15601661" class="commentstatus"></div>
+<div id="comment_15601661">
+	<div id="comment_top_15601661" class="commentTop newcomment">
+		<div class="title">
+			<h4><a name="15601661">Hmm...</a>
+
+
+		 	<span id="comment_score_15601661" class="score"> (Score:1)</span></h4>
+		</div>
+		<div class="details">
+			by <a href="//slashdot.org/~NoScreenNamesLeft">NoScreenNamesLeft (958015)</a> 
+			<span class="otherdetails" id="comment_otherdetails_15601661">		
+		on Sunday June 25 2006, @03:01PM (<a href="//linux.slashdot.org/comments.pl?sid=189477&amp;cid=15601661">#15601661</a>)
+		<small><br>(<a href="http://www.osadvocacy.uk.to/" rel="nofollow">http://www.osadvocacy.uk.to/</a>) </small>
+</span>
+		</div>
+	</div>
+	<div class="commentBody">	
+		<div id="comment_body_15601661">Maybe they should have a size limit. Or, possibly a basic distro with simply the basics and nothing more so you can just run Linux. Maybe they should go for the size of ClosedBSD - 1 floppy...</div>
+	</div>
+
+	<div class="commentSub" id="comment_sub_15601661">
+
+</div>
+</div>
+
+</li><li id="tree_15601685" class="comment">
+<div id="comment_status_15601685" class="commentstatus"></div>
+<div id="comment_15601685">
+	<div id="comment_top_15601685" class="commentTop newcomment">
+		<div class="title">
+			<h4><a name="15601685">I don't see the point</a>
+
+
+		 	<span id="comment_score_15601685" class="score"> (Score:2, Interesting)</span></h4>
+		</div>
+		<div class="details">
+			by <a href="//slashdot.org/~bytesex">bytesex (112972)</a> 
+			<span class="otherdetails" id="comment_otherdetails_15601685">		
+		on Sunday June 25 2006, @03:09PM (<a href="//linux.slashdot.org/comments.pl?sid=189477&amp;cid=15601685">#15601685</a>)
+		<small><br>(<a href="http://ufy.sourceforge.net/" rel="nofollow">http://ufy.sourceforge.net/</a>) </small>
+</span>
+		</div>
+	</div>
+	<div class="commentBody">	
+		<div id="comment_body_15601685">From a usability point-of-view, I don't see the point in having this damn small linux, but maybe that's because I would see the use of this thing only in the perspective of an admin.  You see, if I want big, I'll use knoppix, or kororaa; if we're talking about small (and fitted with a floppy drive), then 1.4 MB is the max.  And you can still fit a linux kernel (albeit one customized for the hardware), a libc, a shell and some disk-tools on that.  That's great for repairs, or bootstrapping your old 386 and using it for vi.  From the point-of-view of hardware, I also have a difficulty understanding why this is usefull; the devices in question have to be fitted with CD- or floppy-drives, so we're talking PCs here; if a PC had 50 MB of diskspace (say, a 386 or a 486; they're not using compression, are they ?) then all this fancy-schmansy gtk stuff is just going to kill it.  Any PC above that would have a CD drive that I could stick a fully loaded CD in.  And any PC that could really play the gtk stuff well, would have to be post-pentium at least.  So, other than 'because we can' I see no answers that a project like this provides.</div>
+	</div>
+
+	<div class="commentSub" id="comment_sub_15601685">
+
+</div>
+</div>
+
+<ul id="commtree_15601685"><li><a href="//linux.slashdot.org/comments.pl?sid=189477&amp;threshold=1&amp;commentsort=0&amp;mode=thread&amp;pid=15601685#15601757">Well...</a> by Belial6 (Score:2) Sunday June 25 2006, @03:33PM</li><li id="tree_15601836" class="comment">
+<div id="comment_status_15601836" class="commentstatus"></div>
+<div id="comment_15601836">
+	<div id="comment_top_15601836" class="commentTop newcomment">
+		<div class="title">
+			<h4><a name="15601836">Think VMWare + Truecrypt with DSL as the base</a>
+
+
+		 	<span id="comment_score_15601836" class="score"> (Score:5, Informative)</span></h4>
+		</div>
+		<div class="details">
+			by <a href="//slashdot.org/~misanthrope101">misanthrope101 (253915)</a> 
+			<span class="otherdetails" id="comment_otherdetails_15601836">		
+		on Sunday June 25 2006, @03:51PM (<a href="//linux.slashdot.org/comments.pl?sid=189477&amp;cid=15601836">#15601836</a>)
+		<small> </small>
+</span>
+		</div>
+	</div>
+	<div class="commentBody">	
+		<div id="comment_body_15601836"><blockquote> <div><i>I don't see the point</i></div> </blockquote>
+
+There are applications for a small distro.  DSL + VMWare + Truecrypt is an interesting setup.  All you'd have unencrypted on your HD would be the DSL install, and you could run your "real" OS from a VMWare Virtual Machine stored in an encrypted container, even in a hidden container.   I haven't actually tried this, but I've seen posts by people using Puppy Linux (or was it Feather?  can't remember) for just this setup.   <p><p>
+
+Now if only Truecrypt and VMWare could be automagically installed via apt-get or Synaptic.  I can even learn to use the command-line version of Truecrypt, if I could just get it installed in less than an hour.  I haven't even tried on DSL yet.</p></div>
+	</div>
+
+	<div class="commentSub" id="comment_sub_15601836">
+[ <a href="//linux.slashdot.org/comments.pl?sid=189477&amp;threshold=1&amp;commentsort=0&amp;mode=thread&amp;cid=15601685">Parent</a> ]
+</div>
+</div>
+
+<ul id="commtree_15601836"><li><a href="//linux.slashdot.org/comments.pl?sid=189477&amp;threshold=1&amp;commentsort=0&amp;mode=thread&amp;pid=15601836#15605409">Not only, but also ...</a> by donak (Score:1) Monday June 26 2006, @09:29AM</li></ul></li><li><a href="//linux.slashdot.org/comments.pl?sid=189477&amp;threshold=1&amp;commentsort=0&amp;mode=thread&amp;pid=15601685#15602098">Re:I don't see the point</a> by TERdON (Score:2) Sunday June 25 2006, @04:57PM</li><li><b><a href="//linux.slashdot.org/comments.pl?sid=189477&amp;threshold=-1&amp;commentsort=0&amp;mode=thread&amp;pid=15601685">1 reply</a> beneath your current threshold.</b></li></ul></li><li id="tree_15601698" class="comment">
+<div id="comment_status_15601698" class="commentstatus"></div>
+<div id="comment_15601698">
+	<div id="comment_top_15601698" class="commentTop newcomment">
+		<div class="title">
+			<h4><a name="15601698">Damn small runs on Damn thin computers!</a>
+
+
+		 	<span id="comment_score_15601698" class="score"> (Score:4, Interesting)</span></h4>
+		</div>
+		<div class="details">
+			by <a href="//slashdot.org/~DoninIN">DoninIN (115418)</a> 
+			<span class="otherdetails" id="comment_otherdetails_15601698">		 &lt;<a href="mailto:middendorf%40mad.scientist.com">middendorf@mad.scientist.com</a>&gt;
+		on Sunday June 25 2006, @03:11PM (<a href="//linux.slashdot.org/comments.pl?sid=189477&amp;cid=15601698">#15601698</a>)
+		<small><br>(<a href="http://middendorf.blogspot.com/">http://middendorf.blogspot.com/</a>) </small>
+</span>
+		</div>
+	</div>
+	<div class="commentBody">	
+		<div id="comment_body_15601698">I was using DSL on a pentium II 350 mhz computer for the last few months and I loved it, that's the beauty of DSL, more so than the "small" in terms of size, the thing part is of huge usefulness! What's the street value of a PII 350? $0.5? Seriously, it's a free computer someone gave me when we installed new hardware at their location, I threw it in my graveyard, and for a while made it a DOS V6.x game box (it's back to that role now, I eventually got bored and bought a modern computer) but during its run of several months I've been web browsing on it from home and haven't had any problem running firefox.</div>
+	</div>
+
+	<div class="commentSub" id="comment_sub_15601698">
+
+</div>
+</div>
+
+<ul id="commtree_15601698"><li><a href="//linux.slashdot.org/comments.pl?sid=189477&amp;threshold=1&amp;commentsort=0&amp;mode=thread&amp;pid=15601698#15602852">Damn stupid name</a> by EmbeddedJanitor (Score:1) Sunday June 25 2006, @08:04PM</li></ul></li><li id="tree_15601763" class="comment">
+<div id="comment_status_15601763" class="commentstatus"></div>
+<div id="comment_15601763">
+	<div id="comment_top_15601763" class="commentTop newcomment">
+		<div class="title">
+			<h4><a name="15601763">50 megs?</a>
+
+
+		 	<span id="comment_score_15601763" class="score"> (Score:4, Funny)</span></h4>
+		</div>
+		<div class="details">
+			by <a href="//slashdot.org/~AC-x">AC-x (735297)</a> 
+			<span class="otherdetails" id="comment_otherdetails_15601763">		
+		on Sunday June 25 2006, @03:34PM (<a href="//linux.slashdot.org/comments.pl?sid=189477&amp;cid=15601763">#15601763</a>)
+		<small> </small>
+</span>
+		</div>
+	</div>
+	<div class="commentBody">	
+		<div id="comment_body_15601763">Pfft, I remember playing with a <a href="http://toastytech.com/guis/qnxdemo.html" title="toastytech.com">bootable floppy</a> [toastytech.com] containing QNX with a complete GUI, web browser, texteditor and full network support.
+<br> <br>
+Ok, it had absolutely _nothing_ else but it was still damn cool.</div>
+	</div>
+
+	<div class="commentSub" id="comment_sub_15601763">
+
+</div>
+</div>
+
+<ul id="commtree_15601763"><li><a href="//linux.slashdot.org/comments.pl?sid=189477&amp;threshold=1&amp;commentsort=0&amp;mode=thread&amp;pid=15601763#15603398">QNX mini-system</a> by Animats (Score:2) Sunday June 25 2006, @10:58PM</li></ul></li><li id="tree_15601764" class="comment">
+<div id="comment_status_15601764" class="commentstatus"></div>
+<div id="comment_15601764">
+	<div id="comment_top_15601764" class="commentTop newcomment">
+		<div class="title">
+			<h4><a name="15601764">16MB with X?</a>
+
+
+		 	<span id="comment_score_15601764" class="score"> (Score:2)</span></h4>
+		</div>
+		<div class="details">
+			by <a href="//slashdot.org/~Vo0k">Vo0k (760020)</a> 
+			<span class="otherdetails" id="comment_otherdetails_15601764">		
+		on Sunday June 25 2006, @03:34PM (<a href="//linux.slashdot.org/comments.pl?sid=189477&amp;cid=15601764">#15601764</a>)
+		<small><br>(Last Journal: <a href="//slashdot.org/~Vo0k/journal/">Wednesday August 18 2004, @07:52AM</a>) </small>
+</span>
+		</div>
+	</div>
+	<div class="commentBody">	
+		<div id="comment_body_15601764">Anybody to suggest a linux that would fit on my spare 16MB SD card and include X? A while ago there was some linux that fitted on 11 floppies and would include X and its goodies, but it's gone MIA and what's available nowadays is DSL (64M), some LiveCD distros of 100+M and 1-2 floppy microlinuxes that are cropped to bare bones and definitely don't have X. Any ideas?</div>
+	</div>
+
+	<div class="commentSub" id="comment_sub_15601764">
+
+</div>
+</div>
+
+<ul id="commtree_15601764"><li id="tree_15602199" class="comment">
+<div id="comment_status_15602199" class="commentstatus"></div>
+<div id="comment_15602199">
+	<div id="comment_top_15602199" class="commentTop newcomment">
+		<div class="title">
+			<h4><a name="15602199">Re:16MB with X?</a>
+
+
+		 	<span id="comment_score_15602199" class="score"> (Score:5, Interesting)</span></h4>
+		</div>
+		<div class="details">
+			by <a href="//slashdot.org/~RGRistroph">RGRistroph (86936)</a> 
+			<span class="otherdetails" id="comment_otherdetails_15602199">		 &lt;<a href="mailto:rgristroph%40yahoo.com">rgristroph@yahoo.com</a>&gt;
+		on Sunday June 25 2006, @05:24PM (<a href="//linux.slashdot.org/comments.pl?sid=189477&amp;cid=15602199">#15602199</a>)
+		<small><br>(<a href="http://rgr.freeshell.org/">http://rgr.freeshell.org/</a>) </small>
+</span>
+		</div>
+	</div>
+	<div class="commentBody">	
+		<div id="comment_body_15602199">You might want to check this out:<br><br><a href="http://www.angelfire.com/linux/floorzat/2diskXwin.htm" title="angelfire.com">http://www.angelfire.com/linux/floorzat/2diskXwin<nobr>.<wbr></nobr> htm</a> [angelfire.com]<br><br>However, I believe your best bet is to avoid X.  You need a very minimal hand-built linux that uses the svgalib and links, and maybe seejpeg, to do all graphical stuff.  If you put it together consider posting an image of it somewhere.<br></div>
+	</div>
+
+	<div class="commentSub" id="comment_sub_15602199">
+[ <a href="//linux.slashdot.org/comments.pl?sid=189477&amp;threshold=1&amp;commentsort=0&amp;mode=thread&amp;cid=15601764">Parent</a> ]
+</div>
+</div>
+
+<ul id="commtree_15602199"><li><a href="//linux.slashdot.org/comments.pl?sid=189477&amp;threshold=1&amp;commentsort=0&amp;mode=thread&amp;pid=15602199#15602795">Re:16MB with X?</a> by korbin_dallas (Score:1) Sunday June 25 2006, @07:47PM</li></ul></li><li><a href="//linux.slashdot.org/comments.pl?sid=189477&amp;threshold=1&amp;commentsort=0&amp;mode=thread&amp;pid=15601764#15602875">Re:16MB with X?</a> by really? (Score:2) Sunday June 25 2006, @08:14PM</li><li><a href="//linux.slashdot.org/comments.pl?sid=189477&amp;threshold=1&amp;commentsort=0&amp;mode=thread&amp;pid=15601764#15603546">Re:16MB with X?</a> by SaidinUnleashed (Score:1) Sunday June 25 2006, @11:56PM</li><li><b><a href="//linux.slashdot.org/comments.pl?sid=189477&amp;threshold=-1&amp;commentsort=0&amp;mode=thread&amp;pid=15601764">1 reply</a> beneath your current threshold.</b></li></ul></li><li id="tree_15601847" class="comment">
+<div id="comment_status_15601847" class="commentstatus"></div>
+<div id="comment_15601847">
+	<div id="comment_top_15601847" class="commentTop newcomment">
+		<div class="title">
+			<h4><a name="15601847">Two web browsers!?!</a>
+
+
+		 	<span id="comment_score_15601847" class="score"> (Score:3, Insightful)</span></h4>
+		</div>
+		<div class="details">
+			by <a href="//slashdot.org/~Andrew+Tanenbaum">Andrew Tanenbaum (896883)</a> 
+			<span class="otherdetails" id="comment_otherdetails_15601847">		
+		on Sunday June 25 2006, @03:53PM (<a href="//linux.slashdot.org/comments.pl?sid=189477&amp;cid=15601847">#15601847</a>)
+		<small> </small>
+</span>
+		</div>
+	</div>
+	<div class="commentBody">	
+		<div id="comment_body_15601847">Why in the world would they need two web browsers?</div>
+	</div>
+
+	<div class="commentSub" id="comment_sub_15601847">
+
+</div>
+</div>
+
+<ul id="commtree_15601847"><li><a href="//linux.slashdot.org/comments.pl?sid=189477&amp;threshold=1&amp;commentsort=0&amp;mode=thread&amp;pid=15601847#15601994">Re:Two web browsers!?!</a> by AlgorithMan (Score:3) Sunday June 25 2006, @04:26PM<ul id="commtree_15601994"><li><a href="//linux.slashdot.org/comments.pl?sid=189477&amp;threshold=1&amp;commentsort=0&amp;mode=thread&amp;pid=15601994#15605491">Re:Two web browsers!?!</a> by ifishfortorque (Score:1) Monday June 26 2006, @09:43AM<ul id="commtree_15605491"><li><a href="//linux.slashdot.org/comments.pl?sid=189477&amp;threshold=1&amp;commentsort=0&amp;mode=thread&amp;pid=15605491#15640903">Re:Two web browsers!?!</a> by martinultima (Score:2) Friday June 30 2006, @08:32PM</li></ul></li></ul></li></ul></li><li id="tree_15601936" class="comment">
+<div id="comment_status_15601936" class="commentstatus"></div>
+<div id="comment_15601936">
+	<div id="comment_top_15601936" class="commentTop newcomment">
+		<div class="title">
+			<h4><a name="15601936">Doesn't anyone see..</a>
+
+
+		 	<span id="comment_score_15601936" class="score"> (Score:2, Interesting)</span></h4>
+		</div>
+		<div class="details">
+			by <a href="//slashdot.org/~movienut">movienut (984943)</a> 
+			<span class="otherdetails" id="comment_otherdetails_15601936">		
+		on Sunday June 25 2006, @04:12PM (<a href="//linux.slashdot.org/comments.pl?sid=189477&amp;cid=15601936">#15601936</a>)
+		<small> </small>
+</span>
+		</div>
+	</div>
+	<div class="commentBody">	
+		<div id="comment_body_15601936">...the value of having an extendable utilitarian linux distro in their wallet, credit card sized and 7 grams in weight, that will work pretty much on any tray load CD PC?
+
+I've used it to show off linux, test garage sale finds, check email in a pinch at a friends house without changing their system at all, troubleshoot sick systems, etc...</div>
+	</div>
+
+	<div class="commentSub" id="comment_sub_15601936">
+
+</div>
+</div>
+
+</li><li id="tree_15601948" class="comment">
+<div id="comment_status_15601948" class="commentstatus"></div>
+<div id="comment_15601948">
+	<div id="comment_top_15601948" class="commentTop newcomment">
+		<div class="title">
+			<h4><a name="15601948">Can't wait for this to hit PDAs</a>
+
+
+		 	<span id="comment_score_15601948" class="score"> (Score:3, Informative)</span></h4>
+		</div>
+		<div class="details">
+			by <a href="//slashdot.org/~rwa2">rwa2 (4391)</a> <a href="/faq/com-mod.shtml#cm2600">*</a> 
+			<span class="otherdetails" id="comment_otherdetails_15601948">		
+		on Sunday June 25 2006, @04:15PM (<a href="//linux.slashdot.org/comments.pl?sid=189477&amp;cid=15601948">#15601948</a>)
+		<small><br>(<a href="http://hairball.bumba.net/~rwa2/">http://hairball.bumba.net/~rwa2/</a> | Last Journal: <a href="//slashdot.org/~rwa2/journal/">Wednesday December 20 2006, @10:25AM</a>) </small>
+</span>
+		</div>
+	</div>
+	<div class="commentBody">	
+		<div id="comment_body_15601948">Familiar's Opie and GPE can help breathe new life into PDAs ( <a href="http://hackndev.com/palm/tx" title="hackndev.com">http://hackndev.com/palm/tx</a> [hackndev.com] ) but they still seems somewhat limited compared to packages DSL provides...</div>
+	</div>
+
+	<div class="commentSub" id="comment_sub_15601948">
+
+</div>
+</div>
+
+</li><li id="tree_15602041" class="comment">
+<div id="comment_status_15602041" class="commentstatus"></div>
+<div id="comment_15602041">
+	<div id="comment_top_15602041" class="commentTop newcomment">
+		<div class="title">
+			<h4><a name="15602041">Still DSL</a>
+
+
+		 	<span id="comment_score_15602041" class="score"> (Score:3, Interesting)</span></h4>
+		</div>
+		<div class="details">
+			by <a href="//slashdot.org/~Nazo-San">Nazo-San (926029)</a> 
+			<span class="otherdetails" id="comment_otherdetails_15602041">		
+		on Sunday June 25 2006, @04:40PM (<a href="//linux.slashdot.org/comments.pl?sid=189477&amp;cid=15602041">#15602041</a>)
+		<small> </small>
+</span>
+		</div>
+	</div>
+	<div class="commentBody">	
+		<div id="comment_body_15602041">The object of DSL wasn't to be so tiny you are amazed.  The object was for it to fit on a business card CDR due to their small size and convenience.  Well, business card CDRs are rare if at all made anymore.  On the other hand, a mini-CDR still exists and is quite common (you can walk in Walmart and come out with some.  Heck, I still have a bunch of mini-CDRW discs lying around for their handy nature.)  These 8 cm radius discs can hold 210 MiB, possibly a bit more since, unlike with the DVD standard, back when they made the CD-R standard they actually didn't feel a need to try to cheat and trick the customer.  If you think about it, since the smallest flash drive you can buy in a modern store is 128 MB (even if that may only be around 110 MiB or so,) you can't even find the old mini-CDRs that only held 185 MiB anymore, and finally business card discs are rare if at all existant anymore (and nearly no more convenient than a mini-CDR really) it just seems a little silly to be limited to 50 MiB for the sake of discs that if you actually had, you would not want to waste on that.<br><br>What's important is the philosophy.  The idea of distros like these is to pack as many useful tools as possible into as little space as possible while maintaining minimalism.  They remove a lot of the unnecessary stuff and get quite a surprising amount packed into it.<br><br>Personally, I carry a flash drive around which will boot on any system supporting USB-ZIP (read the readme.USBKEY file in the syslinux archive for how to do this and why you have to -- but, simply put, very few even modern BIOSes support USB-HDD even today.)  Ok, it's a 512 MB model, but, I have to squeeze things in there because I have to store a lot of data, a copy of my browser for those systems that force you to use an old version of Firefox (IE is dead to me) and so on.  I LOVE having a handy little live linux distro that can boot off of it and be used to repair/diagnose a lot of problems among other things.  I can't afford to have some huge 1 GB large image of Ubuntu or something though on my little flash drive, so that's where a linux distro following this philosophy comes in.  Honestly though, I am forced to admit I didn't really like DSL that much (remember, with linux distros it's all a matter of opinion and, as they say "to each to his own."  I don't like it because it isn't good, I don't like it because it just isn't the type I want.)  Personally I used <a href="http://www.finnix.org/" title="finnix.org" rel="nofollow">Finnix</a> [finnix.org] (site's a little slow these past few days or so) which has much more up to date packages.  It's one of the many live distros that follow the same sort of philosophy DSL follows.  Squeeze handy stuff in there, remove unneeded clutter.  It's my hope that we see even MORE distros like this in the future, not less.</div>
+	</div>
+
+	<div class="commentSub" id="comment_sub_15602041">
+
+</div>
+</div>
+
+<ul id="commtree_15602041"><li><a href="//linux.slashdot.org/comments.pl?sid=189477&amp;threshold=1&amp;commentsort=0&amp;mode=thread&amp;pid=15602041#15603345">Re:Still DSL</a> by dbIII (Score:2) Sunday June 25 2006, @10:39PM<ul id="commtree_15603345"><li><b><a href="//linux.slashdot.org/comments.pl?sid=189477&amp;threshold=-1&amp;commentsort=0&amp;mode=thread&amp;pid=15603345">1 reply</a> beneath your current threshold.</b></li></ul></li></ul></li><li id="tree_15602142" class="comment">
+<div id="comment_status_15602142" class="commentstatus"></div>
+<div id="comment_15602142">
+	<div id="comment_top_15602142" class="commentTop newcomment">
+		<div class="title">
+			<h4><a name="15602142">Very useful</a>
+
+
+		 	<span id="comment_score_15602142" class="score"> (Score:3, Informative)</span></h4>
+		</div>
+		<div class="details">
+			by <a href="//slashdot.org/~PhotoGuy">PhotoGuy (189467)</a> 
+			<span class="otherdetails" id="comment_otherdetails_15602142">		
+		on Sunday June 25 2006, @05:07PM (<a href="//linux.slashdot.org/comments.pl?sid=189477&amp;cid=15602142">#15602142</a>)
+		<small><br>(<a href="http://slashdot.org/">http://slashdot.org/</a>) </small>
+</span>
+		</div>
+	</div>
+	<div class="commentBody">	
+		<div id="comment_body_15602142">Since it's inception, I have used DSL frequently as a recovery tool.  And it's gotten quite a bit better since the early days (a lot more GUI stuff, and such).  For those who argue the "Damn Small" name isn't appropriate for a 50M distribution, don't forget that most distributions these days take multiple 650MB CD's and/or a lot of downloads after installing.  At, say 5% of a two-CD Linux install, it is indeed "Damn Small."<br><br>Not quite as elegantly small as the QNX Demo Diskette of olden days, which, on one 1.44MB diskette, had an OS, networking stack, GUI, window manager, and Web browser.  It was truly amazing.  I'm not sure why they have withdrawn this incredible demonstration of their elegant technology.  (Has QNX itself become the subject of a bit of bloat, perhaps?)  It was limited to one make of network card or serial modem for the networking, which was the main shortcoming of it; but regardless, it was truly unique.</div>
+	</div>
+
+	<div class="commentSub" id="comment_sub_15602142">
+
+</div>
+</div>
+
+<ul id="commtree_15602142"><li><a href="//linux.slashdot.org/comments.pl?sid=189477&amp;threshold=1&amp;commentsort=0&amp;mode=thread&amp;pid=15602142#15603572">Yeah,I wish.</a> by Bill, Shooter of Bul (Score:2) Monday June 26 2006, @12:05AM</li></ul></li><li id="tree_15602162" class="comment">
+<div id="comment_status_15602162" class="commentstatus"></div>
+<div id="comment_15602162">
+	<div id="comment_top_15602162" class="commentTop newcomment">
+		<div class="title">
+			<h4><a name="15602162">as long as you are mentioning minis...</a>
+
+
+		 	<span id="comment_score_15602162" class="score"> (Score:3, Interesting)</span></h4>
+		</div>
+		<div class="details">
+			by <a href="//slashdot.org/~zogger">zogger (617870)</a> 
+			<span class="otherdetails" id="comment_otherdetails_15602162">		
+		on Sunday June 25 2006, @05:12PM (<a href="//linux.slashdot.org/comments.pl?sid=189477&amp;cid=15602162">#15602162</a>)
+		<small><br>(<a href="http://technocrat.net/" rel="nofollow">http://technocrat.net/</a> | Last Journal: <a href="//slashdot.org/~zogger/journal/">Saturday November 10, @06:08PM</a>) </small>
+</span>
+		</div>
+	</div>
+	<div class="commentBody">	
+		<div id="comment_body_15602162">..I'll plug <a href="http://cyti.latgola.lv/ruuni/index_en.html" title="latgola.lv" rel="nofollow">Austrumi</a> [latgola.lv], similar size at 50 megs, 2.6 kernel, loads right to RAM and ejects the disk (freeing up the optical drive), and now comes with enlightenment 17 as the stock windows manager.</div>
+	</div>
+
+	<div class="commentSub" id="comment_sub_15602162">
+
+</div>
+</div>
+
+</li><li id="tree_15602300" class="comment">
+<div id="comment_status_15602300" class="commentstatus"></div>
+<div id="comment_15602300">
+	<div id="comment_top_15602300" class="commentTop newcomment">
+		<div class="title">
+			<h4><a name="15602300">We move from Damn Small Linux to</a>
+
+
+		 	<span id="comment_score_15602300" class="score"> (Score:3, Funny)</span></h4>
+		</div>
+		<div class="details">
+			by <a href="//slashdot.org/~bdwoolman">bdwoolman (561635)</a> 
+			<span class="otherdetails" id="comment_otherdetails_15602300">		
+		on Sunday June 25 2006, @05:46PM (<a href="//linux.slashdot.org/comments.pl?sid=189477&amp;cid=15602300">#15602300</a>)
+		<small><br>(<a href="http://www.bdwoolman.net/" rel="nofollow">http://www.bdwoolman.net/</a>) </small>
+</span>
+		</div>
+	</div>
+	<div class="commentBody">	
+		<div id="comment_body_15602300">Not Too Big Linux and from there to Won't Fit on a DVD Linux.</div>
+	</div>
+
+	<div class="commentSub" id="comment_sub_15602300">
+
+</div>
+</div>
+
+</li><li id="tree_15602334" class="comment">
+<div id="comment_status_15602334" class="commentstatus"></div>
+<div id="comment_15602334">
+	<div id="comment_top_15602334" class="commentTop newcomment">
+		<div class="title">
+			<h4><a name="15602334">Good for</a>
+
+
+		 	<span id="comment_score_15602334" class="score"> (Score:3, Interesting)</span></h4>
+		</div>
+		<div class="details">
+			by <a href="//slashdot.org/~kahrytan">kahrytan (913147)</a> 
+			<span class="otherdetails" id="comment_otherdetails_15602334">		
+		on Sunday June 25 2006, @05:53PM (<a href="//linux.slashdot.org/comments.pl?sid=189477&amp;cid=15602334">#15602334</a>)
+		<small><br>(<a href="http://humblebegin.blogspot.com/" rel="nofollow">http://humblebegin.blogspot.com/</a>) </small>
+</span>
+		</div>
+	</div>
+	<div class="commentBody">	
+		<div id="comment_body_15602334">DSL is only good for those moments when you visit a friend who insists on using Windows but you hate it. Just take out your little 1-4gb flash drive with DSL on it. You won't be stuck with using Windows if you don't have your laptop with you or allows people without a laptop to be more mobile.</div>
+	</div>
+
+	<div class="commentSub" id="comment_sub_15602334">
+
+</div>
+</div>
+
+<ul id="commtree_15602334"><li><a href="//linux.slashdot.org/comments.pl?sid=189477&amp;threshold=1&amp;commentsort=0&amp;mode=thread&amp;pid=15602334#15603479">Re:Good for</a> by Scott Swezey (Score:1) Sunday June 25 2006, @11:31PM</li></ul></li><li id="tree_15602456" class="comment">
+<div id="comment_status_15602456" class="commentstatus"></div>
+<div id="comment_15602456">
+	<div id="comment_top_15602456" class="commentTop newcomment">
+		<div class="title">
+			<h4><a name="15602456">Crossing the 50mb level</a>
+
+
+		 	<span id="comment_score_15602456" class="score"> (Score:2)</span></h4>
+		</div>
+		<div class="details">
+			by <a href="//slashdot.org/~nurb432">nurb432 (527695)</a> 
+			<span class="otherdetails" id="comment_otherdetails_15602456">		
+		on Sunday June 25 2006, @06:20PM (<a href="//linux.slashdot.org/comments.pl?sid=189477&amp;cid=15602456">#15602456</a>)
+		<small><br>(<a href="http://slashdot.org/~nurb432/">http://slashdot.org/~nurb432/</a> | Last Journal: <a href="//slashdot.org/~nurb432/journal/">Friday August 27 2004, @03:24PM</a>) </small>
+</span>
+		</div>
+	</div>
+	<div class="commentBody">	
+		<div id="comment_body_15602456">Is sort of a shame.  The beauty of DSL is that it would fit on one of those business card cd, that you can shove in your wallet.<br><br></div>
+	</div>
+
+	<div class="commentSub" id="comment_sub_15602456">
+
+</div>
+</div>
+
+</li><li id="tree_15602520" class="comment">
+<div id="comment_status_15602520" class="commentstatus"></div>
+<div id="comment_15602520">
+	<div id="comment_top_15602520" class="commentTop newcomment">
+		<div class="title">
+			<h4><a name="15602520">NetBSD</a>
+
+
+		 	<span id="comment_score_15602520" class="score"> (Score:3, Insightful)</span></h4>
+		</div>
+		<div class="details">
+			by <a href="//slashdot.org/~Billly+Gates">Billly Gates (198444)</a> 
+			<span class="otherdetails" id="comment_otherdetails_15602520">		
+		on Sunday June 25 2006, @06:37PM (<a href="//linux.slashdot.org/comments.pl?sid=189477&amp;cid=15602520">#15602520</a>)
+		<small><br>(<a href="http://www.livejournal.com/users/sinistertim101">http://www.livejournal.com/users/sinistertim101</a> | Last Journal: <a href="//slashdot.org/~Billly+Gates/journal/">Saturday March 24 2007, @12:32PM</a>) </small>
+</span>
+		</div>
+	</div>
+	<div class="commentBody">	
+		<div id="comment_body_15602520">NetBSD is not only small but uses significantly alot less ram for a slim base install.<br><br>Also NetBSD libc is alot smaller than the bloated glibc of linux. The resulting binaries are smaller for standard apps. Kde seems a little faster but perhaps its my imagination.<br><br>NetBSD is great for older systems that wont modern software.</div>
+	</div>
+
+	<div class="commentSub" id="comment_sub_15602520">
+
+</div>
+</div>
+
+<ul id="commtree_15602520"><li><b><a href="//linux.slashdot.org/comments.pl?sid=189477&amp;threshold=-1&amp;commentsort=0&amp;mode=thread&amp;pid=15602520">1 reply</a> beneath your current threshold.</b></li></ul></li><li id="tree_15603113" class="comment">
+<div id="comment_status_15603113" class="commentstatus"></div>
+<div id="comment_15603113">
+	<div id="comment_top_15603113" class="commentTop newcomment">
+		<div class="title">
+			<h4><a name="15603113">i dig it</a>
+
+
+		 	<span id="comment_score_15603113" class="score"> (Score:2, Interesting)</span></h4>
+		</div>
+		<div class="details">
+			by <a href="//slashdot.org/~Danzigism">Danzigism (881294)</a> 
+			<span class="otherdetails" id="comment_otherdetails_15603113">		
+		on Sunday June 25 2006, @09:28PM (<a href="//linux.slashdot.org/comments.pl?sid=189477&amp;cid=15603113">#15603113</a>)
+		<small><br>(<a href="http://www.theaudiorevenge.com/" rel="nofollow">http://www.theaudiorevenge.com/</a>) </small>
+</span>
+		</div>
+	</div>
+	<div class="commentBody">	
+		<div id="comment_body_15603113">after a little messin with, I got DSL to work on my Toshiba Satellite 425CDS, p100 mhz with 16mb of ram.. used the Install To HD feature, and it worked like a charm.. the reason I went with a distro like DSL, is because first of all its a livecd, with tons of bundled drivers for all sorts of hardware, including my 16-bit PCMCIA nic cards, and modem card.. many distros like Mandriva, Fedora, even Slackware and Debian had issues installing on this laptop.. i tried Fbsd, and it installed ok.. however, i didnt have nearly enough HD space to upgrade to a STABLE release.. even once it was installed, I couldn't even get my PCMCIA devices to work.. so i wasn't even going to try netbsd.. NetBSD is great on one of my old desktops, but for this old lappy, DSL was the way to go.. its a perfectly functioning portable computer, with a lightweight and small distro, with all the apps I need for now..</div>
+	</div>
+
+	<div class="commentSub" id="comment_sub_15603113">
+
+</div>
+</div>
+
+<ul id="commtree_15603113"><li><a href="//linux.slashdot.org/comments.pl?sid=189477&amp;threshold=1&amp;commentsort=0&amp;mode=thread&amp;pid=15603113#15603124">Re:i dig it</a> by Danzigism (Score:1) Sunday June 25 2006, @09:31PM</li><li><a href="//linux.slashdot.org/comments.pl?sid=189477&amp;threshold=1&amp;commentsort=0&amp;mode=thread&amp;pid=15603264#15603357">Re:i dig it</a> by Danzigism (Score:2) Sunday June 25 2006, @10:44PM</li><li><b><a href="//linux.slashdot.org/comments.pl?sid=189477&amp;threshold=-1&amp;commentsort=0&amp;mode=thread&amp;pid=15603113">1 reply</a> beneath your current threshold.</b></li></ul></li><li id="tree_15603543" class="comment">
+<div id="comment_status_15603543" class="commentstatus"></div>
+<div id="comment_15603543">
+	<div id="comment_top_15603543" class="commentTop newcomment">
+		<div class="title">
+			<h4><a name="15603543">imagine what they could do in more space</a>
+
+
+		 	<span id="comment_score_15603543" class="score"> (Score:2)</span></h4>
+		</div>
+		<div class="details">
+			by <a href="//slashdot.org/~ElitistWhiner">ElitistWhiner (79961)</a> 
+			<span class="otherdetails" id="comment_otherdetails_15603543">		
+		on Sunday June 25 2006, @11:56PM (<a href="//linux.slashdot.org/comments.pl?sid=189477&amp;cid=15603543">#15603543</a>)
+		<small> </small>
+</span>
+		</div>
+	</div>
+	<div class="commentBody">	
+		<div id="comment_body_15603543">Wow!  This ranks right up there with "all you have to do is".<br><br>Obviously, not well-versed in OS development.<br><br>-r</div>
+	</div>
+
+	<div class="commentSub" id="comment_sub_15603543">
+
+</div>
+</div>
+
+</li><li id="tree_15603740" class="comment">
+<div id="comment_status_15603740" class="commentstatus"></div>
+<div id="comment_15603740">
+	<div id="comment_top_15603740" class="commentTop newcomment">
+		<div class="title">
+			<h4><a name="15603740">WARNING: Non Updated Mirrors - Torrent</a>
+
+
+		 	<span id="comment_score_15603740" class="score"> (Score:3, Informative)</span></h4>
+		</div>
+		<div class="details">
+			by <a href="//slashdot.org/~Jonah+Hex">Jonah Hex (651948)</a> 
+			<span class="otherdetails" id="comment_otherdetails_15603740">		 &lt;<a href="mailto:hexagontk+AT+gmail+DOT+com">hexagontk AT gmail DOT com</a>&gt;
+		on Monday June 26 2006, @01:17AM (<a href="//linux.slashdot.org/comments.pl?sid=189477&amp;cid=15603740">#15603740</a>)
+		<small><br>(<a href="http://www.hexagon.tk/">http://www.hexagon.tk/</a> | Last Journal: <a href="//slashdot.org/~Jonah+Hex/journal/">Tuesday April 15 2003, @09:48PM</a>) </small>
+</span>
+		</div>
+	</div>
+	<div class="commentBody">	
+		<div id="comment_body_15603740">The only mirror showing file dsl-3.0.1.iso 20-Jun-2006 is <a href="http://dsl.thegeekery.com/current" title="thegeekery.com">http://dsl.thegeekery.com/current</a> [thegeekery.com], all the rest, including ibiblio, only have dsl-n-0.1RC1.iso 01-May-2006.<br> <br>
+
+I've got 9+ hours remaining for this 50M file, someone please tell me there is a torrent.<br> <br>
+
+Jonah Hex</div>
+	</div>
+
+	<div class="commentSub" id="comment_sub_15603740">
+
+</div>
+</div>
+
+<ul id="commtree_15603740"><li><a href="//linux.slashdot.org/comments.pl?sid=189477&amp;threshold=1&amp;commentsort=0&amp;mode=thread&amp;pid=15603740#15603756">Re:WARNING: Non Updated Mirrors - Torrent</a> by Jonah Hex (Score:2) Monday June 26 2006, @01:21AM</li></ul></li><li id="tree_15604100" class="comment">
+<div id="comment_status_15604100" class="commentstatus"></div>
+<div id="comment_15604100">
+	<div id="comment_top_15604100" class="commentTop newcomment">
+		<div class="title">
+			<h4><a name="15604100">Back in the QNX day ...</a>
+
+
+		 	<span id="comment_score_15604100" class="score"> (Score:2, Insightful)</span></h4>
+		</div>
+		<div class="details">
+			by <a href="//slashdot.org/~xav_jones">xav_jones (612754)</a> 
+			<span class="otherdetails" id="comment_otherdetails_15604100">		
+		on Monday June 26 2006, @03:50AM (<a href="//linux.slashdot.org/comments.pl?sid=189477&amp;cid=15604100">#15604100</a>)
+		<small> </small>
+</span>
+		</div>
+	</div>
+	<div class="commentBody">	
+		<div id="comment_body_15604100">Why I remember the <a href="http://toastytech.com/guis/qnxdemo.html" title="toastytech.com" rel="nofollow">QNX demo</a> [toastytech.com] <b>floppy</b> disk (all 1.44MB) packing the OS (posix compliant), GUI, PPP or networking, Web browser, file browser, and several demo applications including web server, vector graphics program and a text editor. Pffft kids today<nobr> <wbr></nobr>...</div>
+	</div>
+
+	<div class="commentSub" id="comment_sub_15604100">
+
+</div>
+</div>
+
+</li><li id="tree_15604552" class="comment">
+<div id="comment_status_15604552" class="commentstatus"></div>
+<div id="comment_15604552">
+	<div id="comment_top_15604552" class="commentTop newcomment">
+		<div class="title">
+			<h4><a name="15604552">Reminds me of that MS advert</a>
+
+
+		 	<span id="comment_score_15604552" class="score"> (Score:2, Funny)</span></h4>
+		</div>
+		<div class="details">
+			by <a href="//slashdot.org/~Lord+Graga">Lord Graga (696091)</a> 
+			<span class="otherdetails" id="comment_otherdetails_15604552">		
+		on Monday June 26 2006, @07:03AM (<a href="//linux.slashdot.org/comments.pl?sid=189477&amp;cid=15604552">#15604552</a>)
+		<small><br>(Last Journal: <a href="//slashdot.org/~Lord+Graga/journal/">Wednesday February 25 2004, @09:35AM</a>) </small>
+</span>
+		</div>
+	</div>
+	<div class="commentBody">	
+		<div id="comment_body_15604552">I can just imagine Steve Ballmer going "With DAMN SMALL LINUX, you can get TWO WEBBROWSERS, a PDF READER, a MPEG PLAYER, a PAINT PROGRAM, a CD BURNING TOOL, and MUCH MUCH MORE!... in how much do you think? HOW MUCH? 500 MEGABYTES? A THOUSAND? NO! It's just 83 MEGABYTES! 83 MEGABYTES!"</div>
+	</div>
+
+	<div class="commentSub" id="comment_sub_15604552">
+
+</div>
+</div>
+
+</li><li id="tree_15658708" class="comment">
+<div id="comment_status_15658708" class="commentstatus"></div>
+<div id="comment_15658708">
+	<div id="comment_top_15658708" class="commentTop newcomment">
+		<div class="title">
+			<h4><a name="15658708">Can use for Diskless Folding</a>
+
+
+		 	<span id="comment_score_15658708" class="score"> (Score:1)</span></h4>
+		</div>
+		<div class="details">
+			by <a href="//slashdot.org/~Sb1">Sb1 (930524)</a> 
+			<span class="otherdetails" id="comment_otherdetails_15658708">		
+		on Wednesday July 05 2006, @01:29AM (<a href="//linux.slashdot.org/comments.pl?sid=189477&amp;cid=15658708">#15658708</a>)
+		<small> </small>
+</span>
+		</div>
+	</div>
+	<div class="commentBody">	
+		<div id="comment_body_15658708">Last few days I've been useing it diskless, for Folding@Home.  I just put my P4-2.4 to use with no hard drives installed (for now) for this purpose.  I downloaded a special ed F@H one from FAHLinux.com
+ <p>
+Comes with F@H preinstalled, however you have to change the username and team name to yours (he's with Extremeoverclocking), but it's for everybody.  I Fold for <a href="http://www.ocforums.com/forumdisplay.php?s=166f2014960c2f07d4e3c2c11ad36e79&amp;f=21" title="ocforums.com" rel="nofollow">Team 32</a> [ocforums.com] so just changed that.  It comes with Samba so can control Folding utilities like EMIII with WinXP, Rdesktop, VNCviewer (no clue how to do these yet, but if need to I'll learn how).
+<br> <br>
+Next going to use it on old PII 366 Mhz.  I will probably just install that to old hard drive and start learning Linux.  Next will dual boot main machine with one of the flavors of Ubuntu?
+<br> <br>
+Only problem is I really don't understand Linux as I am wanting to update Firefox to 1.5.0.4 but no go so far.  Can you update with LiveCD using only Ram (756mb)?
+<br> <br></p></div>
+	</div>
+
+	<div class="commentSub" id="comment_sub_15658708">
+
+</div>
+</div>
+
+</li><li id="tree_15601491" class="comment">
+<div id="comment_status_15601491" class="commentstatus"></div>
+<div id="comment_15601491">
+	<div id="comment_top_15601491" class="commentTop newcomment">
+		<div class="title">
+			<h4><a name="15601491">Re:yuk! gtk! Fluxbox is much nicer anyway.</a>
+
+
+		 	<span id="comment_score_15601491" class="score"> (Score:5, Insightful)</span></h4>
+		</div>
+		<div class="details">
+			by <a href="//slashdot.org/~damiam">damiam (409504)</a> 
+			<span class="otherdetails" id="comment_otherdetails_15601491">		 &lt;<a href="mailto:davmre%40gmail.OPENBSDcom+minus+bsd">davmre@gmail.OPENBSDcom minus bsd</a>&gt;
+		on Sunday June 25 2006, @02:04PM (<a href="//linux.slashdot.org/comments.pl?sid=189477&amp;cid=15601491">#15601491</a>)
+		<small> </small>
+</span>
+		</div>
+	</div>
+	<div class="commentBody">	
+		<div id="comment_body_15601491">Fluxbox is a window manager. GTK is a UI toolkit. They don't even compete; you're comparing apples and oranges.</div>
+	</div>
+
+	<div class="commentSub" id="comment_sub_15601491">
+[ <a href="//linux.slashdot.org/comments.pl?sid=189477&amp;threshold=1&amp;commentsort=0&amp;mode=thread&amp;cid=15601458">Parent</a> ]
+</div>
+</div>
+
+<ul id="commtree_15601491"><li><a href="//linux.slashdot.org/comments.pl?sid=189477&amp;threshold=1&amp;commentsort=0&amp;mode=thread&amp;pid=15601491#15601534">Re:yuk! gtk! Fluxbox is much nicer anyway.</a> by Anonymous Coward (Score:2) Sunday June 25 2006, @02:15PM<ul id="commtree_15601534"><li><a href="//linux.slashdot.org/comments.pl?sid=189477&amp;threshold=1&amp;commentsort=0&amp;mode=thread&amp;pid=15601649#15602971">Re:yuk! gtk! Fluxbox is much nicer anyway.</a> by anal_assassin (Score:1) Sunday June 25 2006, @08:42PM</li><li><b><a href="//linux.slashdot.org/comments.pl?sid=189477&amp;threshold=-1&amp;commentsort=0&amp;mode=thread&amp;pid=15601534">1 reply</a> beneath your current threshold.</b></li></ul></li></ul></li><li id="tree_15601841" class="comment">
+<div id="comment_status_15601841" class="commentstatus"></div>
+<div id="comment_15601841">
+	<div id="comment_top_15601841" class="commentTop newcomment">
+		<div class="title">
+			<h4><a name="15601841">Re:DSL + eye candy?</a>
+
+
+		 	<span id="comment_score_15601841" class="score"> (Score:4, Informative)</span></h4>
+		</div>
+		<div class="details">
+			by <a href="//slashdot.org/~desNotes">desNotes (900643)</a> 
+			<span class="otherdetails" id="comment_otherdetails_15601841">		
+		on Sunday June 25 2006, @03:52PM (<a href="//linux.slashdot.org/comments.pl?sid=189477&amp;cid=15601841">#15601841</a>)
+		<small> </small>
+</span>
+		</div>
+	</div>
+	<div class="commentBody">	
+		<div id="comment_body_15601841">There is a distro called Austrumi that is 50MB with e17 installed. I am using it as my main distro and it is nice and fast. Check it out...no I am not involved in the project personally.
+
+
+desNotes</div>
+	</div>
+
+	<div class="commentSub" id="comment_sub_15601841">
+[ <a href="//linux.slashdot.org/comments.pl?sid=189477&amp;threshold=1&amp;commentsort=0&amp;mode=thread&amp;cid=15601681">Parent</a> ]
+</div>
+</div>
+
+</li><li id="tree_15603570" class="comment">
+<div id="comment_status_15603570" class="commentstatus"></div>
+<div id="comment_15603570">
+	<div id="comment_top_15603570" class="commentTop newcomment">
+		<div class="title">
+			<h4><a name="15603570">Re:I just don't get it</a>
+
+
+		 	<span id="comment_score_15603570" class="score"> (Score:3, Informative)</span></h4>
+		</div>
+		<div class="details">
+			by <a href="//slashdot.org/~G+Morgan">G Morgan (979144)</a> 
+			<span class="otherdetails" id="comment_otherdetails_15603570">		
+		on Monday June 26 2006, @12:04AM (<a href="//linux.slashdot.org/comments.pl?sid=189477&amp;cid=15603570">#15603570</a>)
+		<small> </small>
+</span>
+		</div>
+	</div>
+	<div class="commentBody">	
+		<div id="comment_body_15603570">Some people can find actual uses for old hardware. Because the idea of turning an older box into a firewall etc escapes you doesn't mean others should abandone otherwise useful hardware. Besides the main point of DSL is use as an admin tool.</div>
+	</div>
+
+	<div class="commentSub" id="comment_sub_15603570">
+[ <a href="//linux.slashdot.org/comments.pl?sid=189477&amp;threshold=1&amp;commentsort=0&amp;mode=thread&amp;cid=15602719">Parent</a> ]
+</div>
+</div>
+
+<ul id="commtree_15603570"><li><a href="//linux.slashdot.org/comments.pl?sid=189477&amp;threshold=1&amp;commentsort=0&amp;mode=thread&amp;pid=15603570#15604173">Re:I just don't get it</a> by Frightening (Score:1) Monday June 26 2006, @04:28AM</li></ul></li><li><b><a href="//linux.slashdot.org/comments.pl?sid=189477&amp;threshold=-1&amp;commentsort=0&amp;mode=thread&amp;pid=0">7 replies</a> beneath your current threshold.</b></li>
+			<li id="roothiddens" class="hide"></li>
+		</ul></div>	
+		</div>
+			<div id="footer">
+				<div class="search">
+				
+					<form method="get" action="//linux.slashdot.org/search.pl">
+						<fieldset>
+							<legend>Search</legend>
+							<input type="text" name="query" value="" size="20">
+							<input type="submit" value="Search" class="button">
+						</fieldset>
+					</form>
+				
+				</div>
+				<div class="rightcontent">
+					
+                		        <small>I doubt, therefore I might be.</small>
+					
+				</div>	
+			</div>
+		</div>	
+	</div>
+	<div class="copyright">
+		<p>
+
+			All trademarks and copyrights on this page are owned by their respective owners.  Comments are owned by the Poster.  The Rest &copy; 1997-2008 <a href="http://sourceforge.com/">SourceForge</a>, Inc.
+		</p>
+	</div>
+	<div class="btmnav">
+		<ul>
+			<li class="begin"><a href="//linux.slashdot.org/">home</a></li>
+			<li><a href="//linux.slashdot.org/awards.shtml">awards</a></li>
+			<li><a href="//linux.slashdot.org/submit.pl">contribute story</a></li>
+			<li><a href="//linux.slashdot.org/search.pl">older articles</a></li>
+			<li><a href="http://sourceforge.com/">sourceforge, inc.</a></li>
+			<li><a href="http://web.sourceforge.com/media_kit.php">advertise</a></li>
+			<li><a href="//linux.slashdot.org/about.shtml">about</a></li>
+			<li><a href="http://web.sourceforge.com/terms.php">terms of service</a></li>
+			<li><a href="http://web.sourceforge.com/privacy.php">privacy</a></li>
+			<li><a href="//linux.slashdot.org/faq/">faq</a></li>
+			<li><a href="http://rss.slashdot.org/Slashdot/slashdotLinux">rss</a></li>
+		</ul>
+	</div>
+<script type="text/javascript">
+pageTracker._trackPageview();
+</script>
+<div id="modal_cover" style="display:none" onclick="hide_modal_box()"></div>
+<div id="modal_box" style="display:none">
+        <div class="generaltitle" >
+                <div class="title"><h3><span id="preference_title"></span> <a href="#" onclick="hide_modal_box(); return false"><img src="//images.slashdot.org/sic_close.png" alt="Close"></a></h3></div>
+        </div>
+        <div id="modal_box_content"></div>
+</div>
+</body>
+</html>

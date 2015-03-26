@@ -1,0 +1,1329 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head><title>
+	Automatically select all text on focus in WinForms TextBox - Stack Overflow
+</title><meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><link href="/Content/all.css?cachebreaker=20080918.1" rel="stylesheet" type="text/css" /><link href="/Content/print.css" rel="stylesheet" media="print" type="text/css" /><link rel="shortcut icon" href="/favicon.ico" /><link rel="apple-itouch-icon" href="/Content/Img/apple-touch-icon.png" /><link rel="search" type="application/opensearchdescription+xml" title="Stack Overflow" href="/opensearch.xml" />    
+    <script type="text/javascript" src="/Content/Js/jquery.package.master.js?cachebreaker=20080930"></script>
+    
+    <link rel="alternate" type="application/atom+xml" title="RSS" href="/feeds/question/97459" />    
+    
+    <script src="/content/js/jquery.package.question.js?cachebreaker=20081003.3" type="text/javascript"></script>
+    
+    <script type="text/javascript">
+        var fkey = "";
+        var repNeededForComments = 50;
+        
+        $().ready(function() {    
+            setupFormValidation('#post-form');
+            vote.initForShow(false, 97459); 
+            styleCode();
+        });
+    </script>
+    <link href="/questions/97459/increment-view-count" type="text/css" rel="stylesheet" />
+</head>
+
+<body>
+
+
+
+    <div class="container">
+    
+        <div id="header">
+        
+        <table width="950px" class="header-table">
+            <tr>            
+            <td style="vertical-align:middle; padding-top:22px;" width="260px">
+            <a href="/"><img src="/Content/Img/stackoverflow-logo-250.png" width="250" height="70" alt="logo link to homepage" /></a>
+            </td>
+            <td style="vertical-align:top; width:690px;">
+            <table>
+            <!--row-->
+            <tr>
+            <td style="vertical-align:middle; height:40px; text-align:left; width:430px">
+            <div id="headerlinks">
+            
+            <a href="/users/login?returnurl=%2fquestions%2f97459%2fautomatically-select-all-text-on-focus-in-winforms-textbox">login</a><span class="link-separator">|</span>
+            <a href="/about">about</a>
+            <span class="link-separator">|</span>
+            <a href="/faq">faq</a>   
+            </div>
+            </td>
+            <td style="text-align:right; vertical-align:middle; width:270px;">
+            <form id="search" action="/search" method="get">
+                <input name="q" class="textbox" type="text" maxlength="80" size="27" value="" style="margin:0px;" />&nbsp;
+                <input type="submit" class="button" value="Search" style="margin:0px; padding:2px; padding: 0px !ie7;" />
+            </form>          
+            </td>
+            </tr>
+            <!--row-->
+            <tr><td colspan="2">
+            <div class="betamessage-top">This is a <b>public beta</b>. Found a bug? Want to make a feature request? <b><a href="http://stackoverflow.uservoice.com/">stackoverflow.uservoice.com</a></b></div>                        
+            </td></tr>
+            <!--row-->
+            <tr>
+            <td style="text-align:left; vertical-align:middle; height:40px">
+            <div class="nav">            
+                <ul class="primarynav">
+                    <li class="youarehere">
+                        <a href="/questions">Questions</a>
+                    </li>
+                    <li class="">
+                        <a href="/tags">Tags</a>
+                    </li>
+                    <li class="">
+                        <a href="/users">Users</a>
+                    </li>
+                    <li class="">
+                        <a href="/badges">Badges</a>
+                    </li>
+                </ul> 
+             </div>                           
+             </td>
+             <td style="text-align:right; vertical-align:middle;">
+                <div class="nav" style="float:right; margin-right:-5px;">
+                <ul class="primarynav">
+                    <li class="">
+                    
+                    <a href="/questions/ask">Ask Question</a>
+                    
+                    </li>
+                </ul>                            
+                </div>
+            </td>            
+
+            </tr>
+            </table>
+            </td>
+        </tr>
+        </table> 
+        
+        </div>      
+        
+        <div id="content">
+            
+
+<div id="question-header">
+    <h2><a href="/questions/97459/automatically-select-all-text-on-focus-in-winforms-textbox">Automatically select all text on focus in WinForms TextBox</a></h2>
+</div>
+
+<div id="mainbar">
+
+<div id="question" class="" style="width:710px;">
+    <table width="710px">
+    <tr>
+    <td width="60px" style="vertical-align:top;">
+        
+<div class="vote">
+
+    <input type="hidden" value="97459" />
+    <img class="vote-up" src="/content/img/vote-arrow-up.png" width="40" height="25" alt="vote up" title="This was helpful (click again to undo)" />
+    <span class="vote-count-post">
+    2
+    </span>
+    <img class="vote-down" src="/content/img/vote-arrow-down.png" width="40" height="25" alt="vote down" title="This was not helpful (click again to undo)" />
+    <br />  
+    
+    <img class="vote-favorite" src="/content/img/vote-favorite-off.png" width="32" height="31" alt="star" title="This is a favorite question (click again to undo)" />
+    <div class="favoritecount"><b>
+        1<br />     
+        
+    </b></div>
+        
+
+</div>
+        
+        <div class="viewcount">
+            views<br />
+            <b>233</b>            
+        </div>
+    </td>
+    <td>
+        <div>          
+            <div class="post-text">
+                <p>When a C# WinForms text box receives focus, I want to select all the text in the textbox.</p>
+
+<p>To see what I mean, click in your web browser's address bar. See how all text was selected? I want to do that.</p>
+
+<p><strong>FASTEST GUN ALERT: please read the following before answering!</strong> Thanks guys. :-)</p>
+
+<blockquote>
+  <p>Calling <strong>.SelectAll() during
+  the .Enter or .GotFocus events won't
+  work</strong> because if the user clicked the
+  textbox, the caret will be placed
+  where he clicked, thus deselecting all
+  text.</p>
+  
+  <p>Also, <strong>calling .SelectAll() during the .Click event won't work</strong> because the user won't be able to select any text with the mouse; the .SelectAll() call will keep overwriting the user's text selection.
+  )</p>
+</blockquote>
+
+            </div>            
+            <div class="post-taglist">
+                <a href="/questions/tagged/winforms" class="post-tag" title="show questions tagged 'winforms'" rel="tag">winforms</a> <a href="/questions/tagged/gui" class="post-tag" title="show questions tagged 'gui'" rel="tag">gui</a> <a href="/questions/tagged/textbox" class="post-tag" title="show questions tagged 'textbox'" rel="tag">textbox</a> 
+            </div>
+            <table width="100%">
+            <tr>
+            <td align="left" style="vertical-align:top;">            
+                <div class="post-menu"><a id="vote-offensive-97459" title="flag this post as hate speech, spam, or abuse">offensive?</a> <span class="vote-offensive-count"></span></div>                            
+            </td>
+            
+            <td align="right" class="post-signature">
+            
+<div class="user-info">
+    
+    <div class="user-action-time">edited <a href="/revisions/97459/list" title="show all edits to this post"><span title="9/18/2008 10:33:14 PM UTC" class="relativetime">Sep 18 at 22:33</span></a><br /></div>
+    <div class="user-gravatar32"></div>
+    <div class="user-details"><br/></div>
+    
+</div>
+            </td>
+            
+            <td class="post-signature owner">                                                
+            
+<div class="user-info">
+    
+    <div class="user-action-time">asked <span title="9/18/2008 10:02:18 PM UTC" class="relativetime">Sep 18 at 22:02</span><br /></div>
+    <div class="user-gravatar32"><a href="/users/536/judah-himango"><img src="http://www.gravatar.com/avatar/2142b1a501386ed0af9232862af48df9?s=32&d=identicon&r=PG" height=32 width=32 alt="gravatar image" /></a></div>
+    <div class="user-details"><a href="/users/536/judah-himango">Judah Himango</a><br/><span class="reputation-score" title="reputation score">1,309</span><span title="2 silver badges"><span class="badge2">&#9679;</span><span class="badgecount">2</span></span><span title="11 bronze badges"><span class="badge3">&#9679;</span><span class="badgecount">11</span></span></div>
+    
+</div>
+            </td>
+            </tr>
+            </table>
+        </div>
+    </td>
+    </tr>
+
+    
+
+<tr>
+<td width="60" height="20"></td>
+<td>
+    <div class="post-menu">
+        <input id="can-post-comments-97459" type="hidden" value="false"/>
+        <a id="comments-link-97459" class="comments-link">comments (<b>2</b>)</a><noscript>&nbsp;JavaScript is needed to access comments.</noscript>
+        <div id="comments-97459" class="comments-container">
+            <div class="comments"></div>
+        </div>
+    </div>
+</td>
+</tr>
+
+    </table>
+    
+</div>
+
+<div id="answers">
+
+    <a name="sort-top"></a>
+    <div id="answer-header">
+        <div id="subheader">
+            <h2>9 Answers:</h2>
+            <div id="tabs">
+                <a href="/questions/97459?sort=oldest#sort-top" title="Answers in the order they were given">Oldest</a><a href="/questions/97459?sort=newest#sort-top" title="Most recent answers first">Newest</a><a class="youarehere" href="/questions/97459?sort=votes#sort-top" title="Answers with the most votes first">Votes</a>
+            </div>    
+        </div>
+    </div>    
+
+
+
+    <a name="97499"></a>
+    
+    <div id="answer-97499" class="answer ">    
+        <table style="width:710px">
+        <tr>
+        <td width="60px" style="vertical-align:top;">
+            
+<div class="vote">
+
+    <input type="hidden" value="97499" />
+    <img class="vote-up" src="/content/img/vote-arrow-up.png" width="40" height="25" alt="vote up" title="This was helpful (click again to undo)" />
+    <span class="vote-count-post">
+    1
+    </span>
+    <img class="vote-down" src="/content/img/vote-arrow-down.png" width="40" height="25" alt="vote down" title="This was not helpful (click again to undo)" />
+    <br />  
+        
+
+</div>
+
+        </td>
+        <td>
+            <div class="post-text"><p>Click event of textbox? Or even MouseCaptureChanged event works for me. - OK. doesn't work.</p>
+
+<p>So you have to do 2 things:</p>
+
+<pre><code>private bool f = false;
+
+private void textBox_MouseClick(object sender, MouseEventArgs e)
+{ 
+  if (this.f) { this.textBox.SelectAll(); }
+  this.f = false;
+}
+
+private void textBox_Enter(object sender, EventArgs e)
+{
+  this.f = true;
+  this.textBox.SelectAll();
+}
+private void textBox_MouseMove(object sender, MouseEventArgs e) // idea from the other answer
+{
+  this.f = false; 
+}
+</code></pre>
+
+<p>Works for tabbing (through textBoxes to the one) as well - call SelectAll() in Enter just in case...</p>
+</div>            
+            <table style="width:100%">
+            <tr>
+            <td style="vertical-align:top;" align="left">
+                <div class="post-menu"><a href="/questions/97459/automatically-select-all-text-on-focus-in-winforms-textbox#97499" title="permalink to this answer">link</a><span class="link-separator">|</span><a id="vote-offensive-97499" title="flag this post as hate speech, spam, or abuse">offensive?</a> <span class="vote-offensive-count"></span></div>
+            </td>
+            
+            <td align="right" class="post-signature">
+            
+<div class="user-info">
+    
+    <div class="user-action-time">edited <a href="/revisions/97499/list" title="show all edits to this post"><span title="9/18/2008 11:36:56 PM UTC" class="relativetime">Sep 18 at 23:36</span></a><br /></div>
+    <div class="user-gravatar32"></div>
+    <div class="user-details"><br/></div>
+    
+</div>
+            </td>
+            
+            
+            <td align="right" class="post-signature">                   
+            
+<div class="user-info">
+    
+    <div class="user-action-time">answered <span title="9/18/2008 10:07:28 PM UTC" class="relativetime">Sep 18 at 22:07</span><br /></div>
+    <div class="user-gravatar32"><a href="/users/16943/jakub-kotrla"><img src="http://www.gravatar.com/avatar/f50ccfd8af98fd3069cb472f815c357b?s=32&d=identicon&r=PG" height=32 width=32 alt="gravatar image" /></a></div>
+    <div class="user-details"><a href="/users/16943/jakub-kotrla">Jakub Kotrla</a><br/><span class="reputation-score" title="reputation score">175</span><span title="4 bronze badges"><span class="badge3">&#9679;</span><span class="badgecount">4</span></span></div>
+    
+</div>    
+            </td>
+            </tr>
+            </table>
+        </td>
+        </tr>
+        
+        
+
+<tr>
+<td width="60" height="20"></td>
+<td>
+    <div class="post-menu">
+        <input id="can-post-comments-97499" type="hidden" value="false"/>
+        <a id="comments-link-97499" class="comments-link">comments (<b>5</b>)</a><noscript>&nbsp;JavaScript is needed to access comments.</noscript>
+        <div id="comments-97499" class="comments-container">
+            <div class="comments"></div>
+        </div>
+    </div>
+</td>
+</tr>
+        
+        </table>
+    </div>
+
+
+    <a name="97507"></a>
+    
+    <div id="answer-97507" class="answer ">    
+        <table style="width:710px">
+        <tr>
+        <td width="60px" style="vertical-align:top;">
+            
+<div class="vote">
+
+    <input type="hidden" value="97507" />
+    <img class="vote-up" src="/content/img/vote-arrow-up.png" width="40" height="25" alt="vote up" title="This was helpful (click again to undo)" />
+    <span class="vote-count-post">
+    0
+    </span>
+    <img class="vote-down" src="/content/img/vote-arrow-down.png" width="40" height="25" alt="vote down" title="This was not helpful (click again to undo)" />
+    <br />  
+        
+
+</div>
+
+        </td>
+        <td>
+            <div class="post-text"><p>If you overload the Click event you can use .SelectAll() and all text will be selected.</p>
+</div>            
+            <table style="width:100%">
+            <tr>
+            <td style="vertical-align:top;" align="left">
+                <div class="post-menu"><a href="/questions/97459/automatically-select-all-text-on-focus-in-winforms-textbox#97507" title="permalink to this answer">link</a><span class="link-separator">|</span><a id="vote-offensive-97507" title="flag this post as hate speech, spam, or abuse">offensive?</a> <span class="vote-offensive-count"></span></div>
+            </td>
+            
+            
+            <td align="right" class="post-signature">                   
+            
+<div class="user-info">
+    
+    <div class="user-action-time">answered <span title="9/18/2008 10:08:15 PM UTC" class="relativetime">Sep 18 at 22:08</span><br /></div>
+    <div class="user-gravatar32"><a href="/users/1204/sam-williamson"><img src="http://www.gravatar.com/avatar/fe24cd0eaa2ff78a42b265fafec55565?s=32&d=identicon&r=PG" height=32 width=32 alt="gravatar image" /></a></div>
+    <div class="user-details"><a href="/users/1204/sam-williamson">Sam Williamson</a><br/><span class="reputation-score" title="reputation score">293</span><span title="1 silver badges"><span class="badge2">&#9679;</span><span class="badgecount">1</span></span><span title="8 bronze badges"><span class="badge3">&#9679;</span><span class="badgecount">8</span></span></div>
+    
+</div>    
+            </td>
+            </tr>
+            </table>
+        </td>
+        </tr>
+        
+        
+
+<tr>
+<td width="60" height="20"></td>
+<td>
+    <div class="post-menu">
+        <input id="can-post-comments-97507" type="hidden" value="false"/>
+        <a id="comments-link-97507" class="comments-link">comments (<b>1</b>)</a><noscript>&nbsp;JavaScript is needed to access comments.</noscript>
+        <div id="comments-97507" class="comments-container">
+            <div class="comments"></div>
+        </div>
+    </div>
+</td>
+</tr>
+        
+        </table>
+    </div>
+
+
+    <a name="97509"></a>
+    
+    <div id="answer-97509" class="answer ">    
+        <table style="width:710px">
+        <tr>
+        <td width="60px" style="vertical-align:top;">
+            
+<div class="vote">
+
+    <input type="hidden" value="97509" />
+    <img class="vote-up" src="/content/img/vote-arrow-up.png" width="40" height="25" alt="vote up" title="This was helpful (click again to undo)" />
+    <span class="vote-count-post">
+    0
+    </span>
+    <img class="vote-down" src="/content/img/vote-arrow-down.png" width="40" height="25" alt="vote down" title="This was not helpful (click again to undo)" />
+    <br />  
+        
+
+</div>
+
+        </td>
+        <td>
+            <div class="post-text"><p>It's a bit kludgey, but in your click event, use SendKeys.Send( "{HOME}+{END}" );</p>
+</div>            
+            <table style="width:100%">
+            <tr>
+            <td style="vertical-align:top;" align="left">
+                <div class="post-menu"><a href="/questions/97459/automatically-select-all-text-on-focus-in-winforms-textbox#97509" title="permalink to this answer">link</a><span class="link-separator">|</span><a id="vote-offensive-97509" title="flag this post as hate speech, spam, or abuse">offensive?</a> <span class="vote-offensive-count"></span></div>
+            </td>
+            
+            <td align="right" class="post-signature">
+            
+<div class="user-info">
+    
+    <div class="user-action-time">edited <a href="/revisions/97509/list" title="show all edits to this post"><span title="9/18/2008 10:25:49 PM UTC" class="relativetime">Sep 18 at 22:25</span></a><br /></div>
+    <div class="user-gravatar32"></div>
+    <div class="user-details"><br/></div>
+    
+</div>
+            </td>
+            
+            
+            <td align="right" class="post-signature">                   
+            
+<div class="user-info">
+    
+    <div class="user-action-time">answered <span title="9/18/2008 10:08:28 PM UTC" class="relativetime">Sep 18 at 22:08</span><br /></div>
+    <div class="user-gravatar32"><a href="/users/18298/todd-benning"><img src="http://www.gravatar.com/avatar/c91cdb00aa05753ee366b4a2d6e47cc6?s=32&d=identicon&r=PG" height=32 width=32 alt="gravatar image" /></a></div>
+    <div class="user-details"><a href="/users/18298/todd-benning">Todd Benning</a><br/><span class="reputation-score" title="reputation score">11</span><span title="2 bronze badges"><span class="badge3">&#9679;</span><span class="badgecount">2</span></span></div>
+    
+</div>    
+            </td>
+            </tr>
+            </table>
+        </td>
+        </tr>
+        
+        
+
+<tr>
+<td width="60" height="20"></td>
+<td>
+    <div class="post-menu">
+        <input id="can-post-comments-97509" type="hidden" value="false"/>
+        <a id="comments-link-97509" class="comments-link">comments (<b>1</b>)</a><noscript>&nbsp;JavaScript is needed to access comments.</noscript>
+        <div id="comments-97509" class="comments-container">
+            <div class="comments"></div>
+        </div>
+    </div>
+</td>
+</tr>
+        
+        </table>
+    </div>
+
+
+    <a name="97735"></a>
+    
+    <div id="answer-97735" class="answer ">    
+        <table style="width:710px">
+        <tr>
+        <td width="60px" style="vertical-align:top;">
+            
+<div class="vote">
+
+    <input type="hidden" value="97735" />
+    <img class="vote-up" src="/content/img/vote-arrow-up.png" width="40" height="25" alt="vote up" title="This was helpful (click again to undo)" />
+    <span class="vote-count-post">
+    0
+    </span>
+    <img class="vote-down" src="/content/img/vote-arrow-down.png" width="40" height="25" alt="vote down" title="This was not helpful (click again to undo)" />
+    <br />  
+        
+
+</div>
+
+        </td>
+        <td>
+            <div class="post-text"><p>The below seems to work.
+The enter event handles the tabbing to the control and the MouseDown works when the control is clicked.</p>
+
+<pre><code>    private void textBox1_Enter(object sender, EventArgs e)
+    {
+        textBox1.SelectAll();
+    }
+
+    private void textBox1_MouseDown(object sender, MouseEventArgs e)
+    {
+        if (textBox1.Focused)
+            textBox1.SelectAll();
+    }
+</code></pre>
+</div>            
+            <table style="width:100%">
+            <tr>
+            <td style="vertical-align:top;" align="left">
+                <div class="post-menu"><a href="/questions/97459/automatically-select-all-text-on-focus-in-winforms-textbox#97735" title="permalink to this answer">link</a><span class="link-separator">|</span><a id="vote-offensive-97735" title="flag this post as hate speech, spam, or abuse">offensive?</a> <span class="vote-offensive-count"></span></div>
+            </td>
+            
+            
+            <td align="right" class="post-signature">                   
+            
+<div class="user-info">
+    
+    <div class="user-action-time">answered <span title="9/18/2008 10:42:15 PM UTC" class="relativetime">Sep 18 at 22:42</span><br /></div>
+    <div class="user-gravatar32"><a href="/users/4490/benpearce"><img src="http://www.gravatar.com/avatar/c1321ea45da2cdf116e0f0f048e2ad62?s=32&d=identicon&r=PG" height=32 width=32 alt="gravatar image" /></a></div>
+    <div class="user-details"><a href="/users/4490/benpearce">benPearce</a><br/><span class="reputation-score" title="reputation score">289</span><span title="1 silver badges"><span class="badge2">&#9679;</span><span class="badgecount">1</span></span><span title="8 bronze badges"><span class="badge3">&#9679;</span><span class="badgecount">8</span></span></div>
+    
+</div>    
+            </td>
+            </tr>
+            </table>
+        </td>
+        </tr>
+        
+        
+
+<tr>
+<td width="60" height="20"></td>
+<td>
+    <div class="post-menu">
+        <input id="can-post-comments-97735" type="hidden" value="false"/>
+        <a id="comments-link-97735" class="comments-link">comments (<b>1</b>)</a><noscript>&nbsp;JavaScript is needed to access comments.</noscript>
+        <div id="comments-97735" class="comments-container">
+            <div class="comments"></div>
+        </div>
+    </div>
+</td>
+</tr>
+        
+        </table>
+    </div>
+
+
+    <a name="97664"></a>
+    
+    <div id="answer-97664" class="answer ">    
+        <table style="width:710px">
+        <tr>
+        <td width="60px" style="vertical-align:top;">
+            
+<div class="vote">
+
+    <input type="hidden" value="97664" />
+    <img class="vote-up" src="/content/img/vote-arrow-up.png" width="40" height="25" alt="vote up" title="This was helpful (click again to undo)" />
+    <span class="vote-count-post">
+    0
+    </span>
+    <img class="vote-down" src="/content/img/vote-arrow-down.png" width="40" height="25" alt="vote down" title="This was not helpful (click again to undo)" />
+    <br />  
+        
+
+</div>
+
+        </td>
+        <td>
+            <div class="post-text"><pre><code>private bool _isSelected = false;
+private void textBox_Validated(object sender, EventArgs e)
+{
+    _isSelected = false;
+}
+
+private void textBox_MouseClick(object sender, MouseEventArgs e)
+{
+    SelectAllText(textBox);
+}
+
+private void textBox_Enter(object sender, EventArgs e)
+{
+    SelectAllText(textBox);
+}
+
+private void SelectAllText(TextBox text)
+{
+    if (!_isSelected)
+    {
+        _isSelected = true;
+        textBox.SelectAll();
+    }
+}
+</code></pre>
+</div>            
+            <table style="width:100%">
+            <tr>
+            <td style="vertical-align:top;" align="left">
+                <div class="post-menu"><a href="/questions/97459/automatically-select-all-text-on-focus-in-winforms-textbox#97664" title="permalink to this answer">link</a><span class="link-separator">|</span><a id="vote-offensive-97664" title="flag this post as hate speech, spam, or abuse">offensive?</a> <span class="vote-offensive-count"></span></div>
+            </td>
+            
+            <td align="right" class="post-signature">
+            
+<div class="user-info">
+    
+    <div class="user-action-time">edited <a href="/revisions/97664/list" title="show all edits to this post"><span title="9/18/2008 10:46:29 PM UTC" class="relativetime">Sep 18 at 22:46</span></a><br /></div>
+    <div class="user-gravatar32"></div>
+    <div class="user-details"><br/></div>
+    
+</div>
+            </td>
+            
+            
+            <td align="right" class="post-signature">                   
+            
+<div class="user-info">
+    
+    <div class="user-action-time">answered <span title="9/18/2008 10:31:05 PM UTC" class="relativetime">Sep 18 at 22:31</span><br /></div>
+    <div class="user-gravatar32"><a href="/users/14484/nescio"><img src="http://www.gravatar.com/avatar/b2a1175bd176dc1b1abe3da055eccb10?s=32&d=identicon&r=PG" height=32 width=32 alt="gravatar image" /></a></div>
+    <div class="user-details"><a href="/users/14484/nescio">Nescio</a><br/><span class="reputation-score" title="reputation score">1,596</span><span title="1 silver badges"><span class="badge2">&#9679;</span><span class="badgecount">1</span></span><span title="15 bronze badges"><span class="badge3">&#9679;</span><span class="badgecount">15</span></span></div>
+    
+</div>    
+            </td>
+            </tr>
+            </table>
+        </td>
+        </tr>
+        
+        
+
+<tr>
+<td width="60" height="20"></td>
+<td>
+    <div class="post-menu">
+        <input id="can-post-comments-97664" type="hidden" value="false"/>
+        <a id="comments-link-97664" class="comments-link">comments (<b>1</b>)</a><noscript>&nbsp;JavaScript is needed to access comments.</noscript>
+        <div id="comments-97664" class="comments-container">
+            <div class="comments"></div>
+        </div>
+    </div>
+</td>
+</tr>
+        
+        </table>
+    </div>
+
+
+    <a name="97814"></a>
+    
+    <div id="answer-97814" class="answer ">    
+        <table style="width:710px">
+        <tr>
+        <td width="60px" style="vertical-align:top;">
+            
+<div class="vote">
+
+    <input type="hidden" value="97814" />
+    <img class="vote-up" src="/content/img/vote-arrow-up.png" width="40" height="25" alt="vote up" title="This was helpful (click again to undo)" />
+    <span class="vote-count-post">
+    0
+    </span>
+    <img class="vote-down" src="/content/img/vote-arrow-down.png" width="40" height="25" alt="vote down" title="This was not helpful (click again to undo)" />
+    <br />  
+        
+
+</div>
+
+        </td>
+        <td>
+            <div class="post-text"><p>Interestingly, a ComboBox with DropDownStyle=Simple has pretty much exactly the behaviour you are looking for, I think.</p>
+
+<p>(If you reduce the height of the control to not show the list - and then by a couple of pixels more - there's no effective difference between the ComboBox and the TextBox.)</p>
+</div>            
+            <table style="width:100%">
+            <tr>
+            <td style="vertical-align:top;" align="left">
+                <div class="post-menu"><a href="/questions/97459/automatically-select-all-text-on-focus-in-winforms-textbox#97814" title="permalink to this answer">link</a><span class="link-separator">|</span><a id="vote-offensive-97814" title="flag this post as hate speech, spam, or abuse">offensive?</a> <span class="vote-offensive-count"></span></div>
+            </td>
+            
+            <td align="right" class="post-signature">
+            
+<div class="user-info">
+    
+    <div class="user-action-time">edited <a href="/revisions/97814/list" title="show all edits to this post"><span title="9/18/2008 11:01:38 PM UTC" class="relativetime">Sep 18 at 23:01</span></a><br /></div>
+    <div class="user-gravatar32"></div>
+    <div class="user-details"><br/></div>
+    
+</div>
+            </td>
+            
+            
+            <td align="right" class="post-signature">                   
+            
+<div class="user-info">
+    
+    <div class="user-action-time">answered <span title="9/18/2008 10:54:38 PM UTC" class="relativetime">Sep 18 at 22:54</span><br /></div>
+    <div class="user-gravatar32"><a href="/users/18312/georgelundmyopenidcom"><img src="http://www.gravatar.com/avatar/bfdb208e8ae29f8f93e98548bae853de?s=32&d=identicon&r=PG" height=32 width=32 alt="gravatar image" /></a></div>
+    <div class="user-details"><a href="/users/18312/georgelundmyopenidcom">george.lund.myopenid.com</a><br/><span class="reputation-score" title="reputation score">1</span><span title="1 bronze badges"><span class="badge3">&#9679;</span><span class="badgecount">1</span></span></div>
+    
+</div>    
+            </td>
+            </tr>
+            </table>
+        </td>
+        </tr>
+        
+        
+
+<tr>
+<td width="60" height="20"></td>
+<td>
+    <div class="post-menu">
+        <input id="can-post-comments-97814" type="hidden" value="false"/>
+        <a id="comments-link-97814" class="comments-link">add comment</a><noscript>&nbsp;JavaScript is needed to access comments.</noscript>
+        <div id="comments-97814" class="comments-container">
+            <div class="comments"></div>
+        </div>
+    </div>
+</td>
+</tr>
+        
+        </table>
+    </div>
+
+
+    <a name="97515"></a>
+    
+    <div id="answer-97515" class="answer ">    
+        <table style="width:710px">
+        <tr>
+        <td width="60px" style="vertical-align:top;">
+            
+<div class="vote">
+
+    <input type="hidden" value="97515" />
+    <img class="vote-up" src="/content/img/vote-arrow-up.png" width="40" height="25" alt="vote up" title="This was helpful (click again to undo)" />
+    <span class="vote-count-post">
+    0
+    </span>
+    <img class="vote-down" src="/content/img/vote-arrow-down.png" width="40" height="25" alt="vote down" title="This was not helpful (click again to undo)" />
+    <br />  
+        
+
+</div>
+
+        </td>
+        <td>
+            <div class="post-text"><pre><code>'Inside the Enter event
+TextBox1.SelectAll();
+</code></pre>
+
+<p>Ok, after trying it here is what you want:</p>
+
+<ul>
+<li>On the Enter event start a flag that states that you have been in the enter event</li>
+<li>On the Click event, if you set the flag, call .SelectAll() and reset the flag.</li>
+<li>On the MouseMove event, set the entered flag to false, which will allow you to click highlight without having to enter the textbox first.</li>
+</ul>
+
+<p>This selected all the text on entry, but allowed me to highlight part of the text afterwards, or allow you to highlight on the first click.</p>
+
+<p>By request:</p>
+
+<pre><code>    bool entered = false;
+    private void textBox1_Enter(object sender, EventArgs e)
+    {
+        entered = true;
+        textBox1.SelectAll();   //From Jakub's answer.
+    }
+
+    private void textBox1_Click(object sender, EventArgs e)
+    {
+        if (entered) textBox1.SelectAll();
+        entered = false;
+    }
+
+    private void textBox1_MouseMove(object sender, MouseEventArgs e)
+    {
+        if (entered) entered = false;
+    }
+</code></pre>
+
+<p>For me, the tabbing into the control selects all the text.</p>
+</div>            
+            <table style="width:100%">
+            <tr>
+            <td style="vertical-align:top;" align="left">
+                <div class="post-menu"><a href="/questions/97459/automatically-select-all-text-on-focus-in-winforms-textbox#97515" title="permalink to this answer">link</a><span class="link-separator">|</span><a id="vote-offensive-97515" title="flag this post as hate speech, spam, or abuse">offensive?</a> <span class="vote-offensive-count"></span></div>
+            </td>
+            
+            <td align="right" class="post-signature">
+            
+<div class="user-info">
+    
+    <div class="user-action-time">edited <a href="/revisions/97515/list" title="show all edits to this post"><span title="9/18/2008 11:45:02 PM UTC" class="relativetime">Sep 18 at 23:45</span></a><br /></div>
+    <div class="user-gravatar32"></div>
+    <div class="user-details"><br/></div>
+    
+</div>
+            </td>
+            
+            
+            <td align="right" class="post-signature">                   
+            
+<div class="user-info">
+    
+    <div class="user-action-time">answered <span title="9/18/2008 10:09:27 PM UTC" class="relativetime">Sep 18 at 22:09</span><br /></div>
+    <div class="user-gravatar32"><a href="/users/8505/magickat"><img src="http://www.gravatar.com/avatar/1fd3d85e09e87742fbcef69cc73e1ada?s=32&d=identicon&r=PG" height=32 width=32 alt="gravatar image" /></a></div>
+    <div class="user-details"><a href="/users/8505/magickat">MagicKat</a><br/><span class="reputation-score" title="reputation score">1,554</span><span title="13 bronze badges"><span class="badge3">&#9679;</span><span class="badgecount">13</span></span></div>
+    
+</div>    
+            </td>
+            </tr>
+            </table>
+        </td>
+        </tr>
+        
+        
+
+<tr>
+<td width="60" height="20"></td>
+<td>
+    <div class="post-menu">
+        <input id="can-post-comments-97515" type="hidden" value="false"/>
+        <a id="comments-link-97515" class="comments-link">comments (<b>3</b>)</a><noscript>&nbsp;JavaScript is needed to access comments.</noscript>
+        <div id="comments-97515" class="comments-container">
+            <div class="comments"></div>
+        </div>
+    </div>
+</td>
+</tr>
+        
+        </table>
+    </div>
+
+
+    <a name="100362"></a>
+    
+    <div id="answer-100362" class="answer ">    
+        <table style="width:710px">
+        <tr>
+        <td width="60px" style="vertical-align:top;">
+            
+<div class="vote">
+
+    <input type="hidden" value="100362" />
+    <img class="vote-up" src="/content/img/vote-arrow-up.png" width="40" height="25" alt="vote up" title="This was helpful (click again to undo)" />
+    <span class="vote-count-post">
+    0
+    </span>
+    <img class="vote-down" src="/content/img/vote-arrow-down.png" width="40" height="25" alt="vote down" title="This was not helpful (click again to undo)" />
+    <br />  
+        
+
+</div>
+
+        </td>
+        <td>
+            <div class="post-text"><p>Actually GotFocus is the right evet (message really) that you are interested in, since no matter how you get to the control you’ll get this even eventually.  The question is when do you call SelectAll().<br />
+Try this:</p>
+
+<pre><code>public partial class Form1 : Form
+{
+	public Form1()
+	{
+		InitializeComponent();
+		this.textBox1.GotFocus += new EventHandler(textBox1_GotFocus);
+	}
+
+	private delegate void SelectAllDelegate();	
+	private IAsyncResult _selectAllar = null;	//So we can clean up afterwards.
+
+	//Catch the input focus event
+	void textBox1_GotFocus(object sender, EventArgs e)
+	{
+		//We could have gotten here many ways (including mouse click)
+		//so there could be other messages queued up already that might change the selection.
+		//Don't call SelectAll here, since it might get undone by things such as positioning the cursor.
+		//Instead use BeginInvoke on the form to queue up a message
+		//to select all the text after everything caused by the current event is processed.
+		this._selectAllar = this.BeginInvoke(new SelectAllDelegate(this._SelectAll));
+	}
+
+	private void _SelectAll()
+	{
+		//Clean-up the BeginInvoke
+		if (this._selectAllar != null)
+		{
+			this.EndInvoke(this._selectAllar);
+		}
+		//Now select everything.
+		this.textBox1.SelectAll();
+	}
+}
+</code></pre>
+</div>            
+            <table style="width:100%">
+            <tr>
+            <td style="vertical-align:top;" align="left">
+                <div class="post-menu"><a href="/questions/97459/automatically-select-all-text-on-focus-in-winforms-textbox#100362" title="permalink to this answer">link</a><span class="link-separator">|</span><a id="vote-offensive-100362" title="flag this post as hate speech, spam, or abuse">offensive?</a> <span class="vote-offensive-count"></span></div>
+            </td>
+            
+            
+            <td align="right" class="post-signature">                   
+            
+<div class="user-info">
+    
+    <div class="user-action-time">answered <span title="9/19/2008 7:58:25 AM UTC" class="relativetime">Sep 19 at 7:58</span><br /></div>
+    <div class="user-gravatar32"><a href="/users/18580/ali"><img src="http://www.gravatar.com/avatar/da485efaa3ef7f7a2f714520a18fe338?s=32&d=identicon&r=PG" height=32 width=32 alt="gravatar image" /></a></div>
+    <div class="user-details"><a href="/users/18580/ali">Ali</a><br/><span class="reputation-score" title="reputation score">1</span></div>
+    
+</div>    
+            </td>
+            </tr>
+            </table>
+        </td>
+        </tr>
+        
+        
+
+<tr>
+<td width="60" height="20"></td>
+<td>
+    <div class="post-menu">
+        <input id="can-post-comments-100362" type="hidden" value="false"/>
+        <a id="comments-link-100362" class="comments-link">comments (<b>1</b>)</a><noscript>&nbsp;JavaScript is needed to access comments.</noscript>
+        <div id="comments-100362" class="comments-container">
+            <div class="comments"></div>
+        </div>
+    </div>
+</td>
+</tr>
+        
+        </table>
+    </div>
+
+
+    <a name="102095"></a>
+    
+    <div id="answer-102095" class="answer owner-answer">    
+        <table style="width:710px">
+        <tr>
+        <td width="60px" style="vertical-align:top;">
+            
+<div class="vote">
+
+    <input type="hidden" value="102095" />
+    <img class="vote-up" src="/content/img/vote-arrow-up.png" width="40" height="25" alt="vote up" title="This was helpful (click again to undo)" />
+    <span class="vote-count-post">
+    0
+    </span>
+    <img class="vote-down" src="/content/img/vote-arrow-down.png" width="40" height="25" alt="vote down" title="This was not helpful (click again to undo)" />
+    <br />  
+        
+
+</div>
+
+        </td>
+        <td>
+            <div class="post-text"><p>Hi guys,</p>
+
+<p>First of all, thanks for answers! 8 total answers. Thank you.</p>
+
+<p>Bad news: all of the answers had some quirks or didn't work quite right (or at all). I've added a comment to each of your posts.</p>
+
+<p>Good news: I've found a way to make it work. This solution is pretty straightforward and seems to work in all the scenarios (mousing down, selecting text, tabbing focus, etc.)</p>
+
+<pre><code>bool alreadyFocused;
+
+...
+
+textBox1.GotFocus += textBox1_GotFocus;
+textBox1.MouseUp += textBox1_MouseUp;
+textBox1.Leave += textBox1_Leave;
+
+...
+
+void textBox1_Leave(object sender, EventArgs e)
+{
+    alreadyFocused = false;
+}
+
+
+void textBox1_GotFocus(object sender, EventArgs e)
+{
+    // Select all text only if the mouse isn't down.
+    if (MouseButtons == MouseButtons.None)
+    {
+        this.textBox1.SelectAll();
+    }
+}
+
+void textBox1_MouseUp(object sender, MouseEventArgs e)
+{
+    if (!alreadyFocused &amp;&amp; this.textBox1.SelectionLength == 0)
+    {
+        alreadyFocused = true;
+        this.textBox1.SelectAll();
+    }
+}
+</code></pre>
+
+<p>As far as I can tell, this causes a textbox to behave exactly like a web browser's address bar.</p>
+
+<p>Hopefully this helps the next guy who tries to solve this deceptively simple problem.</p>
+
+<p>Thanks again, guys, for all your answers that helped lead me towards the correct path.</p>
+</div>            
+            <table style="width:100%">
+            <tr>
+            <td style="vertical-align:top;" align="left">
+                <div class="post-menu"><a href="/questions/97459/automatically-select-all-text-on-focus-in-winforms-textbox#102095" title="permalink to this answer">link</a><span class="link-separator">|</span><a id="vote-offensive-102095" title="flag this post as hate speech, spam, or abuse">offensive?</a> <span class="vote-offensive-count"></span></div>
+            </td>
+            
+            <td align="right" class="post-signature">
+            
+<div class="user-info">
+    
+    <div class="user-action-time">edited <a href="/revisions/102095/list" title="show all edits to this post"><span title="9/19/2008 2:28:02 PM UTC" class="relativetime">Sep 19 at 14:28</span></a><br /></div>
+    <div class="user-gravatar32"></div>
+    <div class="user-details"><br/></div>
+    
+</div>
+            </td>
+            
+            
+            <td align="right" class="post-signature">                   
+            
+<div class="user-info">
+    
+    <div class="user-action-time">answered <span title="9/19/2008 2:08:30 PM UTC" class="relativetime">Sep 19 at 14:08</span><br /></div>
+    <div class="user-gravatar32"><a href="/users/536/judah-himango"><img src="http://www.gravatar.com/avatar/2142b1a501386ed0af9232862af48df9?s=32&d=identicon&r=PG" height=32 width=32 alt="gravatar image" /></a></div>
+    <div class="user-details"><a href="/users/536/judah-himango">Judah Himango</a><br/><span class="reputation-score" title="reputation score">1,309</span><span title="2 silver badges"><span class="badge2">&#9679;</span><span class="badgecount">2</span></span><span title="11 bronze badges"><span class="badge3">&#9679;</span><span class="badgecount">11</span></span></div>
+    
+</div>    
+            </td>
+            </tr>
+            </table>
+        </td>
+        </tr>
+        
+        
+
+<tr>
+<td width="60" height="20"></td>
+<td>
+    <div class="post-menu">
+        <input id="can-post-comments-102095" type="hidden" value="false"/>
+        <a id="comments-link-102095" class="comments-link-owner">add comment</a><noscript>&nbsp;JavaScript is needed to access comments.</noscript>
+        <div id="comments-102095" class="comments-container-owner">
+            <div class="comments"></div>
+        </div>
+    </div>
+</td>
+</tr>
+        
+        </table>
+    </div>
+
+
+<div style="height:20px; clear:both;"></div>
+
+
+    <form id="post-form" action="/questions/97459/answer?sort=Votes" method="post">
+        <h2>Your Answer:</h2>
+        
+
+<script src="/Content/Js/jquery.package.editor.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+
+$().ready(function() {
+    initStyleCode();
+    initValidation();
+    initWMDToggle();
+    initResizer();
+    initBullet();
+});
+
+function initBullet() {
+    $.get("/questions/ticks", function(txt) {
+        $("#comment-div").append("<input type='hidden' name='bullet' value='" + txt + "' />");        
+    });
+}
+
+function initResizer() {
+    $("#post-text:not(.processed)").TextAreaResizer();
+}
+
+function initWMDToggle() {
+    var WMD_HIDE_COOKIE = 'wmdhide';
+    
+    $("#previewToggle").toggle(function() {
+        $(this).text("show preview");
+        $.cookie(WMD_HIDE_COOKIE, 'false', { path: '/', expires: 60 });
+        $("#post-preview").hide();
+     }, function() {
+        $(this).text("hide preview");        
+        $.cookie(WMD_HIDE_COOKIE, 'true', { path: '/', expires: 60 });
+        $("#post-preview").show();
+        styleCode();
+     });
+     
+     if($.cookie(WMD_HIDE_COOKIE) == 'false') {
+        $("#previewToggle").click();
+     }  
+}
+
+function initStyleCode() {
+    $("#post-text").typeWatch( { highlight:false, wait:5000, captureLength: 5, callback:styleCode } );
+}
+
+function initValidation() {
+    $("#post-text").rules("add", { required: true, minlength: 10 });
+    if ($("#title").length > 0) {
+        $("#title").rules("add", { required: true, minlength: 10 });
+    }
+}
+</script>
+
+<input id="fkey" name="fkey" type="hidden" value="" />
+
+<div id="comment-div">
+    <input id="comment" name="comment" type="text" />
+</div>
+
+
+
+<div class="form-item" style="margin-bottom:-50px;">
+
+    <div id="post-text-container" class="resizable-textarea">
+        <textarea id="post-text" name="post-text" cols="90" rows="10" tabindex="101" ></textarea>
+    </div>
+    
+    <div style="float:right; width:200px; text-align:right; margin-right:20px;">
+    <input id="communitymode" name="communitymode" type="checkbox"/>
+    <label for="communitymode" style="display:inline;"><span title="community owned posts do not generate any reputation for the owner, and have a lower reputation barrier for collaborative editing" style="color: #888; font-weight:normal; font-size:90%;">community wiki</span></label> 
+    </div>
+    
+    <br />    
+    <span class="form-error"></span>    
+    <a id="previewToggle" title="Show or hide the real time as-you-type Markdown preview" href="javascript:void(0);" tabindex="-1" >hide preview</a>
+</div>
+
+<div class="form-item" style="width: 680px; padding-top:0; margin-top:40px">
+    <div id="preview-container">
+        <div id="post-preview" class="wmd-preview form-item">
+        </div>
+    </div>
+</div>
+    
+<div class="form-item">
+    <table>
+    <tr>
+    <td style="vertical-align:middle;">
+        <label for="openid_identifier">OpenID Login: <span class="form-error"></span></label>
+        <input id="openid_identifier" name="openid_identifier" type="text" size="40" maxlength="200" value="" tabindex="104" />
+        <div class="form-item-info">
+            Get an <a href="https://www.myopenid.com/" target="_blank">OpenID</a>.
+        </div>
+    </td>
+    <td style="vertical-align:middle; padding: 0px 40px 0px 40px">
+        <div style="position: absolute; margin-top:40px; background-color:white; margin-left:-10px; padding:5px;">or</div>
+        <div style="width:1px; border-left:solid 1px #999; height:8em; margin:auto;"></div>
+    </td>
+    <td style="vertical-align:middle;"> 
+        <label for="display-name">Name: <span class="form-error"></span></label>
+        <input id="display-name" name="display-name" type="text" size="30" maxlength="30" value="" tabindex="105" />
+        
+        <label for="email">Email: <span class="form-error"></span><span class="form-detail">(never shown)</span></label>
+        <input id="email" name="email" type="text" size="40" maxlength="100" value="" tabindex="106" />
+        
+        <label for="home-page">Home Page: <span class="form-error"></span></label>
+        <input id="home-page" name="home-page" type="text" size="40" maxlength="200" value="" tabindex="107" />
+    </td>
+    </tr>
+    </table>    
+</div>
+
+<script type="text/javascript">
+    $().ready(function() {
+    
+        $.validator.addMethod("validUserName",
+          function(value, element) {
+          return this.optional(element) || /^[\w\-\sÀÈÌÒÙàèìòùÁÉÍÓÚÝáéíóúýÂÊÎÔÛâêîôûÃÑÕãñõÄËÏÖÜäëïöüçÇßØøÅåÆæÞþÐð]+$/.test(value); },
+          "Can only contain A-Z, 0-9, spaces, and hyphens.");        
+        $.validator.addMethod("alturl", 
+          function (value) { 
+          return /((^https?:\/\/)?.{2,}\.\w{2,4}\/?|^$)/.test(value); }, 
+          "Enter a valid URL.");
+        $.validator.addMethod("requiredUnlessOpenIdAvailable", 
+          function(value) {
+          return (value.length > 2) || ($("#openid_identifier").val().length > 0); },
+          "Required if you're not using an OpenID.");
+        
+        $("#openid_identifier").rules("add", { alturl: true });
+        $("#display-name").rules("add", { validUserName: true, requiredUnlessOpenIdAvailable: true, minlength: 2, maxlength: 25 });
+        $("#email").rules("add", { email: true, requiredUnlessOpenIdAvailable: true });                
+        $("#home-page").rules("add", { alturl: true });        
+    });
+</script>
+    
+
+        
+        <div class="form-submit" style="clear:both;"><input id="submit-button" type="submit" value="Post Your Answer" tabindex="110"/></div>
+    </form>    
+    
+
+
+<h2>
+
+Not the answer you're looking for? 
+
+Browse other questions tagged <a href="/questions/tagged/winforms" class="post-tag" title="show questions tagged 'winforms'" rel="tag">winforms</a> <a href="/questions/tagged/gui" class="post-tag" title="show questions tagged 'gui'" rel="tag">gui</a> <a href="/questions/tagged/textbox" class="post-tag" title="show questions tagged 'textbox'" rel="tag">textbox</a>  or <a href="/questions/ask">ask your own question</a>.
+</h2>
+
+</div>
+
+</div>
+
+<div id="sidebar" style="width:220px">
+    
+<div class="module newuser">
+    <h4>Welcome!</h4>
+    <div class="box">
+        <p>Stack Overflow is a <b>collaboratively edited question and answer site for programmers</b> &mdash; regardless of platform or language. Jump in and share your software engineering expertise! No registration or account required.</p>
+        <p style="text-align:right;"><a href="/about">about &raquo;</a><br /><a href="/faq">faq &raquo;</a></p>
+    </div>
+</div>
+
+    <div class="module">    
+    <p>You're viewing a single question tagged</p>
+    <div style="margin-bottom:10px;margin-top:5px;">
+        <a href="/questions/tagged/winforms" class="post-tag" title="show questions tagged 'winforms'" rel="tag">winforms</a>&nbsp;<span class="item-multiplier">&times;&nbsp;330</span><br/><a href="/questions/tagged/gui" class="post-tag" title="show questions tagged 'gui'" rel="tag">gui</a>&nbsp;<span class="item-multiplier">&times;&nbsp;207</span><br/><a href="/questions/tagged/textbox" class="post-tag" title="show questions tagged 'textbox'" rel="tag">textbox</a>&nbsp;<span class="item-multiplier">&times;&nbsp;22</span><br/>
+    </div> 
+    <p style="margin-bottom:0">asked</p>
+    <p><b style="font-size:120%;">16 days ago</b></p>
+       
+    <p style="margin-bottom:0">answered by</p>
+    <div class="summarycount" style="text-align:left;">9</div>
+    <p style="margin-bottom:0">users with</p>
+    <div class="summarycount" style="text-align:left;">1</div>
+    <p>total votes</p>
+    <p style="margin-bottom:0">it was answered in</p>
+    <p><b style="font-size:120%;">5 minutes</b></p> 
+    <p style="margin-bottom:0">latest activity was</p>
+    <p><b style="font-size:120%;">15 days ago</b></p>
+
+    </div>
+
+
+    <div class="module">
+    <h4>Legend</h4>
+    <table>
+    <tr>
+    <td style="padding:3px 0px 3px 0px;"><div style="height:20px; width:20px; background-color: white; margin-right:10px; border: 1px solid #999;"></div></td>
+    <td style="vertical-align:middle;">answer</td>
+    </tr>
+    <tr>
+    <td style="padding:3px 0px 3px 0px;"><div class="owner-answer" style="height:20px; width:20px; margin-right:10px; border: 1px solid #999;"></div></td>
+    <td style="vertical-align:middle;">question owner</td>
+    </tr>
+    <tr>
+    <td style="padding:3px 0px 3px 0px;"><div class="accepted-answer" style="height:20px; width:20px; margin-right:10px; border: 1px solid #999;"></div></td>
+    <td style="vertical-align:middle;">accepted by owner</td>
+    </tr>
+    </table>
+    </div>
+
+<div class="module">
+<h4>Sponsored By</h4>
+<div class="box" style="margin-bottom:10px;">
+
+<p><b><a href="http://submain.com/guidelines/?utm_campaign=guidelines&utm_medium=textad&utm_source=stackoverflow" rel="nofollow">.NET Coding Guidelines</a></b></p>
+<p><a href="http://submain.com/guidelines/?utm_campaign=guidelines&utm_medium=textad&utm_source=stackoverflow" rel="nofollow">Free 100+ page pdf ebook</a> on naming conventions, best coding practices, error handling, usage and patterns, written by industry expert Steven Sartain.</p>
+<p>Delivered by SubMain - your coding standards and best practices experts.</p>
+<p><a href="http://submain.com/guidelines/?utm_campaign=guidelines&utm_medium=textad&utm_source=stackoverflow" rel="nofollow">Download now!</a></p>
+    
+</div>
+</div>
+
+</div>
+
+<div id="mainbar-footer">    
+    
+<div id="feed-link">
+    <div id="feed-link-image"><a href="/feeds/question/97459" title="a syndicated data feed of this page suitable for your favorite feed reader"><img src="/Content/Img/feed-icon-small.png" width="14" height="14" alt="feed icon"/></a></div>
+    <div id="feed-link-text"><a href="/feeds/question/97459" title="a syndicated data feed of this page suitable for your favorite feed reader">question feed</a></div>
+</div>
+
+</div>
+
+
+        </div>
+                
+        
+    </div>
+            
+    <div id="footer">
+        <div class="container">
+            <div id="footer-menu"><a href="/about">about this site</a> | <a href="/faq">faq</a> | <a href="http://blog.stackoverflow.com/">blog</a> | <a href="http://itc.conversationsnetwork.org/series/stackoverflow.html">podcast</a> | <a href="/privacy">privacy policy</a> | <a href="mailto:team@stackoverflow.com">contact us</a> | <a href="http://stackoverflow.uservoice.com/">report a bug</a></div>
+            <div id="creativecommons"><a href="http://creativecommons.org/licenses/by-sa/2.5/"><img src="/content/img/cc-wiki.png" title="Creative Commons: Attribution - Share Alike" alt="cc-wiki" /></a></div>
+            <div id="betamessage">Using this website may cause <a href="http://www.youtube.com/watch?v=UM64dMoweio">irreversible damage to the kidneys and liver</a>.</div>
+            <div id="svnrevision">svn revision: 1776</div>            
+        </div>
+    </div>
+
+    <script type="text/javascript">
+        var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+        document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+    </script>
+    <script type="text/javascript">
+        var pageTracker = _gat._getTracker("UA-5620270-1");
+        pageTracker._trackPageview();
+    </script>
+
+    <noscript>
+        <style type="text/css">body { margin-top:3.5em; }</style>
+        <div id="noscript-warning" style="">
+            Stack Overflow works best with JavaScript enabled
+        </div>        
+
+    </noscript>
+
+</body>
+
+</html>
